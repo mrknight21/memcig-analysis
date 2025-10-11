@@ -1,0 +1,91 @@
+{% extends 'base.html' %}
+{% block title %}Register / Login - Annotation Project{% endblock %}
+
+{% block content %}
+<div class="card shadow-sm mx-auto" style="max-width: 600px;">
+  <div class="card-header text-center">
+    <h2>Welcome to the Conversation Information Delta Project</h2>
+  </div>
+  <div class="card-body">
+    <!-- Display error message if registration/login failed -->
+    {% if message %}
+    <div class="alert alert-danger" role="alert">
+      {{ message }}
+    </div>
+    {% endif %}
+    <p class="mb-4">
+      This project aims to investigate how community audiences perceive and evaluate informativeness in public discussions of societal issues. Specifically, we seek to identify the key factors influencing perceptions of informative communication, and develop computational models capable of predicting audience evaluations. In this annotation task, you will assess dialogue segments drawn from public debates, rating their informativeness along with other key aspects such as novelty, relevance, and scope of implication. Your annotations will contribute to building a robust understanding of effective public discourse and help inform tools designed to facilitate clearer, more meaningful communication.
+    </p>
+    <p class="mb-4 reminder">
+      <strong>Reminder:</strong> If you are coming from the Prolific platform, please use your Prolific ID so that you can earn payment.
+    </p>
+    <form id="registrationForm" method="post" action="/register">
+      <!-- New: existing user login field -->
+      <div class="mb-3">
+        <label for="existing_id" class="form-label">Already registered? Enter your Prolific ID to log in:</label>
+        <input type="text"
+               class="form-control"
+               id="existing_id"
+               name="existing_id"
+               placeholder="Your existing Prolific ID">
+      </div>
+
+      <hr>
+
+      <div class="mb-3">
+        <label for="registration_id" class="form-label">Or, Register as a new user (choose a username):</label>
+        <input type="text"
+               class="form-control"
+               id="registration_id"
+               name="registration_id"
+               placeholder="New username / Prolific ID"
+               {% if not existing_id %}required{% endif %}>
+        <div id="usernameError" class="text-danger"></div>
+      </div>
+
+      <div class="d-flex justify-content-between">
+        <button type="submit" id="submitBtn" class="btn btn-primary">Submit</button>
+        <button type="reset" class="btn btn-secondary">Clear</button>
+      </div>
+    </form>
+  </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+// If user is typing a new username, clear the existing login error, and vice versa:
+const existingInput = document.getElementById('existing_id');
+const newUserInput  = document.getElementById('registration_id');
+const submitBtn     = document.getElementById('submitBtn');
+
+existingInput.addEventListener('input', () => {
+  // disable new username validation if logging in
+  newUserInput.removeAttribute('required');
+  document.getElementById('usernameError').textContent = '';
+  submitBtn.disabled = false;
+});
+newUserInput.addEventListener('input', () => {
+  // if they're registering new, clear any existing-id based logic
+  existingInput.value = '';
+});
+
+// Validate new user uniqueness on blur
+newUserInput.addEventListener('blur', function() {
+  const username = this.value.trim();
+  if (!username) return;
+  fetch('/check_username?username=' + encodeURIComponent(username))
+    .then(r => r.json())
+    .then(data => {
+      if (data.exists) {
+        document.getElementById('usernameError').textContent = "Username already exists. Please pick another.";
+        submitBtn.disabled = true;
+      } else {
+        document.getElementById('usernameError').textContent = "";
+        submitBtn.disabled = false;
+      }
+    })
+    .catch(err => console.error('Error checking username:', err));
+});
+</script>
+{% endblock %}

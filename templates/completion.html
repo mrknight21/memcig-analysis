@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block title %}Study Complete{% endblock %}
+
+{% block content %}
+<div class="container d-flex justify-content-center align-items-center" style="min-height: 80vh;">
+  <div class="card shadow-sm text-center" style="max-width: 600px; width: 100%;">
+    <div class="card-header">
+      <h2>Thank you for completing the study!</h2>
+    </div>
+    <div class="card-body">
+      <p>Your submission ID is: <strong>{{ submission_id }}</strong></p>
+      <p>Please click the button below to confirm your completion on Prolific. If you are not from Prolific, please ignore.</p>
+      <a href="https://app.prolific.com/submissions/complete?cc={{ completion_code }}"
+         class="btn btn-primary btn-lg"
+         role="button"
+         target="_blank"
+         rel="noopener">
+        Complete on Prolific
+      </a>
+    </div>
+  </div>
+</div>
+{% endblock %}

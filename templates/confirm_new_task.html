@@ -1,0 +1,90 @@
+{% extends "base.html" %}
+{% block title %}Start Another Task?{% endblock %}
+
+{% block content %}
+<div class="container py-5">
+  <div class="row justify-content-center">
+    <div class="col-12 col-md-10 col-lg-8">
+      <div class="card shadow-sm">
+        <div class="card-header text-center">
+          <h3 class="mb-0">Ready for Another One?</h3>
+        </div>
+
+        {% set sid = study_id or Study_Id or (task.study_id if task is defined else None) %}
+        {% set uid = (nav_info.current_user if nav_info is defined else (current_user if current_user is defined else None)) %}
+
+        <div class="card-body text-center">
+          <p class="lead mb-3">You have previously completed a task.</p>
+          <p class="mb-4">
+            Would you like to start another task under the study ID
+            <strong>{{ sid if sid else "—" }}</strong>?
+          </p>
+
+          {% if remaining is defined %}
+          <p class="mb-4">
+            <span class="badge bg-info text-dark">Remaining tasks available: {{ remaining }}</span>
+          </p>
+          {% endif %}
+
+
+          <!-- Confirm & go to annotation (GET with user_id & study_id) -->
+          <button id="goAnnotBtn" type="button" class="btn btn-success ms-2">
+            Confirm &amp; Start New Annotation Task
+          </button>
+
+        </div>
+
+        <div class="card-footer text-muted small d-flex justify-content-center gap-3 flex-wrap">
+          <span>Study ID: <code>{{ sid if sid else 'N/A' }}</code></span>
+          <span>User ID: <code>{{ uid if uid else 'N/A' }}</code></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+  // Prevent accidental double-submits on the POST action
+  const form = document.getElementById('startForm');
+  const startBtn = document.getElementById('startBtn');
+  form && form.addEventListener('submit', function () {
+    if (startBtn) {
+      startBtn.disabled = true;
+      startBtn.innerText = 'Starting...';
+    }
+  });
+
+  // Redirect to /annotation with user_id & study_id as GET params
+  (function(){
+    const goAnnotBtn = document.getElementById('goAnnotBtn');
+    if (!goAnnotBtn) return;
+
+    // Values from server (Jinja vars); fallback to empty string
+    const userId  = "{{ (uid or '')|e }}";
+    const studyId = "{{ (sid or '')|e }}";
+
+    goAnnotBtn.addEventListener('click', function(){
+      const params = new URLSearchParams();
+      if (userId)  params.set('user_id',  userId);
+      if (studyId) params.set('study_id', studyId);
+      params.set('confirm','true');
+      const qs = params.toString();
+      const url = '/annotation' + (qs ? ('?' + qs) : '');
+      window.location.href = url;
+    });
+  })();
+
+  // Optional: Enter key triggers Start Another Task by default (not the redirect)
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Enter' && !e.shiftKey && !e.ctrlKey && !e.metaKey) {
+      if (document.activeElement && document.activeElement.tagName === 'A') return;
+      if (startBtn && !startBtn.disabled) {
+        e.preventDefault();
+        startBtn.click();
+      }
+    }
+  });
+</script>
+{% endblock %}

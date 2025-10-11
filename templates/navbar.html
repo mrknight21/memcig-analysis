@@ -1,0 +1,60 @@
+<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #205781;">
+  <div class="container">
+    <!-- University of Melbourne Logo + App Name -->
+    <a class="navbar-brand" href="#">
+      <img src="{{ url_for('static', filename='images/uom_logo.png') }}"
+           alt="University of Melbourne" width="40" height="40"
+           class="d-inline-block align-text-top me-2">
+      Conversational Information Delta Annotation
+    </a>
+
+    <!-- Toggler for collapsing nav on small screens -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+            aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Collapsible Nav Content -->
+    <div class="collapse navbar-collapse" id="navbarContent">
+      <ul class="navbar-nav ms-auto">
+        {% if nav_info %}
+          {% if nav_info.current_user %}
+          <li class="nav-item">
+            <span class="navbar-text me-3">User: {{ nav_info.current_user }}</span>
+          </li>
+          {% endif %}
+
+          {% if nav_info.study_type %}
+          <li class="nav-item">
+            <span class="navbar-text me-3">Study Type: {{ nav_info.study_type }}</span>
+          </li>
+          {% endif %}
+
+        {% if nav_info.conversation_id %}
+          <li class="nav-item">
+            <span class="navbar-text me-3">Dialogue ID: {{ nav_info.conversation_id }}</span>
+          </li>
+          {% endif %}
+
+        {% if nav_info.progress %}
+          <li class="nav-item">
+            <span class="navbar-text me-3">Progress: {{ nav_info.progress }}</span>
+          </li>
+          {% endif %}
+
+          {% if nav_info.total_submissions is defined %}
+          <li class="nav-item">
+            <span class="navbar-text me-3">Submissions: {{ nav_info.total_submissions }}</span>
+          </li>
+          {% endif %}
+
+          {% if nav_info.task_id %}
+          <li class="nav-item">
+            <span class="navbar-text me-3">Task ID: {{ nav_info.task_id }}</span>
+          </li>
+          {% endif %}
+        {% endif %}
+      </ul>
+    </div>
+  </div>
+</nav>

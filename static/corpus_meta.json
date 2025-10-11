@@ -1,0 +1,8 @@
+{
+  "insq": {
+    "intro": "<p>\n  The dialogue segment you are about to annotate is taken from the televised debate\n  series <strong>“Intelligence Squared.”</strong> Each episode centres on a single\n  motion debated by two teams—one arguing <strong>for</strong> the motion and the\n  other <strong>against</strong>—while a neutral moderator keeps the discussion on\n  track. In the interface every utterance is labelled in the upper‑right corner with\n  the speaker’s name and a colour‑coded stance tag:\n  <span style=\"color:#0d6efd;\"><strong>blue&nbsp;=&nbsp;for</strong></span>,\n  <span style=\"color:#dc3545;\"><strong>red&nbsp;=&nbsp;against</strong></span>, and\n  <span style=\"color:#198754;\"><strong>green&nbsp;=&nbsp;moderator</strong></span>.\n</p>\n"
+  },
+  "fora": {
+    "intro": "<p>The dialogue segment you are about to annotate is taken from the transcript of community discussion hosted by the <strong>“Community Engagement Team of Durham city”</strong> to invite, record, and share the experiences of historically underserved and underrepresented residents, enabling their voices to influence city decision-making. In the interface every utterance is labelled in the upper‑right corner with  the speaker’s name and a colour‑coded role tag: <span style=\"color:#ffc107;\"><strong>orange&nbsp;=&nbsp;participant</strong></span>, and <span style=\"color:#198754;\"><strong>green&nbsp;=&nbsp;moderator</strong></span>.</p>\n"
+  }
+}

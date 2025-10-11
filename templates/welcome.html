@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% block title %}Welcome{% endblock %}
+
+{% block content %}
+<div class="container d-flex justify-content-center align-items-center" style="min-height: 80vh;">
+  <div class="card shadow-sm" style="max-width: 500px; width: 100%;">
+    <div class="card-header text-center">
+      <h2>Welcome</h2>
+    </div>
+    <div class="card-body">
+      <p>Please enter your <strong>Study ID</strong> to begin:</p>
+      <form method="get" action="{{ url_for('index') }}">
+        <div class="mb-3">
+          <label for="studyIdInput" class="form-label">Study ID</label>
+          <input type="text"
+                 class="form-control"
+                 id="studyIdInput"
+                 name="STUDY_ID"
+                 placeholder="e.g. abc123"
+                 required
+                 autofocus>
+        </div>
+        <div class="text-center">
+          <button type="submit" class="btn btn-primary">Start</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+{% endblock %}

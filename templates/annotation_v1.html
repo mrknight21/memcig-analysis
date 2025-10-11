@@ -1,0 +1,539 @@
+
+{% extends 'base.html' %}
+{% block title %}Formal Annotation{% endblock %}
+
+{% block content %}
+<div class="card shadow-sm mx-auto mb-4" style="max-width:900px;">
+  <div class="card-header text-center"><h2>Instructions</h2></div>
+  <div class="card-body">
+    <p><strong>Task&nbsp;ID:</strong> {{ task.task_id }}<br><strong>Task&nbsp;Type:</strong> {{ task_type }}</p>
+
+{% if task_type == "info" %}
+<section>
+  <p>This is the <strong>pre-screen test</strong>. First, read the <em>Prior Knowledge</em> card for one minute. When the timer ends, the <em>Target Utterances</em> panel unlocks so you can score each response’s <strong>Conversational Information Gain (CIG)</strong> on a 1–4 scale.</p>
+
+  <h4 class="mt-3">
+    <span class="dimension" data-bs-placement="top">Conversational Information Gain</span>
+  </h4>
+  <p><strong>Core question:</strong> Does this response help the group understand the topic more deeply or move forward, given what they already know?</p>
+
+  <button
+    class="btn btn-sm btn-outline-secondary mb-2"
+    type="button"
+    data-bs-toggle="collapse"
+    data-bs-target="#defs-{{ task_type }}-collapse"
+    aria-expanded="false"
+    aria-controls="defs-{{ task_type }}-collapse"
+  >
+    Dimension Definitions
+  </button>
+
+  <div class="collapse" id="defs-{{ task_type }}-collapse">
+    <div class="card card-body">
+      <p><strong>What it measures:</strong> A contribution’s effectiveness in advancing the collective understanding or resolution of the topic, relative to prior knowledge and the preceding dialogue.</p>
+
+      <ul class="mb-0">
+        <li>
+          <strong>1 – No gain at all:</strong>
+          Obstructs, is irrelevant, or repeats established information (verbatim or paraphrase without added meaning).<br>
+          <em>Example:</em> “Like I said, aid has pros and cons.” (Already stated.)<br>
+          <em>Example:</em> “That’s just my opinion.” (No evidence or direction.)
+        </li>
+        <li class="mt-2">
+          <strong>2 – Minimal gain:</strong>
+          Minor clarification or small supporting detail; adds nuance but no significant new understanding.<br>
+          <em>Example:</em> “By ‘aid’, I mean government-to-government grants.” (Clarification.)<br>
+          <em>Example:</em> “The pilot ran for six months.” (Small detail, does not move the argument.)
+        </li>
+        <li class="mt-2">
+          <strong>3 – Incremental:</strong>
+          New evidence or reasoning that clearly surpasses what’s already established; moves the discussion forward without reframing it.<br>
+          <em>Example:</em> “A 2021 RCT in Ghana found school attendance rose 12% after cash transfers.”<br>
+          <em>Example:</em> “Compared with 2020, net migration rose 4%, which helps explain the labor shortage we’re debating.”
+        </li>
+        <li class="mt-2">
+          <strong>4 – Insightful:</strong>
+          Introduces a new perspective, synthesis, or solution that reframes the conversation.<br>
+          <em>Example:</em> “Outcomes depend on state capacity; evaluating aid by governance tiers explains why similar programs produce opposite results.”<br>
+          <em>Example:</em> “If remittances are the counterfactual to aid, our cost-effectiveness ranking flips.”
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+{% elif task_type == "mix" %}
+<section>
+  <p>This is the <strong>pre-screen test</strong>. After a one-minute reading period, rate <em>each utterance</em> on <strong>Novelty</strong>, <strong>Relevance</strong>, and <strong>Implication Scope</strong> (1–4 each).</p>
+
+  <button
+    class="btn btn-sm btn-outline-secondary mb-3"
+    type="button"
+    data-bs-toggle="collapse"
+    data-bs-target="#defs-{{ task_type }}-collapse"
+    aria-expanded="false"
+    aria-controls="defs-{{ task_type }}-collapse"
+  >
+    Dimension Definitions
+  </button>
+
+<div class="collapse" id="defs-{{ task_type }}-collapse">
+    <div class="card card-body">
+      <!-- Novelty details -->
+      <h5 class="mb-1">Novelty</h5>
+      <p class="mb-2">Whether the information is new relative to prior knowledge and preceding dialogue. Novelty is about <em>newness</em> only (not usefulness or relevance).</p>
+      <ul class="mb-3">
+        <li><strong>1 – Not at all novel:</strong> Repeats/paraphrases prior content or states obvious facts.<br>
+          <em>Example:</em> “As I said earlier, aid has pros and cons.” / “Everyone dies at some point.”
+        </li>
+        <li class="mt-2"><strong>2 – Minimally novel:</strong> Adds a minor or predictable detail to a known idea.<br>
+          <em>Example:</em> “Foreign aid programs mean financial support from developed to developing countries.”
+        </li>
+        <li class="mt-2"><strong>3 – Moderately novel:</strong> New evidence/example/supporting detail that expands an existing idea.<br>
+          <em>Example:</em> “A government-run aid program raised rural school attendance by 40% in three years.”
+        </li>
+        <li class="mt-2"><strong>4 – Highly novel:</strong> New framework/principle/topic/line of reasoning that reframes discussion.<br>
+          <em>Example:</em> “A leaked 2022 audit showed 60% of funds never reached recipients.”
+        </li>
+      </ul>
+
+      <!-- Relevance details -->
+      <h5 class="mb-1">Relevance</h5>
+      <p class="mb-2">Measures if the utterance's content provides substantive information that is directly about the core topic or goal. This dimension excludes procedural or meta-discourse contributions.</p>
+      <ul class="mb-3">
+        <li><strong>1 – Not at all relevant:</strong> Off-topic; no clear connection. purely procedural<br>
+          <em>Example:</em> “Is anyone else hungry? I skipped lunch.” (topic: “Foreign Aid in Africa”)
+        </li>
+        <li class="mt-2"><strong>2 – Minimally relevant:</strong> Loosely related; indirect or hypothetical connection.<br>
+          <em>Example:</em> “This reminds me of a book about coffee growers in Africa.”
+        </li>
+        <li class="mt-2"><strong>3 – Moderately relevant:</strong> Related but not central; side issue/counterpoint/secondary aspect.<br>
+          <em>Example:</em> “There are similarities to how nonprofits operate in Southeast Asia.”
+        </li>
+        <li class="mt-2"><strong>4 – Highly relevant:</strong> Directly addresses the core topic/goal.<br>
+          <em>Example:</em> “Evidence shows unrestricted aid can create dependency and weaken governance.”
+        </li>
+      </ul>
+
+      <!-- Implication Scope details -->
+      <h5 class="mb-1">Implication Scope</h5>
+      <p class="mb-2">Measures the intended reach and the generlisation of the implication—For whom this statement is intended to be significant? How does the implication generalise to broader population?</p>
+      <ul class="mb-0">
+        <li><strong>1 – Local:</strong> Manages the immediate conversation; procedural or significant only to the participants involved.<br>
+          <em>Examples:</em> “Can you speak louder?”
+        </li>
+        <li class="mt-2"><strong>2 – Bounded/Specific:</strong> Presents a self-contained fact, feeling, or stance without performing an act of generalization. The significance is confined to the speaker or the specific case.<br>
+          <em>Examples:</em> “The city of Los Angeles has 423 parks.” “I support more funding for our school system.”
+        </li>
+        <li class="mt-2"><strong>3 – Generalizing (Inductive):</strong> Generalise a specific case (an experience, evidence, or observation) to a broader conclusion, issue, or public domain.<br>
+          <em>Example:</em> “This factory closure signals a nationwide problem.” "My mother's career struggles show why school funding is so important."
+        </li>
+        <li class="mt-2"><strong>4 – Universal (Deductive):</strong> States a broad, abstract principle, value, or norm that applies widely, framing the discussion in 'top-down' terms.<br>
+          <em>Example:</em> “Access to clean water is a basic human right.”
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Visible, lightweight prompts next to your rating UI -->
+  <h4 class="mt-3"><span class="dimension" data-bs-placement="top">Novelty</span></h4>
+  <p class="text-muted mb-2"><strong>Core question:</strong> Has this specific fact, idea, or perspective already appeared in the Prior Knowledge or been stated earlier in the conversation? Or common sense?</p>
+
+  <h4 class="mt-3"><span class="dimension" data-bs-placement="top">Relevance</span></h4>
+  <p class="text-muted mb-2"><strong>Core question:</strong> Is this utterance content on-topic and contributing to the conversation’s main goal?</p>
+
+  <h4 class="mt-3"><span class="dimension" data-bs-placement="top">Implication Scope</span></h4>
+  <p class="text-muted mb-2"><strong>Core question:</strong> For whom this statement is intended to be significant? How does the implication generalise to broader population?</p>
+</section>
+
+{% else %}
+<p><strong>Warning:</strong> Unrecognized task type. No annotation fields will be displayed.</p>
+{% endif %}
+
+
+
+
+    <h4 class="mt-4">Workflow</h4>
+    <ol>
+      <li>Read and understand the topic and the goal of the conversation.</li>
+      <li>Read the <strong>Prior Knowledge</strong> card for <strong>60&nbsp;seconds</strong>. A countdown shows when annotation unlocks.</li>
+      <li>Click <strong>yellow key‑phrase buttons</strong> in a target utterance to highlight matching text in Prior Knowledge.</li>
+      <li>Rate each utterance. If there is no scale display, you may skip it by clicking "Next"!
+      <li>When every utterance is rated the <strong>Submit</strong> button activates. Please click to submit.</li>
+    </ol>
+
+    <h4 class="mt-4">Additional Notes</h4>
+    <ul>
+      <li>Just click <strong>"Next"</strong> when you see a response without a rating scale. We deliberately skip rating for some responses if they are too short or made by the moderator.</li>
+      <li>Be aware that any prior response is considered <strong>prior knowledge</strong>, even one you have rated yourself. If you find a response that repeats information from an earlier one, you should <strong>lower its rating</strong> where appropriate.</li>
+    </ul>
+
+    {% if corpus_intro %}
+      <h4 class="mt-4">Conversation Introduction:</h4>
+      <p>{{ corpus_intro | safe }}</p>
+    {% endif %}
+  </div>
+</div>
+
+<div class="card task-section border shadow-sm w-100 mx-auto mb-4 p-4">
+  <div class="card-header text-center">
+    <h2 class="mb-0">Topic: {{ task.topic }}</h2>
+    {% if task.goal %}
+    <h5 class="mb-0">Goal: {{task.goal}}</h5>
+    {% endif %}
+  </div>
+  <div class="d-flex gap-3 flex-wrap justify-content-center">
+
+    <div class="card panel-card" id="leftPanel">
+      <div class="card-header text-center"><h4 class="mb-0">Prior Knowledge</h4></div>
+      <div class="card-body overflow-auto" style="max-height:70vh;" id="leftBody">
+        <div class="card mb-2">
+          <div class="card-header text-white">
+            Prior Discussion Summary
+          </div>
+          <div class="card-body"><p class="mb-0">{{ task.summary | safe }}</p></div>
+        </div>
+        <div class="card mb-2">
+          <div class="card-header text-white">
+            Prior Conversation History
+          </div>
+          <div class="card-body"><p class="mb-0">{{ task.prior_history | safe }}</p></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card panel-card d-flex flex-column position-relative" id="rightPanel">
+      <div class="card-header text-center"><h4 class="mb-0">Target Utterances</h4></div>
+      <div id="lockOverlay" class="overlay d-flex flex-column align-items-center justify-content-center text-center">
+        <p class="mb-2 fw-bold">Reading time &mdash; panel unlocks in</p>
+        <span id="countDown" style="font-size:1.8rem;"></span>
+      </div>
+      <div class="card-body d-flex flex-column p-0" style="max-height:70vh;">
+        <div id="utterancePager" class="flex-grow-1 overflow-auto p-3"></div>
+        <div class="page-controls d-flex justify-content-between align-items-center p-2 border-top w-100 mt-auto">
+          <button id="prevBtn" class="btn btn-outline-secondary" disabled>&laquo; Previous</button>
+          <span id="pageIndicator"></span>
+          <button id="nextBtn" class="btn btn-outline-secondary">Next &raquo;</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="text-center mb-5">
+  <button id="submitBtn" class="btn btn-secondary" disabled>Submit</button>
+  <p id="submitReminder" class="text-danger mt-2">
+    {% if task_type == 'info' %}
+      Please rate Conversational Information Gain (1‑4) for each utterance.
+    {% elif task_type == 'mix' %}
+      Please rate Novelty, Relevance, and Scope (1‑4 each) for every utterance.
+    {% endif %}
+  </p>
+</div>
+
+<div class="modal fade" id="submissionModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content" id="modalContent">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalTitle">Submission</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" onclick="closeSubmissionModal()"></button>
+      </div>
+      <div class="modal-body" id="modalBody"></div>
+      <div class="modal-footer" id="modalFooter"></div>
+    </div>
+  </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<style>
+.panel-card{flex:0 0 48%;max-width:48%;min-width:300px;}
+@media(max-width:1200px){.panel-card{flex:1 1 100%;max-width:100%;}}
+.task-section{border:2px solid #ced4da;}
+.overlay{position:absolute;top:0;left:0;width:100%;height:100%;background:rgba(255,255,255,0.9);z-index:20;display:flex;flex-direction:column;align-items:center;justify-content:center;transition:opacity .4s ease;}
+.overlay.hidden{opacity:0;pointer-events:none;}
+.keyword-btn{background:#fff3cd;border:1px solid #ffe69c;border-radius:4px;padding:0 4px;margin:0 2px;font-weight:600;cursor:pointer;}
+.pk-highlight{background:#fff3cd;padding:0 2px;}
+ul.likert{list-style:none;margin:0 0 24px;padding:0;display:flex;justify-content:space-around;border-bottom:2px solid #efefef;}
+ul.likert li{text-align:center;margin:0 5px;}
+.utterance-card {display:flex; flex-direction:column;}
+.utterance-card.skipped{background:#f8f9fa;}
+.utterance-card .card-body {flex: 1 1 auto; min-height:0; overflow-y:auto; overflow-wrap:break-word; padding-right:.75rem;}
+.utterance-card mark {white-space:normal;}
+</style>
+
+<script>
+/************** GLOBALS & DOM **************/
+const taskType = "{{ task_type }}";
+const lockSeconds = 60;
+let ratings = {}, currentIdx = 0, activePhrase = null;
+
+const leftPanel = document.getElementById('leftBody');
+const originalLeftHTML = leftPanel.innerHTML;
+
+const pagerEl = document.getElementById('utterancePager');
+const rightPanel = document.getElementById('rightPanel');
+const overlay = document.getElementById('lockOverlay');
+const cdSpan = document.getElementById('countDown');
+const prevBtn = document.getElementById('prevBtn');
+const nextBtn = document.getElementById('nextBtn');
+const submitBtn = document.getElementById('submitBtn');
+const pgInd = document.getElementById('pageIndicator');
+
+const uttData = {{ task.target_utterances | tojson | safe }};
+
+/************** BUILD UTTERANCE CARDS **************/
+uttData.forEach((u, i) => {
+  // const card = document.createElement('div');
+  // card.className = `card utterance-card ${u.skipped ? 'skipped' : 'pending'}`;
+  // card.dataset.idx = i;
+  // card.dataset.id = u.utterance_id;
+  // card.style.display = 'none';
+  //
+  // const roleC = u.role === 'mod' ? 'bg-success' : u.role === 'for' ? 'bg-primary' : u.role === 'against' ? 'bg-danger' : 'bg-light text-dark';
+  const card = document.createElement('div');
+  card.dataset.idx = i;
+  card.dataset.id = u.utterance_id;
+  card.style.display = 'none';
+
+  // Normalize role → one of: mod | for | against | other
+  const role =
+    u.role === 'mod' ? 'mod' :
+    u.role === 'for' ? 'for' :
+    u.role === 'against' ? 'against' :
+    'other';
+
+  // Map to Bootstrap classes (no custom CSS needed)
+  const roleC = {
+    mod:     { badge: 'text-bg-success', card: 'bg-success-subtle border border-success-subtle' },
+    for:     { badge: 'text-bg-primary', card: 'bg-primary-subtle border border-primary-subtle' },
+    against: { badge: 'text-bg-danger',  card: 'bg-danger-subtle border border-danger-subtle' },
+    other:   { badge: 'text-bg-warning', card: 'bg-warning-subtle border border-warning-subtle' } // orange-ish
+  }[role];
+
+  // Card base + role tint
+  card.className = `card utterance-card ${u.skipped ? 'skipped' : 'pending'} ${roleC.card}`;
+  card.innerHTML = `<div class='card-body d-flex flex-column'>
+    <h5 class='card-title'>ID: ${u.utterance_id}<span class='float-end'><span class='badge bg-secondary'>Speaker: ${u.utterance_speaker}</span>${u.role ? `<span class='badge ${roleC.badge} ms-2'>${u.role}</span>` : ''}</span></h5>
+    <p class='card-text'>${u.utterance_text}</p>
+    ${u.skipped ? '<p class="text-muted fst-italic mt-auto pt-2">Rating not required for this utterance.</p>' : buildRating(u)}
+  </div>`;
+  pagerEl.appendChild(card);
+  transformKeywords(card);
+});
+
+
+
+
+function transformKeywords(card) {
+  card.querySelectorAll('strong').forEach(strEl => {
+    const btn = document.createElement('button');
+    btn.type = 'button';
+    btn.className = 'keyword-btn';
+    btn.textContent = strEl.textContent;
+    btn.addEventListener('click', () => handleKeywordClick(btn.textContent));
+    strEl.replaceWith(btn);
+  });
+}
+
+function buildRating(u) {
+  const like = (p, l) => {
+    let h = '<ul class="likert">';
+    for (let i = 1; i <= 4; i++) {
+      h += `<li><input class='form-check-input rating-input' type='radio' name='${p}-${u.utterance_id}' id='${p}-${u.utterance_id}-${i}' value='${i}'><label for='${p}-${u.utterance_id}-${i}'>${i} (${l[i-1]})</label></li>`;
+    }
+    return h + '</ul>';
+  };
+  if (taskType === 'info') return `<label class='statement mt-3'>Conversational Information Gain (1-4)</label>${like('info',['No gain','Minimal','Incremental','Insightful'])}`;
+  return `<label class='statement mt-3'>Novelty (1-4)</label>${like('novelty',['Not at all','Minimally','Moderately','Highly'])}<label class='statement'>Relevance (1-4)</label>${like('relevance',['Not at all','Minimally','Moderately','Highly'])}<label class='statement'>Scope (1-4)</label>${like('scope',['Local','Bounded','Generalising','Universal'])}`;
+}
+
+/************** KEYWORD HIGHLIGHT **************/
+function escapeRegExp(s) { return s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'); }
+function clearHighlights() { leftPanel.innerHTML = originalLeftHTML; }
+function handleKeywordClick(phrase) {
+  activePhrase = phrase.toLowerCase();
+  clearHighlights();
+  const reg = new RegExp(`(${escapeRegExp(phrase)})`, `gi`);
+  leftPanel.innerHTML = originalLeftHTML.replace(reg, '<mark class="pk-highlight">$1</mark>');
+  const first = leftPanel.querySelector('.pk-highlight');
+  if (first) first.scrollIntoView({ behavior: 'smooth', block: 'center' });
+}
+
+/************** PAGINATION **************/
+prevBtn.addEventListener('click', () => { if (currentIdx > 0) { currentIdx--; changePage(); } });
+nextBtn.addEventListener('click', () => { if (currentIdx < uttData.length - 1) { currentIdx++; changePage(); } });
+
+function changePage() {
+  show(currentIdx);
+  clearHighlights();
+  activePhrase = null;
+}
+
+function show(i) {
+  document.querySelectorAll('.utterance-card').forEach(c => c.style.display = 'none');
+  const card = document.querySelector(`.utterance-card[data-idx='${i}']`);
+  card.style.display = 'block';
+  pgInd.textContent = `Response ${i + 1} of ${uttData.length}`;
+  prevBtn.disabled = i === 0;
+  const isPending = card.classList.contains('pending');
+  nextBtn.disabled = (i === uttData.length - 1) || isPending;
+}
+
+/************** RATING HANDLER **************/
+pagerEl.addEventListener('change', e => {
+  if (!e.target.classList.contains('rating-input')) return;
+  const card = e.target.closest('.utterance-card');
+  const id = card.dataset.id;
+
+  let cardComplete = false;
+  if (taskType === 'info') {
+    const infoRating = card.querySelector(`input[name='info-${id}']:checked`);
+    if(infoRating) {
+        ratings[id] = { informativeness: +infoRating.value };
+        cardComplete = true;
+    }
+  } else {
+    const noveltyRating = card.querySelector(`input[name='novelty-${id}']:checked`);
+    const relevanceRating = card.querySelector(`input[name='relevance-${id}']:checked`);
+    const scopeRating = card.querySelector(`input[name='scope-${id}']:checked`);
+    if (noveltyRating && relevanceRating && scopeRating) {
+        ratings[id] = { novelty: +noveltyRating.value, relevance: +relevanceRating.value, scope: +scopeRating.value };
+        cardComplete = true;
+    }
+  }
+
+  if (cardComplete) {
+    card.classList.remove('pending');
+    nextBtn.disabled = currentIdx === uttData.length - 1;
+    validate();
+  }
+});
+
+function validate() {
+  const needed = uttData.filter(u => !u.skipped).length;
+  const done = Object.keys(ratings).length;
+  const ready = (done === needed);
+
+  submitBtn.disabled = !ready;
+  submitBtn.classList.toggle('btn-primary', ready);
+  submitBtn.classList.toggle('btn-secondary', !ready);
+  document.getElementById('submitReminder').style.display = ready ? 'none' : 'block';
+}
+
+/******************** SUBMIT ********************/
+submitBtn.addEventListener('click', () => {
+  const payload = {
+    task_id: "{{ task.task_id }}",
+    task_type: taskType,
+    target_utterances: []
+  };
+
+  uttData.forEach(u => {
+    const uttId = u.utterance_id;
+    if (u.skipped) {
+      payload.target_utterances.push({ utterance_id: uttId, skipped: true });
+      return;
+    }
+    const rating = ratings[uttId];
+    if (rating) {
+        payload.target_utterances.push({ utterance_id: uttId, labels: rating });
+    }
+  });
+
+  fetch('/annotation', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(payload)
+  })
+  .then(res => res.json())
+  .then(data => {
+    if (!data.success) {
+      showSubmissionModal(false, false, data.message);
+    }
+    else if (data.completed){
+      showSubmissionModal(true, true, data.message, data.completion_id)
+    }
+    else {
+      showSubmissionModal(true, false, data.message, data.submission_id);
+    }
+  })
+  .catch(err => {
+    console.error('Error submitting:', err);
+    showSubmissionModal(false, false, 'Error submitting annotation. Please retry.');
+  });
+});
+
+function showSubmissionModal(success, completed, msg, submissionId = null) {
+  const modalTitle = document.getElementById('modalTitle');
+  const modalBody = document.getElementById('modalBody');
+  const modalFooter = document.getElementById('modalFooter');
+
+  modalTitle.textContent = success ? "Annotation Submitted!" : "Submission Error";
+  modalBody.innerHTML = `<p>${msg}</p>`;
+
+  if (!success){
+    modalFooter.innerHTML = `<button type="button" class="btn btn-secondary" onclick="closeSubmissionModal()">OK, I'll check again</button>`
+  }
+  else if (completed){
+    modalFooter.innerHTML = `<button type="button" class="btn btn-primary" onclick="redirectToCompletion('${submissionId}')">Go to Completion</button>`
+  }
+  else{
+    modalFooter.innerHTML = `<button type="button" class="btn btn-primary" onclick="redirectToAnnotation()">Go to Next Annotation!</button>`
+  }
+
+  new bootstrap.Modal(document.getElementById('submissionModal'), {
+    backdrop: 'static',
+    keyboard: false
+  }).show();
+}
+
+function redirectToCompletion(submissionId) {
+  if (!submissionId) {
+    window.location.href = "/completion";
+    return;
+  }
+  window.location.href = `/completion?submission_id=${encodeURIComponent(submissionId)}`;
+}
+
+function redirectToAnnotation(submissionId) {
+  if (!submissionId) {
+    window.location.href = "/annotation";
+    return;
+  }
+  window.location.href = `/annotation`;
+}
+
+function closeSubmissionModal() {
+  const m = document.getElementById('submissionModal');
+  const inst = bootstrap.Modal.getInstance(m);
+  if (inst) inst.hide();
+}
+
+/******************** LOCK TIMER ********************/
+let remaining = lockSeconds;
+cdSpan.textContent = remaining;
+rightPanel.style.pointerEvents = 'none';
+
+function unlockPanel() {
+  overlay.classList.add('hidden');
+  setTimeout(() => overlay.style.display = 'none', 400);
+  rightPanel.style.pointerEvents = 'auto';
+  show(0);
+  validate(); // Initial check in case there are no items to rate
+}
+
+const timer = setInterval(() => {
+  remaining--;
+  cdSpan.textContent = remaining;
+  if (remaining <= 0) {
+    clearInterval(timer);
+    unlockPanel();
+  }
+}, 1000);
+
+/******************** INIT ********************/
+// Initialize tooltips on dimension names
+Array.from(document.querySelectorAll('[data-bs-toggle="tooltip"]')).forEach(el => new bootstrap.Tooltip(el));
+</script>
+{% endblock %}

@@ -1,0 +1,569 @@
+{% extends 'base.html' %}
+{% block title %}Annotation Tutorial (Novelty, Relevance, Scope){% endblock %}
+
+{% block content %}
+<div class="card shadow-sm mx-auto" style="max-width: 900px;">
+  <div class="card-header text-center">
+    <h2>Annotation Tutorial – Novelty, Relevance, Scope</h2>
+  </div>
+  <div class="card-body">
+
+<p>Informed public discussion is a cornerstone of a healthy democracy. However, many debates fail to enlighten the public,
+    often devolving into a repetition of established talking points rather than providing new substance.</p><br>
+<p>Our goal is to understand how an audience perceives and measures the new information gained from such discussions.
+    To this end, we introduce the concept of <strong>Conversational Information Gain (CIG)</strong>.
+    The emphasis is on the "gain"—a comment is not informative if it merely restates what is already widely known or has just been said.</p><br>
+
+<p>To help us analyze this concept, you will act as an informed observer or an audience of a public discussion.
+    Given the established background knowledge and the ongoing dialogue, your task is to rate each response on three key aspect,
+    all on a 1–4 scale: <strong>Novelty</strong>, <strong>Relevance</strong>, and <strong>Implication Scope</strong>.</p><br>
+
+    <h3>1. Novelty (1–4)</h3>
+    <p>
+      Assesses whether the information is new compared to the Prior Knowledge and preceding dialogue. (A backward-looking check against the established context. Novelty is about newness only — it does not consider relevance, importance, or usefulness.)
+    </p>
+    <p>
+      **Core Question:** <strong> Has this specific fact, idea, or perspective already appeared in the Prior Knowledge section or been stated earlier in the conversation? Or common sense</strong>
+    </p>
+<ul>
+  <li>
+    <strong>1 – Not at all novel:</strong> Repeats or paraphrases something already in the dialogue or Prior Knowledge, or states obvious/common-sense facts.<br>
+    <em>Example:</em> “As I said earlier, aid has both pros and cons.” (Context: Previously mentioned aid program has pros and cons.)<br>
+    <em>Example:</em> “Everyone dies at some point.” (Commonsense.)
+  </li>
+  <li>
+    <strong>2 – Minimally novel:</strong> Adds a minor or predictable detail to an idea already known. <br>
+    <em>Example:</em> “Foreign aid programs means financial support for developing countries from developed countries.” (Note: Expected clarification.)
+  </li>
+  <li>
+    <strong>3 – Moderately novel:</strong> Contributes new evidence, a concrete example, or a supporting detail that expands or strengthens an existing idea.<br>
+    <em>Rater's Thought: “This is a new fact, but it's being used to support a point we were already discussing.”</em><br>
+    <em>Example:</em> “In Ghana, a government-run aid program increased rural school attendance by 40% in three years.” (Context: The conversation is about whether aid helps rural schools.)
+  </li>
+  <li>
+    <strong>4 – Highly novel:</strong> Introduces a new framework, principle, topic or line of reasoning that reframes the discussion or opens an entirely new direction.<br>
+    <em>Rater's Thought: “We weren't talking about this before. This changes the conversation itself.”</em><br>
+    <em>Example:</em> “A leaked 2022 audit revealed that 60% of international aid funds to several West African nations never reached their intended recipients.” (Context: The conversation was about the intended effects of aid, not its misappropriation.)
+  </li>
+</ul>
+
+    <h3>2. Relevance (1–4)</h3>
+    <p>
+      Measures if the utterance's content provides substantive information (e.g., facts, opinions, arguments, examples) that is directly about the core topic or goal. This dimension strictly excludes procedural or meta-discourse contributions.
+    </p>
+    <p>
+      **Core Question:** <strong> Is this utterance content on-topic and contributing to the conversation’s main goal?</strong>
+    </p>
+<ul>
+  <li>
+    <strong>1 – Not at all relevant:</strong> Completely off-topic; no clear connection to the discussion’s goal. Or purely procedural.<br>
+    <em>Example:</em> “Is anyone else hungry? I skipped lunch today.” (topic:“Foreign Aid in Africa”)
+    <em>Example:</em> "Let's all take a quick coffee break."
+    <em>Example:</em> "Bryan, your turn." (procedural call)
+  </li>
+  <li>
+    <strong>2 – Minimally relevant:</strong> Loosely related; connection is indirect, hypothetical, or requires inference. <br>
+    <em>Example:</em> “This reminds me of a book I read about coffee grower in Africa.” (topic:“Foreign Aid in Africa”)
+  </li>
+  <li>
+    <strong>3 – Moderately relevant:</strong> Substantially related but not central — e.g., addresses a side issue, counterpoint, or secondary aspect of the discussion. <br>
+    <em>Example:</em> “There are some similarities between this aid model and how nonprofits operate in Southeast Asia.” (topic:“Foreign Aid in Africa”)
+  </li>
+  <li>
+    <strong>4 – Highly relevant:</strong> Directly and explicitly addresses the core topic or goal of the conversation. <br>
+    <em>Example:</em> “Evidence shows that unrestricted aid often leads to dependency and undermines local governance.” (topic:“Foreign Aid in Africa”)
+    <em>Example:</em> "Can you clarify what you mean by 'dependency'?" (topic:“Economic Dependency of Rural Tribe”)
+  </li>
+</ul>
+
+<h3>3. Implication Scope (1–4)</h3>
+    <p>
+    Measures the intended reach and the generalisation of the implication.
+    </p>
+    <p>
+    **Core Question:** <strong> For whom this statement is intended to be significant? How does the implication generalise to broader population?</strong>
+    </p>
+<ul>
+  <li>
+    <strong>1 – Local scope:</strong> Significant only to the immediate participants in the conversation. <br>
+    <em>Example:</em> “Hi! How are you, Peter!” <br>
+    <em>Example:</em> “Can you speaker louder? I can't hear you.”
+  </li>
+  <li>
+    <strong>2 – Bounded scope:</strong> Presents a self-contained fact, feeling, or stance without performing an act of generalization or further implication. The significance is confined to the speaker or the specific case. <br>
+      <em>Example:</em> “The city of Los Angeles have 423 parks.” (A simple fact without further implication.)
+      <em>Example:</em> "I support focus on school budgeting." (Opinion or stance without reason or principle that is generaliable.)
+      <em>Example:</em> "Peter is 55 years old." (A personal fact.)
+  </li>
+  <li>
+    <strong>3 – Generalising(Inductive):</strong> Generalise a specific case (an experience, evidence, or observation) to a broader conclusion, issue, or public domain. <br>
+    <em>Example:</em> “This local factory closure is a sign of a nationwide problem.” (Using a factory closure to imply the nationwide problem.)
+      <em>Example:</em> “The last samurai died on 1877, and marked the end of the feudalism in Japan.” (Using a single samurai to imply the change of the generation.)
+      <em>Example:</em> "My mother's career struggles show why school funding is so important." (Using his mum's experience to convey the importance of school funding of the community.)
+  </li>
+  <li>
+    <strong>4 – Universal(Deductive):</strong> States a broad, abstract principle, value, or norm that applies widely, framing the discussion in 'top-down' terms. <br>
+    <em>Example:</em> “Access to clean water is a basic human right that governments must protect.” (Using the principle "water for basic human right" to argue for the policy.)
+    <em>Example:</em> “This policy is wrong because all people deserve dignity.” (Using the principle "people deserve dignity" to argue against the policy.)
+  </li>
+</ul>
+
+<h4 class="mt-4">Annotation Process</h4>
+    <ol>
+      <li><strong>Check the debate topic or goal</strong> to understand the overarching issue being discussed.</li>
+      <li>
+        <strong>Carefully read the prior knowledge section(which summarise what have been discussed so far) and the prior dialogue right before the target dialogue.</strong>
+        We also have highlighted potentially important <strong>key phrases</strong> to guide your attention.
+      </li>
+      <li>
+        <strong>Examine each target response carefully.</strong>
+        Key phrases within the response that are <em>semantically similar</em> to those in the prior context have been highlighted.
+        These highlights <em>do not guarantee repetition or paraphrasing</em>, but they signal areas where close comparison is required.
+      </li>
+      <li>
+        For each response, assign ratings for Novelty, Relevance, and Implication Scope using the 1–4 scales.
+        Consider <strong>who the speaker is</strong>, their <strong>stance</strong>, and <strong>what they have previously stated</strong>.
+      </li>
+      <li>
+        <strong>Enter your ratings</strong> using the Likert scale in the annotation interface.
+      </li>
+      <li>
+        Once all required responses are annotated and no cards remain highlighted in pink, <strong>submit your annotation</strong>.
+      </li>
+    </ol>
+
+    <hr>
+
+    <h2>Example responses &amp; Annotations</h2>
+
+    <h3 class="mt‑4">Conversation Introduction:</h3>
+        <p>
+          The dialogue segment below is taken from the televised debate series
+          <strong>“Intelligence&nbsp;Squared.”</strong>
+          Each episode centres on a single motion debated by two teams—one arguing <strong>for</strong> the motion and the
+          other <strong>against</strong>—while a neutral moderator keeps the discussion on track.
+          In the interface, every utterance is labelled in the upper‑right corner with the speaker’s name and a
+          colour‑coded stance tag:
+          <span style="color:#0d6efd;"><strong>blue&nbsp;=&nbsp;for</strong></span>,
+          <span style="color:#dc3545;"><strong>red&nbsp;=&nbsp;against</strong></span>, and
+          <span style="color:#198754;"><strong>green&nbsp;=&nbsp;moderator</strong></span>.
+        </p>
+    <h3 class="mt-3">Topic: “Gun Reduces Crime”</h3>
+
+<!-- ───────────────  Prior Summary  ─────────────── -->
+<h3 class="mt-4">Prior Knowledge</h3>
+
+<div class="card mb-3">
+  <div class="card-header text-white">
+    Prior Conversation Summary
+  </div>
+  <div class="card-body">
+    <p>The debate opened with two distinct perspectives on the relationship between firearms and public safety, each grounded in decades of professional experience.</p>
+
+<p>On one side, <strong>criminologist</strong> Gary Kleck, citing his <strong>forty years</strong> of research on <strong>firearms and crime</strong>, argued that an <strong>armed citizenry deters violent offenders</strong> and ultimately <strong>saves lives</strong>. He contended that <strong>public policy</strong> should <strong>respect responsible gun ownership</strong> and stated his goal was to clarify the debate around <strong>defensive-gun-use statistics</strong>.</p>
+
+<p>In opposition, R. Gil Kerlikowske drew upon his <strong>four decades</strong> in <strong>law-enforcement leadership</strong>, including as <strong>Seattle Police Chief</strong> and the nation’s “<strong>Drug Czar</strong>.” He argued that the <strong>prevalence of firearms</strong> <strong>complicates policing</strong> and <strong>endangers</strong> both <strong>officers and civilians</strong>. He maintained that gun availability <strong>does not reduce crime</strong> and that improvements in <strong>public-safety</strong> require <strong>tighter controls</strong> and <strong>smart prevention strategies</strong>, not more <strong>weapons on the street</strong>.</p>
+  </div>
+</div>
+<!-- ─────────────────────────────────────────────────────────── -->
+
+    <!-- Prior Conversation History -->
+    <div class="card shadow-sm mx-auto mb-4" style="max-width: 900px;">
+      <div class="card-header">
+        <h4>Prior Conversation History</h4>
+      </div>
+      <div class="card-body bg-light rounded" style="white-space: pre-wrap; border: 1px solid #ccc;">
+        John Donvan(mod): Okay, I—I think we have impasse on this… And I— I wanna go to Chief
+        Kerlikowske, Seattle police chief, because you were talking about British bobbies being unarmed,
+        and preferring that in many situations because they felt being armed would invite assault, as
+        there were some reported case of causality with stolen police guns, and yet Gary Kleck arguing
+        for the motion said why are police armed in the first place unless it is to deter assault, do
+        you—can you take that on?
+      </div>
+    </div>
+
+    <hr>
+
+    <!-- Example 1 -->
+<div class="card mb-3 utterance-card" data-utterance-id="ex-1"
+     style="border-left:4px solid #4F959D;">
+  <div class="card-body">
+    <h5 class="card-title">
+      Utterance ID: Example 1
+      <span class="float-end">
+        <span class="badge bg-secondary">Speaker: R. Gil Kerlikowske</span>
+        <span class="badge bg-danger ms-2">against</span>
+      </span>
+    </h5>
+
+    <p class="card-text">
+      Yes I can, and, remember what Truman said, if I could line up all the economists end to end,
+      wouldn’t that be a beautiful sight, so that, I just— And one, and one is on my panel. So…getting
+      away from the statistics and going to that <strong>police officers</strong> are highly trained with <strong>firearms</strong>. They
+      practice and qualify, they can’t graduate from the academy without qualifying. Without question, they
+      can use the gun in a defensive mode. But when you look at the numbers of <strong>police officers</strong> in the
+      United States and I remember—I can picture every moment to this day, of the first time I had an
+      officer killed in the line of duty. Young, bright, talented, incredible shape, shot 13 times with his
+      own handgun. Wasn’t a question of training, wasn’t a question of anything else. <strong>Officers are routinely
+      wounded and assaulted with their own guns</strong>. That’s why—
+    </p>
+
+    <!-- Static ratings (four‑point Likert) -->
+    <div class="rating-section" style="display:block;">
+      <label class="statement dimension">Novelty&nbsp;(1‑4)</label>
+      <ul class="likert">
+        <li>
+          <input id="ex-1-n1" class="form-check-input" type="radio" disabled>
+          <label for="ex-1-n1">1<br><small>Not at all novel</small></label>
+        </li>
+        <li>
+          <input id="ex-1-n2" class="form-check-input" type="radio" disabled>
+          <label for="ex-1-n2">2<br><small>Minimally novel</small></label>
+        </li>
+        <li>
+          <input id="ex-1-n3" class="form-check-input" type="radio" checked disabled>
+          <label for="ex-1-n3">3<br><small>Moderately novel</small></label>
+        </li>
+        <li>
+          <input id="ex-1-n4" class="form-check-input" type="radio" disabled>
+          <label for="ex-1-n4">4<br><small>Highly novel</small></label>
+        </li>
+      </ul>
+
+      <label class="statement dimension">Relevance&nbsp;(1‑4)</label>
+      <ul class="likert">
+        <li>
+          <input id="ex-1-r1" class="form-check-input" type="radio" disabled>
+          <label for="ex-1-r1">1<br><small>Not at all relevant</small></label>
+        </li>
+        <li>
+          <input id="ex-1-r2" class="form-check-input" type="radio" disabled>
+          <label for="ex-1-r2">2<br><small>Minimally relevant</small></label>
+        </li>
+        <li>
+          <input id="ex-1-r3" class="form-check-input" type="radio" checked disabled>
+          <label for="ex-1-r3">3<br><small>Moderately relevant</small></label>
+        </li>
+        <li>
+          <input id="ex-1-r4" class="form-check-input" type="radio" disabled>
+          <label for="ex-1-r4">4<br><small>Highly relevant</small></label>
+        </li>
+      </ul>
+
+      <label class="statement dimension">Implication Scope&nbsp;(1‑4)</label>
+      <ul class="likert">
+        <li>
+          <input id="ex-1-s1" class="form-check-input" type="radio" disabled>
+          <label for="ex-1-s1">1<br><small>Local scope</small></label>
+        </li>
+        <li>
+          <input id="ex-1-s2" class="form-check-input" type="radio" disabled>
+          <label for="ex-1-s2">2<br><small>Bounded scope</small></label>
+        </li>
+        <li>
+          <input id="ex-1-s3" class="form-check-input" type="radio" checked disabled>
+          <label for="ex-1-s3">3<br><small></small>Generalising scope</label>
+        </li>
+        <li>
+          <input id="ex-1-s4" class="form-check-input" type="radio" disabled>
+          <label for="ex-1-s4">4<br><small>Universal scope</small></label>
+        </li>
+      </ul>
+    </div>
+
+    <p><strong>Explanation:</strong>
+       Provides a vivid anecdote about police firearm risks. While some details and examples are new, similar points were
+       discussed earlier in the prior conversation, giving it moderate novelty (Novelty = 3); relevance is moderate (Relevance = 3) as it
+       address the problem of police firearm risks, but also touch on an irrelevant economist joke aside;
+       The implication scope is moderate (Scope = 3) while it is based on personal experience, it has possible implications
+       for the broader society and general public.
+    </p>
+  </div>
+</div>
+
+    <!-- Example 2 -->
+<div class="card mb-3 utterance-card" data-utterance-id="ex-2"
+     style="border-left:4px solid #4F959D;">
+  <div class="card-body">
+
+    <h5 class="card-title">
+      ID:  Example 2
+      <span class="float-end">
+        <span class="badge bg-secondary">Speaker: Gary Kleck</span>
+        <span class="badge bg-primary ms-2">for</span>
+      </span>
+    </h5>
+
+  <p class="card-text">“That’s not true—absolutely, unequivocally not true. I’ve said it before and I’ll say it again: as a criminologist with more than four decades—yes, forty solid years—spent poring over every credible dataset on guns and crime, I can assure you the facts speak for themselves. An armed citizenry deters violent offenders, saves innocent lives, and does so far more often than it ever puts anyone in danger.”</p>
+
+    <!-- Static ratings (4‑point Likert) -->
+    <div class="rating-section" style="display:block;">
+
+      <!-- Novelty -->
+      <label class="statement dimension">Novelty&nbsp;(1‑4)</label>
+      <ul class="likert">
+        <li><input id="ex-2-n1" class="form-check-input" type="radio" checked disabled>
+            <label for="ex-2-n1">1<br><small>Not at all novel</small></label></li>
+        <li><input id="ex-2-n2" class="form-check-input" type="radio" disabled>
+            <label for="ex-2-n2">2<br><small>Minimally novel</small></label></li>
+        <li><input id="ex-2-n3" class="form-check-input" type="radio" disabled>
+            <label for="ex-2-n3">3<br><small>Moderately novel</small></label></li>
+        <li><input id="ex-2-n4" class="form-check-input" type="radio" disabled>
+            <label for="ex-2-n4">4<br><small>Highly novel</small></label></li>
+      </ul>
+
+      <!-- Relevance -->
+      <label class="statement dimension">Relevance&nbsp;(1‑4)</label>
+      <ul class="likert">
+        <li><input id="ex-2-r1" class="form-check-input" type="radio" disabled>
+            <label for="ex-2-r1">1<br><small>Not at all relevant</small></label></li>
+        <li><input id="ex-2-r2" class="form-check-input" type="radio" disabled>
+            <label for="ex-2-r2">2<br><small>Minimally relevant</small></label></li>
+        <li><input id="ex-2-r3" class="form-check-input" type="radio" disabled>
+            <label for="ex-2-r3">3<br><small>Moderately relevant</small></label></li>
+        <li><input id="ex-2-r4" class="form-check-input" type="radio" checked disabled>
+            <label for="ex-2-r4">4<br><small>Highly relevant</small></label></li>
+      </ul>
+
+      <!-- Scope -->
+      <label class="statement dimension">Implication Scope&nbsp;(1‑4)</label>
+      <ul class="likert">
+        <li><input id="ex-2-s1" class="form-check-input"  type="radio" disabled>
+            <label for="ex-2-s1">1<br><small>Local scope</small></label></li>
+        <li><input id="ex-2-s2" class="form-check-input" type="radio" disabled>
+            <label for="ex-2-s2">2<br><small>Bounded scope</small></label></li>
+        <li><input id="ex-2-s3" class="form-check-input" type="radio" disabled>
+            <label for="ex-2-s3">3<br><small>Generalising scope</small></label></li>
+        <li><input id="ex-2-s4" class="form-check-input" type="radio" checked disabled>
+            <label for="ex-2-s4">4<br><small>Universal scope</small></label></li>
+      </ul>
+    </div>
+
+    <p><strong>Explanation:</strong>
+       The speaker explicitly states they are repeating a previously made point (Novelty  =  1).
+        The utterance is a direct rebuttal to an opposing viewpoint on the core topic of the debate (Relevance = 4).
+        The speaker emphasise his universal belief that "armed citizens deter crimes" (Implication scope = 4).
+    </p>
+  </div>
+</div>
+
+
+    <!-- Example 3 -->
+<div class="card mb-3 utterance-card" data-utterance-id="ex-3"
+     style="border-left:4px solid #4F959D;">
+  <div class="card-body">
+
+    <h5 class="card-title">
+      ID: Example 3
+      <span class="float-end">
+        <span class="badge bg-secondary">Speaker: R. Gil Kerlikowske</span>
+        <span class="badge bg-danger ms-2">against</span>
+      </span>
+    </h5>
+
+    <p class="card-text">
+        “By the way, could someone please adjust the air conditioning? It’s absolutely sweltering in here—easily thirty-two degrees at least,
+        and I’m starting to feel dizzy from the heat. My shirt’s stuck to me, the lights are glaring, and I can’t help but wonder if anyone
+        else is wilting as badly as I am. Honestly, it feels like we’re in a greenhouse rather than a debate hall. Perhaps
+        we should discuss climate change instead of <strong>gun ownership</strong>, as it might actually kill more people.
+        So…um, what exactly is not true?”
+    </p>
+
+    <!-- Static ratings (4‑point Likert) -->
+    <div class="rating-section" style="display:block;">
+
+      <!-- Novelty -->
+      <label class="statement dimension">Novelty&nbsp;(1‑4)</label>
+      <ul class="likert">
+        <li><input id="ex-3-n1" class="form-check-input" type="radio" disabled>
+            <label for="ex-3-n1">1<br><small>Not at all novel</small></label></li>
+        <li><input id="ex-3-n2" class="form-check-input" type="radio" disabled>
+            <label for="ex-3-n2">2<br><small> Minimally novel</small></label></li>
+        <li><input id="ex-3-n3" class="form-check-input" type="radio" checked disabled>
+            <label for="ex-3-n3">3<br><small>Moderately novel</small></label></li>
+        <li><input id="ex-3-n4" class="form-check-input" type="radio" disabled>
+            <label for="ex-3-n4">4<br><small>Highly novel</small></label></li>
+      </ul>
+
+      <!-- Relevance -->
+      <label class="statement dimension">Relevance&nbsp;(1‑4)</label>
+      <ul class="likert">
+        <li><input id="ex-3-r1" class="form-check-input" type="radio" disabled>
+            <label for="ex-3-r1">1<br><small>Not at all relevant</small></label></li>
+        <li><input id="ex-3-r2" class="form-check-input" type="radio" checked disabled>
+            <label for="ex-3-r2">2<br><small> Minimally relevant</small></label></li>
+        <li><input id="ex-3-r3" class="form-check-input" type="radio" disabled>
+            <label for="ex-3-r3">3<br><small>Moderately relevant</small></label></li>
+        <li><input id="ex-3-r4" class="form-check-input" type="radio" disabled>
+            <label for="ex-3-r4">4<br><small>Highly relevant</small></label></li>
+      </ul>
+
+      <!-- Scope -->
+      <label class="statement dimension">Scope&nbsp;(1‑4)</label>
+      <ul class="likert">
+        <li><input id="ex-3-s1" class="form-check-input" type="radio" checked disabled>
+            <label for="ex-3-s1">1<br><small>Local scope</small></label></li>
+        <li><input id="ex-3-s2" class="form-check-input" type="radio" disabled>
+            <label for="ex-3-s2">2<br><small>Bounded scope</small></label></li>
+        <li><input id="ex-3-s3" class="form-check-input" type="radio" disabled>
+            <label for="ex-3-s3">3<br><small>Generalising scope</small></label></li>
+        <li><input id="ex-3-s4" class="form-check-input" type="radio" disabled>
+            <label for="ex-3-s4">4<br><small>Universal scope</small></label></li>
+      </ul>
+    </div>
+
+    <p><strong>Explanation:</strong>
+       The speaker shifts the focus to a personal comfort issue, introducing some new information about the room
+       temperature (Novelty = 3). While this comment is not directly relevant to the debate, the speaker ends
+       with a general question that prompts the other speaker to elaborate—contributing only minimal relevance to the
+       overall discussion (Relevance = 2). The implication of the statement is mostly limited to the immediate
+       physical setting and moment, resulting in a narrow scope (Scope = 1).
+    </p>
+  </div>
+</div>
+
+
+
+<!-- Example 4 -->
+<div class="card mb-3 utterance-card" data-utterance-id="ex-4"
+     style="border-left:4px solid #4F959D;">
+  <div class="card-body">
+
+    <h5 class="card-title">
+      ID: Example 4
+      <span class="float-end">
+        <span class="badge bg-secondary">Speaker: Gary Kleck</span>
+        <span class="badge bg-primary ms-2">for</span>
+      </span>
+    </h5>
+
+    <p class="card-text">
+      “I mean, sure, there have been cases where a criminal managed to <strong>steal a gun from a trained officer</strong>. But if
+      someone is bold enough to disarm <strong>law enforcement</strong>, what more dangerous things might they do to an
+      <strong>unarmed citizen</strong>? I was talking to some unbelievable folks—real patriots, salt of the earth—and they’ve
+      got some very interesting ways of keeping things safe, let me tell you. Why should we abandon <strong>firearms</strong>
+      altogether, instead of exploring smarter solutions—like securing guns with personal biometric locks? There
+      is a startup in Detroit that has developed a fingerprint-based AI gun-lock. They have trialed with the local
+      <strong>police departments</strong>, and have seen a significant decline of <strong>stolen guns</strong>.”
+    </p>
+
+    <!-- Static ratings (4‑point Likert) -->
+    <div class="rating-section" style="display:block;">
+
+      <!-- Novelty -->
+      <label class="statement dimension">Novelty&nbsp;(1‑4)</label>
+      <ul class="likert">
+        <li><input id="ex-4-n1" class="form-check-input" type="radio" disabled>
+            <label for="ex-4-n1">1<br><small>Not at all novel</small></label></li>
+        <li><input id="ex-4-n2" class="form-check-input" type="radio" disabled>
+            <label for="ex-4-n2">2<br><small>Minimally novel</small></label></li>
+        <li><input id="ex-4-n3" class="form-check-input" type="radio" disabled>
+            <label for="ex-4-n3">3<br><small>Moderately novel</small></label></li>
+        <li><input id="ex-4-n4" class="form-check-input" type="radio" checked disabled>
+            <label for="ex-4-n4">4<br><small>Highly novel</small></label></li>
+      </ul>
+
+      <!-- Relevance -->
+      <label class="statement dimension">Relevance&nbsp;(1‑4)</label>
+      <ul class="likert">
+        <li><input id="ex-4-r1" class="form-check-input" type="radio" disabled>
+            <label for="ex-4-r1">1<br><small>Not at all relevant</small></label></li>
+        <li><input id="ex-4-r2" class="form-check-input" type="radio" disabled>
+            <label for="ex-4-r2">2<br><small>  Minimally relevant</small></label></li>
+        <li><input id="ex-4-r3" class="form-check-input" type="radio" disabled>
+            <label for="ex-4-r3">3<br><small>Moderately relevant</small></label></li>
+        <li><input id="ex-4-r4" class="form-check-input" type="radio" checked disabled>
+            <label for="ex-4-r4">4<br><small>Highly relevant</small></label></li>
+      </ul>
+
+      <!-- Scope -->
+      <label class="statement dimension">Implication Scope&nbsp;(1‑4)</label>
+      <ul class="likert">
+        <li><input id="ex-4-s1" class="form-check-input" type="radio" disabled>
+            <label for="ex-4-s1">1<br><small>Local scope</small></label></li>
+        <li><input id="ex-4-s2" class="form-check-input" type="radio" disabled>
+            <label for="ex-4-s2">2<br><small>Bounded scope</small></label></li>
+        <li><input id="ex-4-s3" class="form-check-input" type="radio" checked disabled>
+            <label for="ex-4-s3">3<br><small>Generalising scope</small></label></li>
+        <li><input id="ex-4-s4" class="form-check-input" type="radio" disabled>
+            <label for="ex-4-s4">4<br><small>Universal scope</small></label></li>
+      </ul>
+    </div>
+
+    <p><strong>Explanation:</strong>
+       This utterance is rated as highly relevant (4) because it directly addresses the core theme of firearm safety
+        by proposing a tangible, on-topic solution. Its novelty (4) is also very high, as it breaks from the established
+        pro/con dynamic to introduce an entirely new concept—smart gun technology—supported by the specific evidence
+        of a startup in Detroit. The implication scope is best described as "generalising," (3) because the speaker uses this
+        specific, local example to advocate for a much broader, nationwide application, effectively taking a single
+        case and framing it as a model for solving a larger problem.
+    </p>
+  </div>
+</div>
+
+
+
+    <p>
+      These examples illustrate how to assign <strong>Novelty</strong>, <strong>Relevance</strong>,
+      and <strong>Scope</strong> based on context. Focus on whether an response adds new information
+      (Novelty), remains on-topic (Relevance), and implies a narrow or broad impact (Scope).
+    </p>
+
+    {% if not codebook%}
+    <p class="mt-4">
+      When you’re ready, click <strong>Next</strong> to proceed. You will be directed
+      to the pre-study page, where a short study will be conducted to assess your understanding of the annotation labels and process
+    </p>
+
+    <div class="text-center mt-4">
+      <form method="post" action="{{ url_for('tutorial') }}">
+        <button type="submit" class="btn btn-primary">Next</button>
+      </form>
+    </div>
+    {% endif %}
+  </div>
+</div>
+{% endblock %}
+
+
+{% block scripts %}
+<style>
+/* Minimal styling for the Likert scale and tooltip trigger */
+
+/* NEW: light grey bg for skipped cards */
+.utterance-card.skipped {background:#f8f9fa;}
+
+.statement {
+  font-weight: bold;
+  margin-top: 10px;
+  display: inline-block;
+}
+.dimension {
+  font-weight: bold;
+  color: #205781; /* e.g. a custom color for dimension names */
+  cursor: pointer;
+}
+ul.likert {
+  list-style-type: none;
+  margin: 0 0 24px;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 2px solid #efefef;
+}
+ul.likert li {
+  text-align: center;
+  vertical-align: top;
+  margin: 0 5px;
+}
+ul.likert li input[type=radio] {
+  display: block;
+  margin: 0 auto 5px;
+}
+ul.likert li label {
+  display: block;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+</style>
+{% endblock %}

@@ -1,0 +1,97 @@
+{
+  "task_id": "insq_prescreen_0",
+  "corpus_id": "insq",
+  "conversation_id": "0",
+  "segment_id": 0,
+  "topic": "Aid to Africa is Doing More Harm Than Good",
+  "summary": "<p>The discussion on the efficacy of foreign aid began with two sharply contrasting perspectives.</p>\n\n<p>William Easterly, arguing from his background as a development scholar, contended that the current <strong>foreign aid</strong> system is <strong>structurally flawed</strong>. He asserted that it often fuels <strong>corruption</strong>, undermines <strong>government accountability</strong>, creates a cycle of <strong>dependency</strong>, and props up <strong>authoritarian regimes</strong> by distorting <strong>domestic incentives</strong>. In his view, <strong>sustainable progress</strong> must be driven by <strong>citizen-led development</strong> and <strong>entrepreneurial independence</strong>, which requires a commitment to <strong>rethink aid from the ground up</strong>.</p>\n\n<p>Countering this, Gayle Smith drew on her experience in <strong>international development and crisis response</strong> to argue that <strong>well-designed aid programs</strong> have a profound positive impact. While acknowledging room for improvement, she stated it is misleading to suggest that <strong>aid inherently</strong> causes harm, pointing to successes in lowering <strong>HIV/AIDS rates</strong> and supporting <strong>economic modernization</strong> in post-conflict nations like <strong>Ethiopia</strong>. She concluded that the goal is to make aid <strong>strategic, transparent</strong>, and <strong>community-centered</strong>, viewing it not as charity but as a vital tool for <strong>long-term transformation</strong>.</p>",
+  "target_utterances": [
+    {
+      "conversation_id": 0,
+      "phase": 1,
+      "utterance_id": 101,
+      "utterance_index": 1,
+      "utterance_speaker": "Gayle Smith",
+      "role": "against",
+      "utterance_text": "It’s misleading to suggest that <strong>aid</strong> inherently undermines <strong>accountability</strong>. Take the substantial reductions in <strong>HIV/AIDS</strong> cases, for instance—<strong>aid</strong> supported government-run programs that dramatically reduced the spread of the disease. What matters is how <strong>aid</strong> is designed and monitored. Blanket critiques overlook the difference between strategic investment and careless spending.",
+      "segment": 0,
+      "answers":{"informativeness": 2, "novelty": 1, "relevance": 4, "scope": 4},
+      "hints": {
+        "informativeness": "Mostly repetition of prior point and example, with slight nuance at the end about design and monitoring.", "novelty": "No new facts — repeats HIV/AIDS example and argument.", "relevance": "Mostly focus on the topic.", "scope": "Applies broadly to public/global matters."
+      }
+    },
+    {
+      "conversation_id": 0,
+      "phase": 1,
+      "utterance_id": 102,
+      "utterance_index": 3,
+      "utterance_speaker": "William Easterly",
+      "role": "for",
+      "utterance_text": "Gayle, could you please step forward a bit more, so people can hear? I think we only have thirty minutes left for the discussion. Let's dive deeper to the topic.",
+      "segment": 0,
+      "answers":{"informativeness": 1, "novelty": 3, "relevance": 1, "scope": 1},
+      "hints": {
+        "informativeness": "Purely logistical request; no topic advancement.", "novelty": "time left + positioning request not stated before, so fully new info", "relevance": "Mostly focus on the coordination not the topic.", "scope": "Only relevant to immediate participants."
+      }
+    },
+    {
+      "conversation_id": 0,
+      "phase": 1,
+      "utterance_id": 103,
+      "utterance_index": 4,
+      "utterance_speaker": "Gayle Smith",
+      "role": "against",
+      "utterance_text": "Let me have a sip of coffee, then I will continue. Oh! Here we have the one-hundred percent <strong>Ethiopia</strong> blend. Kinda fit the theme today.",
+      "segment": 0,
+      "answers":{"informativeness": 1, "novelty": 3, "relevance": 2, "scope": 1},
+      "hints": {
+        "informativeness": "Sharing self intent, not advancing the topic understanding.", "novelty": "Ethiopia blend coffee detail not stated before", "relevance": "Minimally potential relevant to the topic (coffee).", "scope": "Mostly focus on the immediate individual matter."
+      }
+    },
+    {
+      "conversation_id": 0,
+      "phase": 1,
+      "utterance_id": 104,
+      "utterance_index": 5,
+      "utterance_speaker": "William Easterly",
+      "role": "for",
+      "utterance_text": "Speaking of coffee, I want to share a book called A Good African Story: How a Small Company Built a Global Coffee Brand, which is about an enterprise that helped thousands of coffee farmers and created more impact than billions in <strong>aid</strong>. They need to be <strong>independent</strong>. They know better than we do about what they really need. And unfortunately, this company was then disrupted by a government funded competitor, which later reported to have received <strong>foreign aids</strong> and shared revenue with other international corporate.",
+      "segment": 0,
+      "answers":{"informativeness": 4, "novelty": 4, "relevance": 4, "scope": 4},
+      "hints": {
+        "informativeness": "Share of real life example and book, and new point of aid funded company could threaten local business.", "novelty": "New information about the book, coffee industry and aid funded company threat.", "relevance": "Directly relevant to the topic.", "scope": "Although the example is a single company, the implication is broader."
+      }
+    },
+    {
+      "conversation_id": 0,
+      "phase": 1,
+      "utterance_id": 105,
+      "utterance_index": 6,
+      "utterance_speaker": "Gayle Smith",
+      "role": "against",
+      "utterance_text": "But why coffee farmers? With <strong>aid</strong>, they could move beyond growing coffee. They could build economies based on IT, medical science, and many other high-end industries. It’s because of past colonialism that their economies are limited to coffee. It’s our responsibility to help restore what was lost. And what about their lost culture? coffee is not a native African culture. Do you see the colonialism impact here?",
+      "segment": 0,
+      "answers":{"informativeness": 4, "novelty": 4, "relevance": 4, "scope": 4},
+      "hints": {
+        "informativeness": "New critical angle about the impact of colonialism.", "novelty": "New critical angle of colonialism.", "relevance": "Directly relevant to the topic.", "scope": "Mostly public matter."
+      }
+    },
+    {
+      "conversation_id": 0,
+      "phase": 1,
+      "utterance_id": 106,
+      "utterance_index": 7,
+      "utterance_speaker": "William Easterly",
+      "role": "for",
+      "utterance_text": "But <strong>aid</strong> is what makes them stick with coffee. It caused <strong>dependency</strong>. We have responsibilities to too many things. Why aren’t we talking about climate change? That’s going to affect everyone. I have a climate change discussion meeting tomorrow—I believe that’s where the attention should be.",
+      "segment": 0,
+      "answers":{"informativeness": 2, "novelty": 3, "relevance": 2, "scope": 2},
+      "hints": {
+        "informativeness": "Repeating dependency argument, and irrelevant extension to climate change.", "novelty": "New information about climate change and his personal plan.", "relevance": "Only the first two sentences are relevant.", "scope": "The implication of the last sentence is limited in individual level."
+      }
+    }
+  ],
+  "prior_history": "William Easterly (for): I’ve said it before and I’ll say it again: <strong>corruption</strong> eats aid alive. You can throw as much money as you want at a broken system. One of the biggest problems with foreign aid is that it distorts <strong>political incentives</strong>. When governments can rely on <strong>external funding</strong> instead of <strong>tax revenues</strong>, they become less accountable to their own citizens. In countries like <strong>Ethiopia</strong> and <strong>Uganda</strong>, we’ve seen <strong>authoritarian regimes</strong> strengthened—not weakened—by large aid flows. The road to development should start with <strong>empowering citizens</strong>, not bypassing them.<br><br>John (mod): Thank you, Mr. Easterly. Gayle Smith, you oppose this motion. Your response?",
+  "reading_times": [],
+  "target_total_reading_time": -1
+}

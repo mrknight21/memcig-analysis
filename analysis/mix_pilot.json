@@ -1,0 +1,2099 @@
+[{
+  "_id": {
+    "$oid": "68906772a3071236eac187f2"
+  },
+  "task_id": "insq_2228_0_info",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": 2243,
+      "labels": {
+        "informativeness": 3
+      }
+    },
+    {
+      "utterance_id": 2244,
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": 2245,
+      "skipped": true
+    },
+    {
+      "utterance_id": 2246,
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": 2247,
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": 2248,
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": 2249,
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": 2250,
+      "skipped": true
+    },
+    {
+      "utterance_id": 2251,
+      "labels": {
+        "informativeness": 3
+      }
+    },
+    {
+      "utterance_id": 2252,
+      "labels": {
+        "informativeness": 3
+      }
+    },
+    {
+      "utterance_id": 2253,
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": 2254,
+      "labels": {
+        "informativeness": 4
+      }
+    }
+  ],
+  "submission_id": "insq_2228_0_info_YC2SOUx6W5cMBlCz_Rena",
+  "annotator": "Rena",
+  "type": "info",
+  "session_id": "YC2SOUx6W5cMBlCz",
+  "submission_timestamp": {
+    "$date": "2025-08-04T17:55:30.613Z"
+  },
+  "conversation_id": "insq_2228",
+  "study_id": "67e4bb1a1171c20d55663682",
+  "status": "pending"
+},
+{
+  "_id": {
+    "$oid": "6890689ea3071236eac187f3"
+  },
+  "task_id": "insq_2228_3_info",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": 2306,
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": 2307,
+      "skipped": true
+    },
+    {
+      "utterance_id": 2308,
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": 2309,
+      "skipped": true
+    },
+    {
+      "utterance_id": 2310,
+      "labels": {
+        "informativeness": 3
+      }
+    },
+    {
+      "utterance_id": 2312,
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": 2313,
+      "skipped": true
+    },
+    {
+      "utterance_id": 2314,
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": 2315,
+      "skipped": true
+    },
+    {
+      "utterance_id": 2316,
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": 2317,
+      "skipped": true
+    },
+    {
+      "utterance_id": 2318,
+      "labels": {
+        "informativeness": 4
+      }
+    }
+  ],
+  "submission_id": "insq_2228_3_info_YC2SOUx6W5cMBlCz_Rena",
+  "annotator": "Rena",
+  "type": "info",
+  "session_id": "YC2SOUx6W5cMBlCz",
+  "submission_timestamp": {
+    "$date": "2025-08-04T18:00:30.488Z"
+  },
+  "conversation_id": "insq_2228",
+  "study_id": "67e4bb1a1171c20d55663682",
+  "status": "pending"
+},
+{
+  "_id": {
+    "$oid": "68906993a3071236eac187f4"
+  },
+  "task_id": "insq_2228_6_info",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": 2365,
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": 2366,
+      "labels": {
+        "informativeness": 3
+      }
+    },
+    {
+      "utterance_id": 2367,
+      "skipped": true
+    },
+    {
+      "utterance_id": 2368,
+      "skipped": true
+    },
+    {
+      "utterance_id": 2369,
+      "labels": {
+        "informativeness": 3
+      }
+    },
+    {
+      "utterance_id": 2370,
+      "skipped": true
+    },
+    {
+      "utterance_id": 2371,
+      "skipped": true
+    },
+    {
+      "utterance_id": 2372,
+      "skipped": true
+    },
+    {
+      "utterance_id": 2373,
+      "skipped": true
+    },
+    {
+      "utterance_id": 2374,
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": 2375,
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": 2376,
+      "skipped": true
+    },
+    {
+      "utterance_id": 2377,
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": 2378,
+      "skipped": true
+    },
+    {
+      "utterance_id": 2379,
+      "labels": {
+        "informativeness": 4
+      }
+    }
+  ],
+  "submission_id": "insq_2228_6_info_YC2SOUx6W5cMBlCz_Rena",
+  "annotator": "Rena",
+  "type": "info",
+  "session_id": "YC2SOUx6W5cMBlCz",
+  "submission_timestamp": {
+    "$date": "2025-08-04T18:04:35.360Z"
+  },
+  "conversation_id": "insq_2228",
+  "study_id": "67e4bb1a1171c20d55663682",
+  "status": "pending"
+},
+{
+  "_id": {
+    "$oid": "68906a17a3071236eac187f5"
+  },
+  "task_id": "insq_2228_7_info",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": 2381,
+      "labels": {
+        "informativeness": 3
+      }
+    },
+    {
+      "utterance_id": 2382,
+      "skipped": true
+    },
+    {
+      "utterance_id": 2383,
+      "labels": {
+        "informativeness": 2
+      }
+    }
+  ],
+  "submission_id": "insq_2228_7_info_YC2SOUx6W5cMBlCz_Rena",
+  "annotator": "Rena",
+  "type": "info",
+  "session_id": "YC2SOUx6W5cMBlCz",
+  "submission_timestamp": {
+    "$date": "2025-08-04T18:06:47.056Z"
+  },
+  "conversation_id": "insq_2228",
+  "study_id": "67e4bb1a1171c20d55663682",
+  "status": "pending"
+},
+{
+  "_id": {
+    "$oid": "68906ffaa3071236eac187fc"
+  },
+  "task_id": "insq_2228_0_info",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": 2243,
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": 2244,
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": 2245,
+      "skipped": true
+    },
+    {
+      "utterance_id": 2246,
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": 2247,
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": 2248,
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": 2249,
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": 2250,
+      "skipped": true
+    },
+    {
+      "utterance_id": 2251,
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": 2252,
+      "labels": {
+        "informativeness": 3
+      }
+    },
+    {
+      "utterance_id": 2253,
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": 2254,
+      "labels": {
+        "informativeness": 4
+      }
+    }
+  ],
+  "submission_id": "insq_2228_0_info_S681bimGWb8pfV6C_zw",
+  "annotator": "zw",
+  "type": "info",
+  "session_id": "S681bimGWb8pfV6C",
+  "submission_timestamp": {
+    "$date": "2025-08-04T18:31:54.892Z"
+  },
+  "conversation_id": "insq_2228",
+  "study_id": "67e4bb1a1171c20d55663682",
+  "status": "pending"
+},
+{
+  "_id": {
+    "$oid": "689070cea3071236eac187fd"
+  },
+  "task_id": "insq_2228_3_info",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": 2306,
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": 2307,
+      "skipped": true
+    },
+    {
+      "utterance_id": 2308,
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": 2309,
+      "skipped": true
+    },
+    {
+      "utterance_id": 2310,
+      "labels": {
+        "informativeness": 3
+      }
+    },
+    {
+      "utterance_id": 2312,
+      "labels": {
+        "informativeness": 3
+      }
+    },
+    {
+      "utterance_id": 2313,
+      "skipped": true
+    },
+    {
+      "utterance_id": 2314,
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": 2315,
+      "skipped": true
+    },
+    {
+      "utterance_id": 2316,
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": 2317,
+      "skipped": true
+    },
+    {
+      "utterance_id": 2318,
+      "labels": {
+        "informativeness": 3
+      }
+    }
+  ],
+  "submission_id": "insq_2228_3_info_S681bimGWb8pfV6C_zw",
+  "annotator": "zw",
+  "type": "info",
+  "session_id": "S681bimGWb8pfV6C",
+  "submission_timestamp": {
+    "$date": "2025-08-04T18:35:26.803Z"
+  },
+  "conversation_id": "insq_2228",
+  "study_id": "67e4bb1a1171c20d55663682",
+  "status": "pending"
+},
+{
+  "_id": {
+    "$oid": "6890718ea3071236eac187fe"
+  },
+  "task_id": "insq_2228_6_info",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": 2365,
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": 2366,
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": 2367,
+      "skipped": true
+    },
+    {
+      "utterance_id": 2368,
+      "skipped": true
+    },
+    {
+      "utterance_id": 2369,
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": 2370,
+      "skipped": true
+    },
+    {
+      "utterance_id": 2371,
+      "skipped": true
+    },
+    {
+      "utterance_id": 2372,
+      "skipped": true
+    },
+    {
+      "utterance_id": 2373,
+      "skipped": true
+    },
+    {
+      "utterance_id": 2374,
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": 2375,
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": 2376,
+      "skipped": true
+    },
+    {
+      "utterance_id": 2377,
+      "labels": {
+        "informativeness": 3
+      }
+    },
+    {
+      "utterance_id": 2378,
+      "skipped": true
+    },
+    {
+      "utterance_id": 2379,
+      "labels": {
+        "informativeness": 4
+      }
+    }
+  ],
+  "submission_id": "insq_2228_6_info_S681bimGWb8pfV6C_zw",
+  "annotator": "zw",
+  "type": "info",
+  "session_id": "S681bimGWb8pfV6C",
+  "submission_timestamp": {
+    "$date": "2025-08-04T18:38:38.304Z"
+  },
+  "conversation_id": "insq_2228",
+  "study_id": "67e4bb1a1171c20d55663682",
+  "status": "pending"
+},
+{
+  "_id": {
+    "$oid": "68907229a3071236eac187ff"
+  },
+  "task_id": "insq_2228_7_info",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": 2381,
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": 2382,
+      "skipped": true
+    },
+    {
+      "utterance_id": 2383,
+      "labels": {
+        "informativeness": 3
+      }
+    }
+  ],
+  "submission_id": "insq_2228_7_info_S681bimGWb8pfV6C_zw",
+  "annotator": "zw",
+  "type": "info",
+  "session_id": "S681bimGWb8pfV6C",
+  "submission_timestamp": {
+    "$date": "2025-08-04T18:41:13.029Z"
+  },
+  "conversation_id": "insq_2228",
+  "study_id": "67e4bb1a1171c20d55663682",
+  "status": "pending"
+},
+{
+  "_id": {
+    "$oid": "689816203c71c891079a07b0"
+  },
+  "task_id": "insq_2228_0_info",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": 2243,
+      "labels": {
+        "informativeness": 3
+      }
+    },
+    {
+      "utterance_id": 2244,
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": 2245,
+      "skipped": true
+    },
+    {
+      "utterance_id": 2246,
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": 2247,
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": 2248,
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": 2249,
+      "labels": {
+        "informativeness": 3
+      }
+    },
+    {
+      "utterance_id": 2250,
+      "skipped": true
+    },
+    {
+      "utterance_id": 2251,
+      "labels": {
+        "informativeness": 3
+      }
+    },
+    {
+      "utterance_id": 2252,
+      "labels": {
+        "informativeness": 3
+      }
+    },
+    {
+      "utterance_id": 2253,
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": 2254,
+      "labels": {
+        "informativeness": 4
+      }
+    }
+  ],
+  "submission_id": "insq_2228_0_info_123_maychill",
+  "annotator": "maychill",
+  "type": "info",
+  "session_id": "123",
+  "submission_timestamp": {
+    "$date": "2025-08-10T13:46:40.786Z"
+  },
+  "conversation_id": "insq_2228",
+  "study_id": "67e4bb1a1171c20d55663682",
+  "status": "pending"
+},
+{
+  "_id": {
+    "$oid": "689816e03c71c891079a07b1"
+  },
+  "task_id": "insq_2228_3_info",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": 2306,
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": 2307,
+      "skipped": true
+    },
+    {
+      "utterance_id": 2308,
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": 2309,
+      "skipped": true
+    },
+    {
+      "utterance_id": 2310,
+      "labels": {
+        "informativeness": 3
+      }
+    },
+    {
+      "utterance_id": 2312,
+      "labels": {
+        "informativeness": 3
+      }
+    },
+    {
+      "utterance_id": 2313,
+      "skipped": true
+    },
+    {
+      "utterance_id": 2314,
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": 2315,
+      "skipped": true
+    },
+    {
+      "utterance_id": 2316,
+      "labels": {
+        "informativeness": 3
+      }
+    },
+    {
+      "utterance_id": 2317,
+      "skipped": true
+    },
+    {
+      "utterance_id": 2318,
+      "labels": {
+        "informativeness": 4
+      }
+    }
+  ],
+  "submission_id": "insq_2228_3_info_123_maychill",
+  "annotator": "maychill",
+  "type": "info",
+  "session_id": "123",
+  "submission_timestamp": {
+    "$date": "2025-08-10T13:49:52.820Z"
+  },
+  "conversation_id": "insq_2228",
+  "study_id": "67e4bb1a1171c20d55663682",
+  "status": "pending"
+},
+{
+  "_id": {
+    "$oid": "689817ff5f48910744a143c8"
+  },
+  "task_id": "insq_2228_6_info",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": 2365,
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": 2366,
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": 2367,
+      "skipped": true
+    },
+    {
+      "utterance_id": 2368,
+      "skipped": true
+    },
+    {
+      "utterance_id": 2369,
+      "labels": {
+        "informativeness": 3
+      }
+    },
+    {
+      "utterance_id": 2370,
+      "skipped": true
+    },
+    {
+      "utterance_id": 2371,
+      "skipped": true
+    },
+    {
+      "utterance_id": 2372,
+      "skipped": true
+    },
+    {
+      "utterance_id": 2373,
+      "skipped": true
+    },
+    {
+      "utterance_id": 2374,
+      "labels": {
+        "informativeness": 3
+      }
+    },
+    {
+      "utterance_id": 2375,
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": 2376,
+      "skipped": true
+    },
+    {
+      "utterance_id": 2377,
+      "labels": {
+        "informativeness": 3
+      }
+    },
+    {
+      "utterance_id": 2378,
+      "skipped": true
+    },
+    {
+      "utterance_id": 2379,
+      "labels": {
+        "informativeness": 4
+      }
+    }
+  ],
+  "submission_id": "insq_2228_6_info_123_maychill",
+  "annotator": "maychill",
+  "type": "info",
+  "session_id": "123",
+  "submission_timestamp": {
+    "$date": "2025-08-10T13:54:39.894Z"
+  },
+  "conversation_id": "insq_2228",
+  "study_id": "67e4bb1a1171c20d55663682",
+  "status": "pending"
+},
+{
+  "_id": {
+    "$oid": "6899a02edc56589bfc6fb769"
+  },
+  "task_id": "insq_2228_0_mix",
+  "task_type": "mix",
+  "target_utterances": [
+    {
+      "utterance_id": 2243,
+      "labels": {
+        "novelty": 3,
+        "relevance": 3,
+        "scope": 2
+      }
+    },
+    {
+      "utterance_id": 2244,
+      "labels": {
+        "novelty": 1,
+        "relevance": 4,
+        "scope": 1
+      }
+    },
+    {
+      "utterance_id": 2245,
+      "skipped": true
+    },
+    {
+      "utterance_id": 2246,
+      "labels": {
+        "novelty": 2,
+        "relevance": 2,
+        "scope": 2
+      }
+    },
+    {
+      "utterance_id": 2247,
+      "labels": {
+        "novelty": 1,
+        "relevance": 1,
+        "scope": 1
+      }
+    },
+    {
+      "utterance_id": 2248,
+      "labels": {
+        "novelty": 1,
+        "relevance": 3,
+        "scope": 3
+      }
+    },
+    {
+      "utterance_id": 2249,
+      "labels": {
+        "novelty": 1,
+        "relevance": 2,
+        "scope": 1
+      }
+    },
+    {
+      "utterance_id": 2250,
+      "skipped": true
+    },
+    {
+      "utterance_id": 2251,
+      "labels": {
+        "novelty": 2,
+        "relevance": 3,
+        "scope": 2
+      }
+    },
+    {
+      "utterance_id": 2252,
+      "labels": {
+        "novelty": 3,
+        "relevance": 2,
+        "scope": 2
+      }
+    },
+    {
+      "utterance_id": 2253,
+      "labels": {
+        "novelty": 3,
+        "relevance": 3,
+        "scope": 1
+      }
+    },
+    {
+      "utterance_id": 2254,
+      "labels": {
+        "novelty": 3,
+        "relevance": 4,
+        "scope": 3
+      }
+    }
+  ],
+  "submission_id": "insq_2228_0_mix_YCcVDcQlVUw15LmZ_zw",
+  "annotator": "zw",
+  "type": "mix",
+  "session_id": "YCcVDcQlVUw15LmZ",
+  "submission_timestamp": {
+    "$date": "2025-08-11T17:47:58.429Z"
+  },
+  "conversation_id": "insq_2228",
+  "study_id": "67fc8c6d1fad13ba413bf7de",
+  "status": "pending"
+},
+{
+  "_id": {
+    "$oid": "6899a1addc56589bfc6fb76a"
+  },
+  "task_id": "insq_2228_3_mix",
+  "task_type": "mix",
+  "target_utterances": [
+    {
+      "utterance_id": 2306,
+      "labels": {
+        "novelty": 3,
+        "relevance": 3,
+        "scope": 2
+      }
+    },
+    {
+      "utterance_id": 2307,
+      "skipped": true
+    },
+    {
+      "utterance_id": 2308,
+      "labels": {
+        "novelty": 1,
+        "relevance": 3,
+        "scope": 2
+      }
+    },
+    {
+      "utterance_id": 2309,
+      "skipped": true
+    },
+    {
+      "utterance_id": 2310,
+      "labels": {
+        "novelty": 3,
+        "relevance": 3,
+        "scope": 2
+      }
+    },
+    {
+      "utterance_id": 2312,
+      "labels": {
+        "novelty": 2,
+        "relevance": 3,
+        "scope": 3
+      }
+    },
+    {
+      "utterance_id": 2313,
+      "skipped": true
+    },
+    {
+      "utterance_id": 2314,
+      "labels": {
+        "novelty": 3,
+        "relevance": 3,
+        "scope": 2
+      }
+    },
+    {
+      "utterance_id": 2315,
+      "skipped": true
+    },
+    {
+      "utterance_id": 2316,
+      "labels": {
+        "novelty": 4,
+        "relevance": 3,
+        "scope": 2
+      }
+    },
+    {
+      "utterance_id": 2317,
+      "skipped": true
+    },
+    {
+      "utterance_id": 2318,
+      "labels": {
+        "novelty": 1,
+        "relevance": 3,
+        "scope": 3
+      }
+    }
+  ],
+  "submission_id": "insq_2228_3_mix_YCcVDcQlVUw15LmZ_zw",
+  "annotator": "zw",
+  "type": "mix",
+  "session_id": "YCcVDcQlVUw15LmZ",
+  "submission_timestamp": {
+    "$date": "2025-08-11T17:54:21.926Z"
+  },
+  "conversation_id": "insq_2228",
+  "study_id": "67fc8c6d1fad13ba413bf7de",
+  "status": "pending"
+},
+{
+  "_id": {
+    "$oid": "6899a26ddc56589bfc6fb76b"
+  },
+  "task_id": "insq_2228_6_mix",
+  "task_type": "mix",
+  "target_utterances": [
+    {
+      "utterance_id": 2365,
+      "labels": {
+        "novelty": 1,
+        "relevance": 3,
+        "scope": 2
+      }
+    },
+    {
+      "utterance_id": 2366,
+      "labels": {
+        "novelty": 1,
+        "relevance": 3,
+        "scope": 3
+      }
+    },
+    {
+      "utterance_id": 2367,
+      "skipped": true
+    },
+    {
+      "utterance_id": 2368,
+      "skipped": true
+    },
+    {
+      "utterance_id": 2369,
+      "labels": {
+        "novelty": 1,
+        "relevance": 3,
+        "scope": 2
+      }
+    },
+    {
+      "utterance_id": 2370,
+      "skipped": true
+    },
+    {
+      "utterance_id": 2371,
+      "skipped": true
+    },
+    {
+      "utterance_id": 2372,
+      "skipped": true
+    },
+    {
+      "utterance_id": 2373,
+      "skipped": true
+    },
+    {
+      "utterance_id": 2374,
+      "labels": {
+        "novelty": 4,
+        "relevance": 1,
+        "scope": 1
+      }
+    },
+    {
+      "utterance_id": 2375,
+      "labels": {
+        "novelty": 1,
+        "relevance": 2,
+        "scope": 1
+      }
+    },
+    {
+      "utterance_id": 2376,
+      "skipped": true
+    },
+    {
+      "utterance_id": 2377,
+      "labels": {
+        "novelty": 3,
+        "relevance": 3,
+        "scope": 3
+      }
+    },
+    {
+      "utterance_id": 2378,
+      "skipped": true
+    },
+    {
+      "utterance_id": 2379,
+      "labels": {
+        "novelty": 4,
+        "relevance": 4,
+        "scope": 3
+      }
+    }
+  ],
+  "submission_id": "insq_2228_6_mix_YCcVDcQlVUw15LmZ_zw",
+  "annotator": "zw",
+  "type": "mix",
+  "session_id": "YCcVDcQlVUw15LmZ",
+  "submission_timestamp": {
+    "$date": "2025-08-11T17:57:33.755Z"
+  },
+  "conversation_id": "insq_2228",
+  "study_id": "67fc8c6d1fad13ba413bf7de",
+  "status": "pending"
+},
+{
+  "_id": {
+    "$oid": "6899a2ecdc56589bfc6fb76c"
+  },
+  "task_id": "insq_2228_7_mix",
+  "task_type": "mix",
+  "target_utterances": [
+    {
+      "utterance_id": 2381,
+      "labels": {
+        "novelty": 4,
+        "relevance": 4,
+        "scope": 3
+      }
+    },
+    {
+      "utterance_id": 2382,
+      "skipped": true
+    },
+    {
+      "utterance_id": 2383,
+      "labels": {
+        "novelty": 4,
+        "relevance": 4,
+        "scope": 3
+      }
+    }
+  ],
+  "submission_id": "insq_2228_7_mix_YCcVDcQlVUw15LmZ_zw",
+  "annotator": "zw",
+  "type": "mix",
+  "session_id": "YCcVDcQlVUw15LmZ",
+  "submission_timestamp": {
+    "$date": "2025-08-11T17:59:40.067Z"
+  },
+  "conversation_id": "insq_2228",
+  "study_id": "67fc8c6d1fad13ba413bf7de",
+  "status": "pending"
+},
+{
+  "_id": {
+    "$oid": "689a945eebeb9ff7b954f0fd"
+  },
+  "task_id": "insq_2228_0_mix",
+  "task_type": "mix",
+  "target_utterances": [
+    {
+      "utterance_id": 2243,
+      "labels": {
+        "novelty": 3,
+        "relevance": 4,
+        "scope": 3
+      }
+    },
+    {
+      "utterance_id": 2244,
+      "labels": {
+        "novelty": 1,
+        "relevance": 4,
+        "scope": 3
+      }
+    },
+    {
+      "utterance_id": 2245,
+      "skipped": true
+    },
+    {
+      "utterance_id": 2246,
+      "labels": {
+        "novelty": 3,
+        "relevance": 4,
+        "scope": 3
+      }
+    },
+    {
+      "utterance_id": 2247,
+      "labels": {
+        "novelty": 1,
+        "relevance": 4,
+        "scope": 4
+      }
+    },
+    {
+      "utterance_id": 2248,
+      "labels": {
+        "novelty": 2,
+        "relevance": 4,
+        "scope": 3
+      }
+    },
+    {
+      "utterance_id": 2249,
+      "labels": {
+        "novelty": 1,
+        "relevance": 4,
+        "scope": 3
+      }
+    },
+    {
+      "utterance_id": 2250,
+      "skipped": true
+    },
+    {
+      "utterance_id": 2251,
+      "labels": {
+        "novelty": 2,
+        "relevance": 4,
+        "scope": 3
+      }
+    },
+    {
+      "utterance_id": 2252,
+      "labels": {
+        "novelty": 2,
+        "relevance": 4,
+        "scope": 3
+      }
+    },
+    {
+      "utterance_id": 2253,
+      "labels": {
+        "novelty": 1,
+        "relevance": 3,
+        "scope": 2
+      }
+    },
+    {
+      "utterance_id": 2254,
+      "labels": {
+        "novelty": 2,
+        "relevance": 4,
+        "scope": 3
+      }
+    }
+  ],
+  "submission_id": "insq_2228_0_mix_fpM1JOXQLpz6jC9E_aso",
+  "annotator": "aso",
+  "type": "mix",
+  "session_id": "fpM1JOXQLpz6jC9E",
+  "submission_timestamp": {
+    "$date": "2025-08-12T01:09:50.208Z"
+  },
+  "conversation_id": "insq_2228",
+  "study_id": "67fc8c6d1fad13ba413bf7de",
+  "status": "pending"
+},
+{
+  "_id": {
+    "$oid": "689a9e8febeb9ff7b954f0fe"
+  },
+  "task_id": "insq_2228_3_mix",
+  "task_type": "mix",
+  "target_utterances": [
+    {
+      "utterance_id": 2306,
+      "labels": {
+        "novelty": 1,
+        "relevance": 4,
+        "scope": 4
+      }
+    },
+    {
+      "utterance_id": 2307,
+      "skipped": true
+    },
+    {
+      "utterance_id": 2308,
+      "labels": {
+        "novelty": 2,
+        "relevance": 4,
+        "scope": 4
+      }
+    },
+    {
+      "utterance_id": 2309,
+      "skipped": true
+    },
+    {
+      "utterance_id": 2310,
+      "labels": {
+        "novelty": 3,
+        "relevance": 4,
+        "scope": 3
+      }
+    },
+    {
+      "utterance_id": 2312,
+      "labels": {
+        "novelty": 4,
+        "relevance": 4,
+        "scope": 3
+      }
+    },
+    {
+      "utterance_id": 2313,
+      "skipped": true
+    },
+    {
+      "utterance_id": 2314,
+      "labels": {
+        "novelty": 1,
+        "relevance": 4,
+        "scope": 2
+      }
+    },
+    {
+      "utterance_id": 2315,
+      "skipped": true
+    },
+    {
+      "utterance_id": 2316,
+      "labels": {
+        "novelty": 3,
+        "relevance": 4,
+        "scope": 4
+      }
+    },
+    {
+      "utterance_id": 2317,
+      "skipped": true
+    },
+    {
+      "utterance_id": 2318,
+      "labels": {
+        "novelty": 1,
+        "relevance": 4,
+        "scope": 3
+      }
+    }
+  ],
+  "submission_id": "insq_2228_3_mix_fpM1JOXQLpz6jC9E_aso",
+  "annotator": "aso",
+  "type": "mix",
+  "session_id": "fpM1JOXQLpz6jC9E",
+  "submission_timestamp": {
+    "$date": "2025-08-12T01:53:19.195Z"
+  },
+  "conversation_id": "insq_2228",
+  "study_id": "67fc8c6d1fad13ba413bf7de",
+  "status": "pending"
+},
+{
+  "_id": {
+    "$oid": "68a02f4e3408210d74119f93"
+  },
+  "task_id": "insq_2228_0_mix",
+  "task_type": "mix",
+  "target_utterances": [
+    {
+      "utterance_id": 2243,
+      "labels": {
+        "novelty": 4,
+        "relevance": 4,
+        "scope": 3
+      }
+    },
+    {
+      "utterance_id": 2244,
+      "labels": {
+        "novelty": 1,
+        "relevance": 3,
+        "scope": 2
+      }
+    },
+    {
+      "utterance_id": 2245,
+      "skipped": true
+    },
+    {
+      "utterance_id": 2246,
+      "labels": {
+        "novelty": 1,
+        "relevance": 1,
+        "scope": 1
+      }
+    },
+    {
+      "utterance_id": 2247,
+      "labels": {
+        "novelty": 1,
+        "relevance": 1,
+        "scope": 1
+      }
+    },
+    {
+      "utterance_id": 2248,
+      "labels": {
+        "novelty": 2,
+        "relevance": 3,
+        "scope": 3
+      }
+    },
+    {
+      "utterance_id": 2249,
+      "labels": {
+        "novelty": 2,
+        "relevance": 2,
+        "scope": 1
+      }
+    },
+    {
+      "utterance_id": 2250,
+      "skipped": true
+    },
+    {
+      "utterance_id": 2251,
+      "labels": {
+        "novelty": 2,
+        "relevance": 3,
+        "scope": 3
+      }
+    },
+    {
+      "utterance_id": 2252,
+      "labels": {
+        "novelty": 3,
+        "relevance": 4,
+        "scope": 2
+      }
+    },
+    {
+      "utterance_id": 2253,
+      "labels": {
+        "novelty": 1,
+        "relevance": 2,
+        "scope": 2
+      }
+    },
+    {
+      "utterance_id": 2254,
+      "labels": {
+        "novelty": 3,
+        "relevance": 3,
+        "scope": 3
+      }
+    }
+  ],
+  "submission_id": "insq_2228_0_mix_68a02ad713468d54a904dd1b_68109d22b0ba84c17333ecab",
+  "annotator": "68109d22b0ba84c17333ecab",
+  "type": "mix",
+  "session_id": "68a02ad713468d54a904dd1b",
+  "submission_timestamp": {
+    "$date": "2025-08-16T07:12:14.639Z"
+  },
+  "conversation_id": "insq_2228",
+  "study_id": "689ed5672184a83065905e57",
+  "status": "pending"
+},
+{
+  "_id": {
+    "$oid": "68a030773408210d74119f94"
+  },
+  "task_id": "insq_2228_3_mix",
+  "task_type": "mix",
+  "target_utterances": [
+    {
+      "utterance_id": 2306,
+      "labels": {
+        "novelty": 3,
+        "relevance": 3,
+        "scope": 3
+      }
+    },
+    {
+      "utterance_id": 2307,
+      "skipped": true
+    },
+    {
+      "utterance_id": 2308,
+      "labels": {
+        "novelty": 1,
+        "relevance": 2,
+        "scope": 3
+      }
+    },
+    {
+      "utterance_id": 2309,
+      "skipped": true
+    },
+    {
+      "utterance_id": 2310,
+      "labels": {
+        "novelty": 4,
+        "relevance": 4,
+        "scope": 3
+      }
+    },
+    {
+      "utterance_id": 2312,
+      "labels": {
+        "novelty": 3,
+        "relevance": 4,
+        "scope": 3
+      }
+    },
+    {
+      "utterance_id": 2313,
+      "skipped": true
+    },
+    {
+      "utterance_id": 2314,
+      "labels": {
+        "novelty": 3,
+        "relevance": 3,
+        "scope": 2
+      }
+    },
+    {
+      "utterance_id": 2315,
+      "skipped": true
+    },
+    {
+      "utterance_id": 2316,
+      "labels": {
+        "novelty": 2,
+        "relevance": 3,
+        "scope": 3
+      }
+    },
+    {
+      "utterance_id": 2317,
+      "skipped": true
+    },
+    {
+      "utterance_id": 2318,
+      "labels": {
+        "novelty": 2,
+        "relevance": 3,
+        "scope": 3
+      }
+    }
+  ],
+  "submission_id": "insq_2228_3_mix_68a02ad713468d54a904dd1b_68109d22b0ba84c17333ecab",
+  "annotator": "68109d22b0ba84c17333ecab",
+  "type": "mix",
+  "session_id": "68a02ad713468d54a904dd1b",
+  "submission_timestamp": {
+    "$date": "2025-08-16T07:17:11.281Z"
+  },
+  "conversation_id": "insq_2228",
+  "study_id": "689ed5672184a83065905e57",
+  "status": "pending"
+},
+{
+  "_id": {
+    "$oid": "68a031353408210d74119f96"
+  },
+  "task_id": "insq_2228_6_mix",
+  "task_type": "mix",
+  "target_utterances": [
+    {
+      "utterance_id": 2365,
+      "labels": {
+        "novelty": 2,
+        "relevance": 3,
+        "scope": 2
+      }
+    },
+    {
+      "utterance_id": 2366,
+      "labels": {
+        "novelty": 2,
+        "relevance": 3,
+        "scope": 2
+      }
+    },
+    {
+      "utterance_id": 2367,
+      "skipped": true
+    },
+    {
+      "utterance_id": 2368,
+      "skipped": true
+    },
+    {
+      "utterance_id": 2369,
+      "labels": {
+        "novelty": 2,
+        "relevance": 3,
+        "scope": 3
+      }
+    },
+    {
+      "utterance_id": 2370,
+      "skipped": true
+    },
+    {
+      "utterance_id": 2371,
+      "skipped": true
+    },
+    {
+      "utterance_id": 2372,
+      "skipped": true
+    },
+    {
+      "utterance_id": 2373,
+      "skipped": true
+    },
+    {
+      "utterance_id": 2374,
+      "labels": {
+        "novelty": 2,
+        "relevance": 2,
+        "scope": 2
+      }
+    },
+    {
+      "utterance_id": 2375,
+      "labels": {
+        "novelty": 2,
+        "relevance": 2,
+        "scope": 2
+      }
+    },
+    {
+      "utterance_id": 2376,
+      "skipped": true
+    },
+    {
+      "utterance_id": 2377,
+      "labels": {
+        "novelty": 2,
+        "relevance": 3,
+        "scope": 3
+      }
+    },
+    {
+      "utterance_id": 2378,
+      "skipped": true
+    },
+    {
+      "utterance_id": 2379,
+      "labels": {
+        "novelty": 4,
+        "relevance": 4,
+        "scope": 3
+      }
+    }
+  ],
+  "submission_id": "insq_2228_6_mix_68a02ad713468d54a904dd1b_68109d22b0ba84c17333ecab",
+  "annotator": "68109d22b0ba84c17333ecab",
+  "type": "mix",
+  "session_id": "68a02ad713468d54a904dd1b",
+  "submission_timestamp": {
+    "$date": "2025-08-16T07:20:21.775Z"
+  },
+  "conversation_id": "insq_2228",
+  "study_id": "689ed5672184a83065905e57",
+  "status": "pending"
+},
+{
+  "_id": {
+    "$oid": "68a031c33408210d74119f97"
+  },
+  "task_id": "insq_2228_7_mix",
+  "task_type": "mix",
+  "target_utterances": [
+    {
+      "utterance_id": 2381,
+      "labels": {
+        "novelty": 4,
+        "relevance": 3,
+        "scope": 3
+      }
+    },
+    {
+      "utterance_id": 2382,
+      "skipped": true
+    },
+    {
+      "utterance_id": 2383,
+      "labels": {
+        "novelty": 4,
+        "relevance": 4,
+        "scope": 3
+      }
+    }
+  ],
+  "submission_id": "insq_2228_7_mix_68a02ad713468d54a904dd1b_68109d22b0ba84c17333ecab",
+  "annotator": "68109d22b0ba84c17333ecab",
+  "type": "mix",
+  "session_id": "68a02ad713468d54a904dd1b",
+  "submission_timestamp": {
+    "$date": "2025-08-16T07:22:43.918Z"
+  },
+  "conversation_id": "insq_2228",
+  "study_id": "689ed5672184a83065905e57",
+  "status": "pending"
+},
+{
+  "_id": {
+    "$oid": "68a038ac3408210d74119f9c"
+  },
+  "task_id": "insq_2228_0_mix",
+  "task_type": "mix",
+  "target_utterances": [
+    {
+      "utterance_id": 2243,
+      "labels": {
+        "novelty": 3,
+        "relevance": 1,
+        "scope": 4
+      }
+    },
+    {
+      "utterance_id": 2244,
+      "labels": {
+        "novelty": 3,
+        "relevance": 3,
+        "scope": 3
+      }
+    },
+    {
+      "utterance_id": 2245,
+      "skipped": true
+    },
+    {
+      "utterance_id": 2246,
+      "labels": {
+        "novelty": 3,
+        "relevance": 4,
+        "scope": 4
+      }
+    },
+    {
+      "utterance_id": 2247,
+      "labels": {
+        "novelty": 1,
+        "relevance": 1,
+        "scope": 1
+      }
+    },
+    {
+      "utterance_id": 2248,
+      "labels": {
+        "novelty": 2,
+        "relevance": 3,
+        "scope": 3
+      }
+    },
+    {
+      "utterance_id": 2249,
+      "labels": {
+        "novelty": 2,
+        "relevance": 3,
+        "scope": 3
+      }
+    },
+    {
+      "utterance_id": 2250,
+      "skipped": true
+    },
+    {
+      "utterance_id": 2251,
+      "labels": {
+        "novelty": 4,
+        "relevance": 4,
+        "scope": 4
+      }
+    },
+    {
+      "utterance_id": 2252,
+      "labels": {
+        "novelty": 3,
+        "relevance": 4,
+        "scope": 3
+      }
+    },
+    {
+      "utterance_id": 2253,
+      "labels": {
+        "novelty": 2,
+        "relevance": 2,
+        "scope": 2
+      }
+    },
+    {
+      "utterance_id": 2254,
+      "labels": {
+        "novelty": 3,
+        "relevance": 3,
+        "scope": 4
+      }
+    }
+  ],
+  "submission_id": "insq_2228_0_mix_68a0322764b19b0bfbb15392_6007421356226920359b5f3e",
+  "annotator": "6007421356226920359b5f3e",
+  "type": "mix",
+  "session_id": "68a0322764b19b0bfbb15392",
+  "submission_timestamp": {
+    "$date": "2025-08-16T07:52:12.459Z"
+  },
+  "conversation_id": "insq_2228",
+  "study_id": "689ed5672184a83065905e57",
+  "status": "pending"
+},
+{
+  "_id": {
+    "$oid": "68a03a5f3408210d74119f9d"
+  },
+  "task_id": "insq_2228_3_mix",
+  "task_type": "mix",
+  "target_utterances": [
+    {
+      "utterance_id": 2306,
+      "labels": {
+        "novelty": 2,
+        "relevance": 2,
+        "scope": 3
+      }
+    },
+    {
+      "utterance_id": 2307,
+      "skipped": true
+    },
+    {
+      "utterance_id": 2308,
+      "labels": {
+        "novelty": 1,
+        "relevance": 1,
+        "scope": 1
+      }
+    },
+    {
+      "utterance_id": 2309,
+      "skipped": true
+    },
+    {
+      "utterance_id": 2310,
+      "labels": {
+        "novelty": 3,
+        "relevance": 3,
+        "scope": 2
+      }
+    },
+    {
+      "utterance_id": 2312,
+      "labels": {
+        "novelty": 3,
+        "relevance": 4,
+        "scope": 4
+      }
+    },
+    {
+      "utterance_id": 2313,
+      "skipped": true
+    },
+    {
+      "utterance_id": 2314,
+      "labels": {
+        "novelty": 2,
+        "relevance": 3,
+        "scope": 2
+      }
+    },
+    {
+      "utterance_id": 2315,
+      "skipped": true
+    },
+    {
+      "utterance_id": 2316,
+      "labels": {
+        "novelty": 2,
+        "relevance": 2,
+        "scope": 3
+      }
+    },
+    {
+      "utterance_id": 2317,
+      "skipped": true
+    },
+    {
+      "utterance_id": 2318,
+      "labels": {
+        "novelty": 3,
+        "relevance": 3,
+        "scope": 3
+      }
+    }
+  ],
+  "submission_id": "insq_2228_3_mix_68a0322764b19b0bfbb15392_6007421356226920359b5f3e",
+  "annotator": "6007421356226920359b5f3e",
+  "type": "mix",
+  "session_id": "68a0322764b19b0bfbb15392",
+  "submission_timestamp": {
+    "$date": "2025-08-16T07:59:27.975Z"
+  },
+  "conversation_id": "insq_2228",
+  "study_id": "689ed5672184a83065905e57",
+  "status": "pending"
+},
+{
+  "_id": {
+    "$oid": "68a03bdc3408210d74119f9e"
+  },
+  "task_id": "insq_2228_6_mix",
+  "task_type": "mix",
+  "target_utterances": [
+    {
+      "utterance_id": 2365,
+      "labels": {
+        "novelty": 1,
+        "relevance": 2,
+        "scope": 1
+      }
+    },
+    {
+      "utterance_id": 2366,
+      "labels": {
+        "novelty": 2,
+        "relevance": 3,
+        "scope": 2
+      }
+    },
+    {
+      "utterance_id": 2367,
+      "skipped": true
+    },
+    {
+      "utterance_id": 2368,
+      "skipped": true
+    },
+    {
+      "utterance_id": 2369,
+      "labels": {
+        "novelty": 3,
+        "relevance": 3,
+        "scope": 3
+      }
+    },
+    {
+      "utterance_id": 2370,
+      "skipped": true
+    },
+    {
+      "utterance_id": 2371,
+      "skipped": true
+    },
+    {
+      "utterance_id": 2372,
+      "skipped": true
+    },
+    {
+      "utterance_id": 2373,
+      "skipped": true
+    },
+    {
+      "utterance_id": 2374,
+      "labels": {
+        "novelty": 1,
+        "relevance": 1,
+        "scope": 1
+      }
+    },
+    {
+      "utterance_id": 2375,
+      "labels": {
+        "novelty": 1,
+        "relevance": 1,
+        "scope": 1
+      }
+    },
+    {
+      "utterance_id": 2376,
+      "skipped": true
+    },
+    {
+      "utterance_id": 2377,
+      "labels": {
+        "novelty": 3,
+        "relevance": 4,
+        "scope": 2
+      }
+    },
+    {
+      "utterance_id": 2378,
+      "skipped": true
+    },
+    {
+      "utterance_id": 2379,
+      "labels": {
+        "novelty": 4,
+        "relevance": 4,
+        "scope": 4
+      }
+    }
+  ],
+  "submission_id": "insq_2228_6_mix_68a0322764b19b0bfbb15392_6007421356226920359b5f3e",
+  "annotator": "6007421356226920359b5f3e",
+  "type": "mix",
+  "session_id": "68a0322764b19b0bfbb15392",
+  "submission_timestamp": {
+    "$date": "2025-08-16T08:05:48.476Z"
+  },
+  "conversation_id": "insq_2228",
+  "study_id": "689ed5672184a83065905e57",
+  "status": "pending"
+},
+{
+  "_id": {
+    "$oid": "68a03cd53408210d74119f9f"
+  },
+  "task_id": "insq_2228_7_mix",
+  "task_type": "mix",
+  "target_utterances": [
+    {
+      "utterance_id": 2381,
+      "labels": {
+        "novelty": 4,
+        "relevance": 4,
+        "scope": 4
+      }
+    },
+    {
+      "utterance_id": 2382,
+      "skipped": true
+    },
+    {
+      "utterance_id": 2383,
+      "labels": {
+        "novelty": 4,
+        "relevance": 4,
+        "scope": 3
+      }
+    }
+  ],
+  "submission_id": "insq_2228_7_mix_68a0322764b19b0bfbb15392_6007421356226920359b5f3e",
+  "annotator": "6007421356226920359b5f3e",
+  "type": "mix",
+  "session_id": "68a0322764b19b0bfbb15392",
+  "submission_timestamp": {
+    "$date": "2025-08-16T08:09:57.843Z"
+  },
+  "conversation_id": "insq_2228",
+  "study_id": "689ed5672184a83065905e57",
+  "status": "pending"
+}]

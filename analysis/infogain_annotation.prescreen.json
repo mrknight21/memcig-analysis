@@ -1,0 +1,10740 @@
+[{
+  "_id": {
+    "$oid": "680afa055f1a8ac859862ea3"
+  },
+  "task_id": "insq_prescreen_0",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": "100",
+      "labels": {
+        "informativeness": 3
+      }
+    },
+    {
+      "utterance_id": "101",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "102",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "103",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "104",
+      "labels": {
+        "informativeness": 3
+      }
+    },
+    {
+      "utterance_id": "105",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "106",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "107",
+      "labels": {
+        "informativeness": 1
+      }
+    }
+  ],
+  "date_time": "2025-04-25 02:57:09",
+  "user_id": "Rena Gao"
+},
+{
+  "_id": {
+    "$oid": "6817fed05f1a8ac859862ea8"
+  },
+  "task_id": "insq_prescreen_0",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": "100",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "101",
+      "labels": {
+        "informativeness": 3
+      }
+    },
+    {
+      "utterance_id": "102",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "103",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "104",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "105",
+      "labels": {
+        "informativeness": 3
+      }
+    },
+    {
+      "utterance_id": "106",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "107",
+      "labels": {
+        "informativeness": 1
+      }
+    }
+  ],
+  "date_time": "2025-05-04 23:57:04",
+  "user_id": "Lea2"
+},
+{
+  "_id": {
+    "$oid": "681c70aa7d850b03cf680cdc"
+  },
+  "task_id": "insq_prescreen_0",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": "101",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "102",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "103",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "104",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "105",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "106",
+      "labels": {
+        "informativeness": 2
+      }
+    }
+  ],
+  "date_time": "2025-05-08 18:51:54",
+  "user_id": "maychill"
+},
+{
+  "_id": {
+    "$oid": "681cb2af53dd431ad2a48782"
+  },
+  "task_id": "insq_prescreen_0",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": "101",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "102",
+      "labels": {
+        "informativeness": 3
+      }
+    },
+    {
+      "utterance_id": "103",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "104",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "105",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "106",
+      "labels": {
+        "informativeness": 3
+      }
+    }
+  ],
+  "date_time": "2025-05-08 13:33:35",
+  "user_id": "67edb75b0744561f1cf6ff9d"
+},
+{
+  "_id": {
+    "$oid": "681cb2b553dd431ad2a48783"
+  },
+  "task_id": "insq_prescreen_0",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": "101",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "102",
+      "labels": {
+        "informativeness": 3
+      }
+    },
+    {
+      "utterance_id": "103",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "104",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "105",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "106",
+      "labels": {
+        "informativeness": 3
+      }
+    }
+  ],
+  "date_time": "2025-05-08 13:33:41",
+  "user_id": "67edb75b0744561f1cf6ff9d"
+},
+{
+  "_id": {
+    "$oid": "681cb2d453dd431ad2a48784"
+  },
+  "task_id": "insq_prescreen_0",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": "101",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "102",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "103",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "104",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "105",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "106",
+      "labels": {
+        "informativeness": 4
+      }
+    }
+  ],
+  "date_time": "2025-05-08 13:34:12",
+  "user_id": "67edb75b0744561f1cf6ff9d"
+},
+{
+  "_id": {
+    "$oid": "681cb30553dd431ad2a48786"
+  },
+  "task_id": "insq_prescreen_0",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": "101",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "102",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "103",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "104",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "105",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "106",
+      "labels": {
+        "informativeness": 4
+      }
+    }
+  ],
+  "date_time": "2025-05-08 13:35:01",
+  "user_id": "67edb75b0744561f1cf6ff9d"
+},
+{
+  "_id": {
+    "$oid": "681cb30753dd431ad2a48787"
+  },
+  "task_id": "insq_prescreen_0",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": "101",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "102",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "103",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "104",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "105",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "106",
+      "labels": {
+        "informativeness": 4
+      }
+    }
+  ],
+  "date_time": "2025-05-08 13:35:03",
+  "user_id": "67edb75b0744561f1cf6ff9d"
+},
+{
+  "_id": {
+    "$oid": "681cb30753dd431ad2a48788"
+  },
+  "task_id": "insq_prescreen_0",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": "101",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "102",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "103",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "104",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "105",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "106",
+      "labels": {
+        "informativeness": 4
+      }
+    }
+  ],
+  "date_time": "2025-05-08 13:35:03",
+  "user_id": "67edb75b0744561f1cf6ff9d"
+},
+{
+  "_id": {
+    "$oid": "681cb30753dd431ad2a48789"
+  },
+  "task_id": "insq_prescreen_0",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": "101",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "102",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "103",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "104",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "105",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "106",
+      "labels": {
+        "informativeness": 4
+      }
+    }
+  ],
+  "date_time": "2025-05-08 13:35:03",
+  "user_id": "67edb75b0744561f1cf6ff9d"
+},
+{
+  "_id": {
+    "$oid": "681cb30853dd431ad2a4878a"
+  },
+  "task_id": "insq_prescreen_0",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": "101",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "102",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "103",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "104",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "105",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "106",
+      "labels": {
+        "informativeness": 4
+      }
+    }
+  ],
+  "date_time": "2025-05-08 13:35:04",
+  "user_id": "67edb75b0744561f1cf6ff9d"
+},
+{
+  "_id": {
+    "$oid": "681cb30853dd431ad2a4878b"
+  },
+  "task_id": "insq_prescreen_0",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": "101",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "102",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "103",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "104",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "105",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "106",
+      "labels": {
+        "informativeness": 4
+      }
+    }
+  ],
+  "date_time": "2025-05-08 13:35:04",
+  "user_id": "67edb75b0744561f1cf6ff9d"
+},
+{
+  "_id": {
+    "$oid": "681cb30853dd431ad2a4878c"
+  },
+  "task_id": "insq_prescreen_0",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": "101",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "102",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "103",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "104",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "105",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "106",
+      "labels": {
+        "informativeness": 4
+      }
+    }
+  ],
+  "date_time": "2025-05-08 13:35:04",
+  "user_id": "67edb75b0744561f1cf6ff9d"
+},
+{
+  "_id": {
+    "$oid": "681cb30853dd431ad2a4878d"
+  },
+  "task_id": "insq_prescreen_0",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": "101",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "102",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "103",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "104",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "105",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "106",
+      "labels": {
+        "informativeness": 4
+      }
+    }
+  ],
+  "date_time": "2025-05-08 13:35:04",
+  "user_id": "67edb75b0744561f1cf6ff9d"
+},
+{
+  "_id": {
+    "$oid": "681cb30853dd431ad2a4878e"
+  },
+  "task_id": "insq_prescreen_0",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": "101",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "102",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "103",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "104",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "105",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "106",
+      "labels": {
+        "informativeness": 4
+      }
+    }
+  ],
+  "date_time": "2025-05-08 13:35:04",
+  "user_id": "67edb75b0744561f1cf6ff9d"
+},
+{
+  "_id": {
+    "$oid": "681cb30953dd431ad2a4878f"
+  },
+  "task_id": "insq_prescreen_0",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": "101",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "102",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "103",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "104",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "105",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "106",
+      "labels": {
+        "informativeness": 4
+      }
+    }
+  ],
+  "date_time": "2025-05-08 13:35:05",
+  "user_id": "67edb75b0744561f1cf6ff9d"
+},
+{
+  "_id": {
+    "$oid": "681cb30953dd431ad2a48790"
+  },
+  "task_id": "insq_prescreen_0",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": "101",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "102",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "103",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "104",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "105",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "106",
+      "labels": {
+        "informativeness": 4
+      }
+    }
+  ],
+  "date_time": "2025-05-08 13:35:05",
+  "user_id": "67edb75b0744561f1cf6ff9d"
+},
+{
+  "_id": {
+    "$oid": "681cb39a53dd431ad2a48793"
+  },
+  "task_id": "insq_prescreen_0",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": "101",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "102",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "103",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "104",
+      "labels": {
+        "informativeness": 3
+      }
+    },
+    {
+      "utterance_id": "105",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "106",
+      "labels": {
+        "informativeness": 2
+      }
+    }
+  ],
+  "date_time": "2025-05-08 13:37:30",
+  "user_id": "67edb75b0744561f1cf6ff9d"
+},
+{
+  "_id": {
+    "$oid": "681cb39a53dd431ad2a48794"
+  },
+  "task_id": "insq_prescreen_0",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": "101",
+      "labels": {
+        "informativeness": 3
+      }
+    },
+    {
+      "utterance_id": "102",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "103",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "104",
+      "labels": {
+        "informativeness": 3
+      }
+    },
+    {
+      "utterance_id": "105",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "106",
+      "labels": {
+        "informativeness": 3
+      }
+    }
+  ],
+  "date_time": "2025-05-08 13:37:30",
+  "user_id": "677c4ac5878568e38dae405a"
+},
+{
+  "_id": {
+    "$oid": "681cb39b53dd431ad2a48795"
+  },
+  "task_id": "insq_prescreen_0",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": "101",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "102",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "103",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "104",
+      "labels": {
+        "informativeness": 3
+      }
+    },
+    {
+      "utterance_id": "105",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "106",
+      "labels": {
+        "informativeness": 2
+      }
+    }
+  ],
+  "date_time": "2025-05-08 13:37:31",
+  "user_id": "67edb75b0744561f1cf6ff9d"
+},
+{
+  "_id": {
+    "$oid": "681cb39b53dd431ad2a48796"
+  },
+  "task_id": "insq_prescreen_0",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": "101",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "102",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "103",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "104",
+      "labels": {
+        "informativeness": 3
+      }
+    },
+    {
+      "utterance_id": "105",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "106",
+      "labels": {
+        "informativeness": 2
+      }
+    }
+  ],
+  "date_time": "2025-05-08 13:37:31",
+  "user_id": "67edb75b0744561f1cf6ff9d"
+},
+{
+  "_id": {
+    "$oid": "681cb39b53dd431ad2a48797"
+  },
+  "task_id": "insq_prescreen_0",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": "101",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "102",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "103",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "104",
+      "labels": {
+        "informativeness": 3
+      }
+    },
+    {
+      "utterance_id": "105",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "106",
+      "labels": {
+        "informativeness": 2
+      }
+    }
+  ],
+  "date_time": "2025-05-08 13:37:31",
+  "user_id": "67edb75b0744561f1cf6ff9d"
+},
+{
+  "_id": {
+    "$oid": "681cb3a053dd431ad2a48798"
+  },
+  "task_id": "insq_prescreen_0",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": "101",
+      "labels": {
+        "informativeness": 3
+      }
+    },
+    {
+      "utterance_id": "102",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "103",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "104",
+      "labels": {
+        "informativeness": 3
+      }
+    },
+    {
+      "utterance_id": "105",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "106",
+      "labels": {
+        "informativeness": 3
+      }
+    }
+  ],
+  "date_time": "2025-05-08 13:37:36",
+  "user_id": "677c4ac5878568e38dae405a"
+},
+{
+  "_id": {
+    "$oid": "681cb3a353dd431ad2a48799"
+  },
+  "task_id": "insq_prescreen_0",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": "101",
+      "labels": {
+        "informativeness": 3
+      }
+    },
+    {
+      "utterance_id": "102",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "103",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "104",
+      "labels": {
+        "informativeness": 3
+      }
+    },
+    {
+      "utterance_id": "105",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "106",
+      "labels": {
+        "informativeness": 3
+      }
+    }
+  ],
+  "date_time": "2025-05-08 13:37:39",
+  "user_id": "677c4ac5878568e38dae405a"
+},
+{
+  "_id": {
+    "$oid": "681cb3a553dd431ad2a4879a"
+  },
+  "task_id": "insq_prescreen_0",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": "101",
+      "labels": {
+        "informativeness": 3
+      }
+    },
+    {
+      "utterance_id": "102",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "103",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "104",
+      "labels": {
+        "informativeness": 3
+      }
+    },
+    {
+      "utterance_id": "105",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "106",
+      "labels": {
+        "informativeness": 3
+      }
+    }
+  ],
+  "date_time": "2025-05-08 13:37:41",
+  "user_id": "677c4ac5878568e38dae405a"
+},
+{
+  "_id": {
+    "$oid": "681cb3b153dd431ad2a4879b"
+  },
+  "task_id": "insq_prescreen_0",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": "101",
+      "labels": {
+        "informativeness": 3
+      }
+    },
+    {
+      "utterance_id": "102",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "103",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "104",
+      "labels": {
+        "informativeness": 3
+      }
+    },
+    {
+      "utterance_id": "105",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "106",
+      "labels": {
+        "informativeness": 4
+      }
+    }
+  ],
+  "date_time": "2025-05-08 13:37:53",
+  "user_id": "677c4ac5878568e38dae405a"
+},
+{
+  "_id": {
+    "$oid": "681cb3b253dd431ad2a4879c"
+  },
+  "task_id": "insq_prescreen_0",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": "101",
+      "labels": {
+        "informativeness": 3
+      }
+    },
+    {
+      "utterance_id": "102",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "103",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "104",
+      "labels": {
+        "informativeness": 3
+      }
+    },
+    {
+      "utterance_id": "105",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "106",
+      "labels": {
+        "informativeness": 4
+      }
+    }
+  ],
+  "date_time": "2025-05-08 13:37:54",
+  "user_id": "677c4ac5878568e38dae405a"
+},
+{
+  "_id": {
+    "$oid": "681cb3b353dd431ad2a4879d"
+  },
+  "task_id": "insq_prescreen_0",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": "101",
+      "labels": {
+        "informativeness": 3
+      }
+    },
+    {
+      "utterance_id": "102",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "103",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "104",
+      "labels": {
+        "informativeness": 3
+      }
+    },
+    {
+      "utterance_id": "105",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "106",
+      "labels": {
+        "informativeness": 4
+      }
+    }
+  ],
+  "date_time": "2025-05-08 13:37:55",
+  "user_id": "677c4ac5878568e38dae405a"
+},
+{
+  "_id": {
+    "$oid": "681cb3b353dd431ad2a4879e"
+  },
+  "task_id": "insq_prescreen_0",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": "101",
+      "labels": {
+        "informativeness": 3
+      }
+    },
+    {
+      "utterance_id": "102",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "103",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "104",
+      "labels": {
+        "informativeness": 3
+      }
+    },
+    {
+      "utterance_id": "105",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "106",
+      "labels": {
+        "informativeness": 4
+      }
+    }
+  ],
+  "date_time": "2025-05-08 13:37:55",
+  "user_id": "677c4ac5878568e38dae405a"
+},
+{
+  "_id": {
+    "$oid": "681cb3b353dd431ad2a4879f"
+  },
+  "task_id": "insq_prescreen_0",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": "101",
+      "labels": {
+        "informativeness": 3
+      }
+    },
+    {
+      "utterance_id": "102",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "103",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "104",
+      "labels": {
+        "informativeness": 3
+      }
+    },
+    {
+      "utterance_id": "105",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "106",
+      "labels": {
+        "informativeness": 4
+      }
+    }
+  ],
+  "date_time": "2025-05-08 13:37:55",
+  "user_id": "677c4ac5878568e38dae405a"
+},
+{
+  "_id": {
+    "$oid": "681cb3be53dd431ad2a487a0"
+  },
+  "task_id": "insq_prescreen_0",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": "101",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "102",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "103",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "104",
+      "labels": {
+        "informativeness": 3
+      }
+    },
+    {
+      "utterance_id": "105",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "106",
+      "labels": {
+        "informativeness": 2
+      }
+    }
+  ],
+  "date_time": "2025-05-08 13:38:06",
+  "user_id": "67edb75b0744561f1cf6ff9d"
+},
+{
+  "_id": {
+    "$oid": "681cb3c153dd431ad2a487a1"
+  },
+  "task_id": "insq_prescreen_0",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": "101",
+      "labels": {
+        "informativeness": 3
+      }
+    },
+    {
+      "utterance_id": "102",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "103",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "104",
+      "labels": {
+        "informativeness": 3
+      }
+    },
+    {
+      "utterance_id": "105",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "106",
+      "labels": {
+        "informativeness": 4
+      }
+    }
+  ],
+  "date_time": "2025-05-08 13:38:09",
+  "user_id": "677c4ac5878568e38dae405a"
+},
+{
+  "_id": {
+    "$oid": "681cb3c253dd431ad2a487a2"
+  },
+  "task_id": "insq_prescreen_0",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": "101",
+      "labels": {
+        "informativeness": 3
+      }
+    },
+    {
+      "utterance_id": "102",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "103",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "104",
+      "labels": {
+        "informativeness": 3
+      }
+    },
+    {
+      "utterance_id": "105",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "106",
+      "labels": {
+        "informativeness": 4
+      }
+    }
+  ],
+  "date_time": "2025-05-08 13:38:10",
+  "user_id": "677c4ac5878568e38dae405a"
+},
+{
+  "_id": {
+    "$oid": "681cb3c253dd431ad2a487a3"
+  },
+  "task_id": "insq_prescreen_0",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": "101",
+      "labels": {
+        "informativeness": 3
+      }
+    },
+    {
+      "utterance_id": "102",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "103",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "104",
+      "labels": {
+        "informativeness": 3
+      }
+    },
+    {
+      "utterance_id": "105",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "106",
+      "labels": {
+        "informativeness": 4
+      }
+    }
+  ],
+  "date_time": "2025-05-08 13:38:10",
+  "user_id": "677c4ac5878568e38dae405a"
+},
+{
+  "_id": {
+    "$oid": "681cb3c353dd431ad2a487a4"
+  },
+  "task_id": "insq_prescreen_0",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": "101",
+      "labels": {
+        "informativeness": 3
+      }
+    },
+    {
+      "utterance_id": "102",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "103",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "104",
+      "labels": {
+        "informativeness": 3
+      }
+    },
+    {
+      "utterance_id": "105",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "106",
+      "labels": {
+        "informativeness": 4
+      }
+    }
+  ],
+  "date_time": "2025-05-08 13:38:11",
+  "user_id": "677c4ac5878568e38dae405a"
+},
+{
+  "_id": {
+    "$oid": "681cb3c353dd431ad2a487a5"
+  },
+  "task_id": "insq_prescreen_0",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": "101",
+      "labels": {
+        "informativeness": 3
+      }
+    },
+    {
+      "utterance_id": "102",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "103",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "104",
+      "labels": {
+        "informativeness": 3
+      }
+    },
+    {
+      "utterance_id": "105",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "106",
+      "labels": {
+        "informativeness": 4
+      }
+    }
+  ],
+  "date_time": "2025-05-08 13:38:11",
+  "user_id": "677c4ac5878568e38dae405a"
+},
+{
+  "_id": {
+    "$oid": "681cb3db53dd431ad2a487a7"
+  },
+  "task_id": "insq_prescreen_0",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": "101",
+      "labels": {
+        "informativeness": 3
+      }
+    },
+    {
+      "utterance_id": "102",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "103",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "104",
+      "labels": {
+        "informativeness": 3
+      }
+    },
+    {
+      "utterance_id": "105",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "106",
+      "labels": {
+        "informativeness": 4
+      }
+    }
+  ],
+  "date_time": "2025-05-08 13:38:35",
+  "user_id": "677c4ac5878568e38dae405a"
+},
+{
+  "_id": {
+    "$oid": "681cb3e353dd431ad2a487a8"
+  },
+  "task_id": "insq_prescreen_0",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": "101",
+      "labels": {
+        "informativeness": 3
+      }
+    },
+    {
+      "utterance_id": "102",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "103",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "104",
+      "labels": {
+        "informativeness": 3
+      }
+    },
+    {
+      "utterance_id": "105",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "106",
+      "labels": {
+        "informativeness": 2
+      }
+    }
+  ],
+  "date_time": "2025-05-08 13:38:43",
+  "user_id": "677c4ac5878568e38dae405a"
+},
+{
+  "_id": {
+    "$oid": "681cb40753dd431ad2a487a9"
+  },
+  "task_id": "insq_prescreen_0",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": "101",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "102",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "103",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "104",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "105",
+      "labels": {
+        "informativeness": 3
+      }
+    },
+    {
+      "utterance_id": "106",
+      "labels": {
+        "informativeness": 2
+      }
+    }
+  ],
+  "date_time": "2025-05-08 13:39:19",
+  "user_id": "67aa21a12b1a6e9475bc61b2"
+},
+{
+  "_id": {
+    "$oid": "681cb41653dd431ad2a487aa"
+  },
+  "task_id": "insq_prescreen_0",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": "101",
+      "labels": {
+        "informativeness": 3
+      }
+    },
+    {
+      "utterance_id": "102",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "103",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "104",
+      "labels": {
+        "informativeness": 3
+      }
+    },
+    {
+      "utterance_id": "105",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "106",
+      "labels": {
+        "informativeness": 2
+      }
+    }
+  ],
+  "date_time": "2025-05-08 13:39:34",
+  "user_id": "677c4ac5878568e38dae405a"
+},
+{
+  "_id": {
+    "$oid": "681cb41853dd431ad2a487ab"
+  },
+  "task_id": "insq_prescreen_0",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": "101",
+      "labels": {
+        "informativeness": 3
+      }
+    },
+    {
+      "utterance_id": "102",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "103",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "104",
+      "labels": {
+        "informativeness": 3
+      }
+    },
+    {
+      "utterance_id": "105",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "106",
+      "labels": {
+        "informativeness": 2
+      }
+    }
+  ],
+  "date_time": "2025-05-08 13:39:36",
+  "user_id": "677c4ac5878568e38dae405a"
+},
+{
+  "_id": {
+    "$oid": "681cb41953dd431ad2a487ac"
+  },
+  "task_id": "insq_prescreen_0",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": "101",
+      "labels": {
+        "informativeness": 3
+      }
+    },
+    {
+      "utterance_id": "102",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "103",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "104",
+      "labels": {
+        "informativeness": 3
+      }
+    },
+    {
+      "utterance_id": "105",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "106",
+      "labels": {
+        "informativeness": 2
+      }
+    }
+  ],
+  "date_time": "2025-05-08 13:39:37",
+  "user_id": "677c4ac5878568e38dae405a"
+},
+{
+  "_id": {
+    "$oid": "681cb41953dd431ad2a487ad"
+  },
+  "task_id": "insq_prescreen_0",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": "101",
+      "labels": {
+        "informativeness": 3
+      }
+    },
+    {
+      "utterance_id": "102",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "103",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "104",
+      "labels": {
+        "informativeness": 3
+      }
+    },
+    {
+      "utterance_id": "105",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "106",
+      "labels": {
+        "informativeness": 2
+      }
+    }
+  ],
+  "date_time": "2025-05-08 13:39:37",
+  "user_id": "677c4ac5878568e38dae405a"
+},
+{
+  "_id": {
+    "$oid": "681cb41953dd431ad2a487ae"
+  },
+  "task_id": "insq_prescreen_0",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": "101",
+      "labels": {
+        "informativeness": 3
+      }
+    },
+    {
+      "utterance_id": "102",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "103",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "104",
+      "labels": {
+        "informativeness": 3
+      }
+    },
+    {
+      "utterance_id": "105",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "106",
+      "labels": {
+        "informativeness": 2
+      }
+    }
+  ],
+  "date_time": "2025-05-08 13:39:37",
+  "user_id": "677c4ac5878568e38dae405a"
+},
+{
+  "_id": {
+    "$oid": "681cb41a53dd431ad2a487af"
+  },
+  "task_id": "insq_prescreen_0",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": "101",
+      "labels": {
+        "informativeness": 3
+      }
+    },
+    {
+      "utterance_id": "102",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "103",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "104",
+      "labels": {
+        "informativeness": 3
+      }
+    },
+    {
+      "utterance_id": "105",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "106",
+      "labels": {
+        "informativeness": 2
+      }
+    }
+  ],
+  "date_time": "2025-05-08 13:39:38",
+  "user_id": "677c4ac5878568e38dae405a"
+},
+{
+  "_id": {
+    "$oid": "681cb41a53dd431ad2a487b0"
+  },
+  "task_id": "insq_prescreen_0",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": "101",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "102",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "103",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "104",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "105",
+      "labels": {
+        "informativeness": 3
+      }
+    },
+    {
+      "utterance_id": "106",
+      "labels": {
+        "informativeness": 2
+      }
+    }
+  ],
+  "date_time": "2025-05-08 13:39:38",
+  "user_id": "67aa21a12b1a6e9475bc61b2"
+},
+{
+  "_id": {
+    "$oid": "681cb41a53dd431ad2a487b1"
+  },
+  "task_id": "insq_prescreen_0",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": "101",
+      "labels": {
+        "informativeness": 3
+      }
+    },
+    {
+      "utterance_id": "102",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "103",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "104",
+      "labels": {
+        "informativeness": 3
+      }
+    },
+    {
+      "utterance_id": "105",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "106",
+      "labels": {
+        "informativeness": 2
+      }
+    }
+  ],
+  "date_time": "2025-05-08 13:39:38",
+  "user_id": "677c4ac5878568e38dae405a"
+},
+{
+  "_id": {
+    "$oid": "681cb41a53dd431ad2a487b2"
+  },
+  "task_id": "insq_prescreen_0",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": "101",
+      "labels": {
+        "informativeness": 3
+      }
+    },
+    {
+      "utterance_id": "102",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "103",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "104",
+      "labels": {
+        "informativeness": 3
+      }
+    },
+    {
+      "utterance_id": "105",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "106",
+      "labels": {
+        "informativeness": 2
+      }
+    }
+  ],
+  "date_time": "2025-05-08 13:39:38",
+  "user_id": "677c4ac5878568e38dae405a"
+},
+{
+  "_id": {
+    "$oid": "681cb41b53dd431ad2a487b3"
+  },
+  "task_id": "insq_prescreen_0",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": "101",
+      "labels": {
+        "informativeness": 3
+      }
+    },
+    {
+      "utterance_id": "102",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "103",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "104",
+      "labels": {
+        "informativeness": 3
+      }
+    },
+    {
+      "utterance_id": "105",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "106",
+      "labels": {
+        "informativeness": 2
+      }
+    }
+  ],
+  "date_time": "2025-05-08 13:39:39",
+  "user_id": "677c4ac5878568e38dae405a"
+},
+{
+  "_id": {
+    "$oid": "681cb41b53dd431ad2a487b4"
+  },
+  "task_id": "insq_prescreen_0",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": "101",
+      "labels": {
+        "informativeness": 3
+      }
+    },
+    {
+      "utterance_id": "102",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "103",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "104",
+      "labels": {
+        "informativeness": 3
+      }
+    },
+    {
+      "utterance_id": "105",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "106",
+      "labels": {
+        "informativeness": 2
+      }
+    }
+  ],
+  "date_time": "2025-05-08 13:39:39",
+  "user_id": "677c4ac5878568e38dae405a"
+},
+{
+  "_id": {
+    "$oid": "681cb41c53dd431ad2a487b5"
+  },
+  "task_id": "insq_prescreen_0",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": "101",
+      "labels": {
+        "informativeness": 3
+      }
+    },
+    {
+      "utterance_id": "102",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "103",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "104",
+      "labels": {
+        "informativeness": 3
+      }
+    },
+    {
+      "utterance_id": "105",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "106",
+      "labels": {
+        "informativeness": 2
+      }
+    }
+  ],
+  "date_time": "2025-05-08 13:39:40",
+  "user_id": "677c4ac5878568e38dae405a"
+},
+{
+  "_id": {
+    "$oid": "681cb41c53dd431ad2a487b6"
+  },
+  "task_id": "insq_prescreen_0",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": "101",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "102",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "103",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "104",
+      "labels": {
+        "informativeness": 3
+      }
+    },
+    {
+      "utterance_id": "105",
+      "labels": {
+        "informativeness": 3
+      }
+    },
+    {
+      "utterance_id": "106",
+      "labels": {
+        "informativeness": 3
+      }
+    }
+  ],
+  "date_time": "2025-05-08 13:39:40",
+  "user_id": "67edb75b0744561f1cf6ff9d"
+},
+{
+  "_id": {
+    "$oid": "681cb41d53dd431ad2a487b7"
+  },
+  "task_id": "insq_prescreen_0",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": "101",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "102",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "103",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "104",
+      "labels": {
+        "informativeness": 3
+      }
+    },
+    {
+      "utterance_id": "105",
+      "labels": {
+        "informativeness": 3
+      }
+    },
+    {
+      "utterance_id": "106",
+      "labels": {
+        "informativeness": 3
+      }
+    }
+  ],
+  "date_time": "2025-05-08 13:39:41",
+  "user_id": "67edb75b0744561f1cf6ff9d"
+},
+{
+  "_id": {
+    "$oid": "681cb41e53dd431ad2a487b8"
+  },
+  "task_id": "insq_prescreen_0",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": "101",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "102",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "103",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "104",
+      "labels": {
+        "informativeness": 3
+      }
+    },
+    {
+      "utterance_id": "105",
+      "labels": {
+        "informativeness": 3
+      }
+    },
+    {
+      "utterance_id": "106",
+      "labels": {
+        "informativeness": 3
+      }
+    }
+  ],
+  "date_time": "2025-05-08 13:39:42",
+  "user_id": "67edb75b0744561f1cf6ff9d"
+},
+{
+  "_id": {
+    "$oid": "681cb42c53dd431ad2a487b9"
+  },
+  "task_id": "insq_prescreen_0",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": "101",
+      "labels": {
+        "informativeness": 3
+      }
+    },
+    {
+      "utterance_id": "102",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "103",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "104",
+      "labels": {
+        "informativeness": 3
+      }
+    },
+    {
+      "utterance_id": "105",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "106",
+      "labels": {
+        "informativeness": 3
+      }
+    }
+  ],
+  "date_time": "2025-05-08 13:39:56",
+  "user_id": "677c4ac5878568e38dae405a"
+},
+{
+  "_id": {
+    "$oid": "681cb43253dd431ad2a487ba"
+  },
+  "task_id": "insq_prescreen_0",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": "101",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "102",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "103",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "104",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "105",
+      "labels": {
+        "informativeness": 3
+      }
+    },
+    {
+      "utterance_id": "106",
+      "labels": {
+        "informativeness": 2
+      }
+    }
+  ],
+  "date_time": "2025-05-08 13:40:02",
+  "user_id": "67aa21a12b1a6e9475bc61b2"
+},
+{
+  "_id": {
+    "$oid": "681cb43653dd431ad2a487bb"
+  },
+  "task_id": "insq_prescreen_0",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": "101",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "102",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "103",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "104",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "105",
+      "labels": {
+        "informativeness": 3
+      }
+    },
+    {
+      "utterance_id": "106",
+      "labels": {
+        "informativeness": 2
+      }
+    }
+  ],
+  "date_time": "2025-05-08 13:40:06",
+  "user_id": "67aa21a12b1a6e9475bc61b2"
+},
+{
+  "_id": {
+    "$oid": "681cb43753dd431ad2a487bc"
+  },
+  "task_id": "insq_prescreen_0",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": "101",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "102",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "103",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "104",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "105",
+      "labels": {
+        "informativeness": 3
+      }
+    },
+    {
+      "utterance_id": "106",
+      "labels": {
+        "informativeness": 2
+      }
+    }
+  ],
+  "date_time": "2025-05-08 13:40:07",
+  "user_id": "67aa21a12b1a6e9475bc61b2"
+},
+{
+  "_id": {
+    "$oid": "681cb43753dd431ad2a487bd"
+  },
+  "task_id": "insq_prescreen_0",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": "101",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "102",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "103",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "104",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "105",
+      "labels": {
+        "informativeness": 3
+      }
+    },
+    {
+      "utterance_id": "106",
+      "labels": {
+        "informativeness": 2
+      }
+    }
+  ],
+  "date_time": "2025-05-08 13:40:07",
+  "user_id": "67aa21a12b1a6e9475bc61b2"
+},
+{
+  "_id": {
+    "$oid": "681cb43753dd431ad2a487be"
+  },
+  "task_id": "insq_prescreen_0",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": "101",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "102",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "103",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "104",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "105",
+      "labels": {
+        "informativeness": 3
+      }
+    },
+    {
+      "utterance_id": "106",
+      "labels": {
+        "informativeness": 2
+      }
+    }
+  ],
+  "date_time": "2025-05-08 13:40:07",
+  "user_id": "67aa21a12b1a6e9475bc61b2"
+},
+{
+  "_id": {
+    "$oid": "681cb43753dd431ad2a487bf"
+  },
+  "task_id": "insq_prescreen_0",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": "101",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "102",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "103",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "104",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "105",
+      "labels": {
+        "informativeness": 3
+      }
+    },
+    {
+      "utterance_id": "106",
+      "labels": {
+        "informativeness": 2
+      }
+    }
+  ],
+  "date_time": "2025-05-08 13:40:07",
+  "user_id": "67aa21a12b1a6e9475bc61b2"
+},
+{
+  "_id": {
+    "$oid": "681cb43853dd431ad2a487c0"
+  },
+  "task_id": "insq_prescreen_0",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": "101",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "102",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "103",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "104",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "105",
+      "labels": {
+        "informativeness": 3
+      }
+    },
+    {
+      "utterance_id": "106",
+      "labels": {
+        "informativeness": 2
+      }
+    }
+  ],
+  "date_time": "2025-05-08 13:40:08",
+  "user_id": "67aa21a12b1a6e9475bc61b2"
+},
+{
+  "_id": {
+    "$oid": "681cb43853dd431ad2a487c1"
+  },
+  "task_id": "insq_prescreen_0",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": "101",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "102",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "103",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "104",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "105",
+      "labels": {
+        "informativeness": 3
+      }
+    },
+    {
+      "utterance_id": "106",
+      "labels": {
+        "informativeness": 2
+      }
+    }
+  ],
+  "date_time": "2025-05-08 13:40:08",
+  "user_id": "67aa21a12b1a6e9475bc61b2"
+},
+{
+  "_id": {
+    "$oid": "681cb43853dd431ad2a487c2"
+  },
+  "task_id": "insq_prescreen_0",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": "101",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "102",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "103",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "104",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "105",
+      "labels": {
+        "informativeness": 3
+      }
+    },
+    {
+      "utterance_id": "106",
+      "labels": {
+        "informativeness": 2
+      }
+    }
+  ],
+  "date_time": "2025-05-08 13:40:08",
+  "user_id": "67aa21a12b1a6e9475bc61b2"
+},
+{
+  "_id": {
+    "$oid": "681cb43853dd431ad2a487c3"
+  },
+  "task_id": "insq_prescreen_0",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": "101",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "102",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "103",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "104",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "105",
+      "labels": {
+        "informativeness": 3
+      }
+    },
+    {
+      "utterance_id": "106",
+      "labels": {
+        "informativeness": 2
+      }
+    }
+  ],
+  "date_time": "2025-05-08 13:40:08",
+  "user_id": "67aa21a12b1a6e9475bc61b2"
+},
+{
+  "_id": {
+    "$oid": "681cb43853dd431ad2a487c4"
+  },
+  "task_id": "insq_prescreen_0",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": "101",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "102",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "103",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "104",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "105",
+      "labels": {
+        "informativeness": 3
+      }
+    },
+    {
+      "utterance_id": "106",
+      "labels": {
+        "informativeness": 2
+      }
+    }
+  ],
+  "date_time": "2025-05-08 13:40:08",
+  "user_id": "67aa21a12b1a6e9475bc61b2"
+},
+{
+  "_id": {
+    "$oid": "681cb43953dd431ad2a487c5"
+  },
+  "task_id": "insq_prescreen_0",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": "101",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "102",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "103",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "104",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "105",
+      "labels": {
+        "informativeness": 3
+      }
+    },
+    {
+      "utterance_id": "106",
+      "labels": {
+        "informativeness": 2
+      }
+    }
+  ],
+  "date_time": "2025-05-08 13:40:09",
+  "user_id": "67aa21a12b1a6e9475bc61b2"
+},
+{
+  "_id": {
+    "$oid": "681cb44b53dd431ad2a487c6"
+  },
+  "task_id": "insq_prescreen_0",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": "101",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "102",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "103",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "104",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "105",
+      "labels": {
+        "informativeness": 3
+      }
+    },
+    {
+      "utterance_id": "106",
+      "labels": {
+        "informativeness": 2
+      }
+    }
+  ],
+  "date_time": "2025-05-08 13:40:27",
+  "user_id": "67aa21a12b1a6e9475bc61b2"
+},
+{
+  "_id": {
+    "$oid": "681cb44e53dd431ad2a487c7"
+  },
+  "task_id": "insq_prescreen_0",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": "101",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "102",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "103",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "104",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "105",
+      "labels": {
+        "informativeness": 3
+      }
+    },
+    {
+      "utterance_id": "106",
+      "labels": {
+        "informativeness": 2
+      }
+    }
+  ],
+  "date_time": "2025-05-08 13:40:30",
+  "user_id": "67aa21a12b1a6e9475bc61b2"
+},
+{
+  "_id": {
+    "$oid": "681cb44e53dd431ad2a487c8"
+  },
+  "task_id": "insq_prescreen_0",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": "101",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "102",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "103",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "104",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "105",
+      "labels": {
+        "informativeness": 3
+      }
+    },
+    {
+      "utterance_id": "106",
+      "labels": {
+        "informativeness": 2
+      }
+    }
+  ],
+  "date_time": "2025-05-08 13:40:30",
+  "user_id": "67aa21a12b1a6e9475bc61b2"
+},
+{
+  "_id": {
+    "$oid": "681cb44e53dd431ad2a487c9"
+  },
+  "task_id": "insq_prescreen_0",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": "101",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "102",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "103",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "104",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "105",
+      "labels": {
+        "informativeness": 3
+      }
+    },
+    {
+      "utterance_id": "106",
+      "labels": {
+        "informativeness": 2
+      }
+    }
+  ],
+  "date_time": "2025-05-08 13:40:30",
+  "user_id": "67aa21a12b1a6e9475bc61b2"
+},
+{
+  "_id": {
+    "$oid": "681cb44e53dd431ad2a487ca"
+  },
+  "task_id": "insq_prescreen_0",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": "101",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "102",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "103",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "104",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "105",
+      "labels": {
+        "informativeness": 3
+      }
+    },
+    {
+      "utterance_id": "106",
+      "labels": {
+        "informativeness": 2
+      }
+    }
+  ],
+  "date_time": "2025-05-08 13:40:30",
+  "user_id": "67aa21a12b1a6e9475bc61b2"
+},
+{
+  "_id": {
+    "$oid": "681cb4a353dd431ad2a487cb"
+  },
+  "task_id": "insq_prescreen_0",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": "101",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "102",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "103",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "104",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "105",
+      "labels": {
+        "informativeness": 3
+      }
+    },
+    {
+      "utterance_id": "106",
+      "labels": {
+        "informativeness": 2
+      }
+    }
+  ],
+  "date_time": "2025-05-08 13:41:55",
+  "user_id": "67aa21a12b1a6e9475bc61b2"
+},
+{
+  "_id": {
+    "$oid": "681cb4a553dd431ad2a487cc"
+  },
+  "task_id": "insq_prescreen_0",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": "101",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "102",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "103",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "104",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "105",
+      "labels": {
+        "informativeness": 3
+      }
+    },
+    {
+      "utterance_id": "106",
+      "labels": {
+        "informativeness": 2
+      }
+    }
+  ],
+  "date_time": "2025-05-08 13:41:57",
+  "user_id": "67aa21a12b1a6e9475bc61b2"
+},
+{
+  "_id": {
+    "$oid": "681cb4a553dd431ad2a487cd"
+  },
+  "task_id": "insq_prescreen_0",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": "101",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "102",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "103",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "104",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "105",
+      "labels": {
+        "informativeness": 3
+      }
+    },
+    {
+      "utterance_id": "106",
+      "labels": {
+        "informativeness": 2
+      }
+    }
+  ],
+  "date_time": "2025-05-08 13:41:57",
+  "user_id": "67aa21a12b1a6e9475bc61b2"
+},
+{
+  "_id": {
+    "$oid": "681cb4a653dd431ad2a487ce"
+  },
+  "task_id": "insq_prescreen_0",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": "101",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "102",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "103",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "104",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "105",
+      "labels": {
+        "informativeness": 3
+      }
+    },
+    {
+      "utterance_id": "106",
+      "labels": {
+        "informativeness": 2
+      }
+    }
+  ],
+  "date_time": "2025-05-08 13:41:58",
+  "user_id": "67aa21a12b1a6e9475bc61b2"
+},
+{
+  "_id": {
+    "$oid": "681cb4b353dd431ad2a487cf"
+  },
+  "task_id": "insq_prescreen_0",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": "101",
+      "labels": {
+        "informativeness": 3
+      }
+    },
+    {
+      "utterance_id": "102",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "103",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "104",
+      "labels": {
+        "informativeness": 3
+      }
+    },
+    {
+      "utterance_id": "105",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "106",
+      "labels": {
+        "informativeness": 3
+      }
+    }
+  ],
+  "date_time": "2025-05-08 13:42:11",
+  "user_id": "677c4ac5878568e38dae405a"
+},
+{
+  "_id": {
+    "$oid": "681cb4b353dd431ad2a487d0"
+  },
+  "task_id": "insq_prescreen_0",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": "101",
+      "labels": {
+        "informativeness": 3
+      }
+    },
+    {
+      "utterance_id": "102",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "103",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "104",
+      "labels": {
+        "informativeness": 3
+      }
+    },
+    {
+      "utterance_id": "105",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "106",
+      "labels": {
+        "informativeness": 3
+      }
+    }
+  ],
+  "date_time": "2025-05-08 13:42:11",
+  "user_id": "677c4ac5878568e38dae405a"
+},
+{
+  "_id": {
+    "$oid": "681cb4d053dd431ad2a487d1"
+  },
+  "task_id": "insq_prescreen_0",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": "101",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "102",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "103",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "104",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "105",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "106",
+      "labels": {
+        "informativeness": 2
+      }
+    }
+  ],
+  "date_time": "2025-05-08 13:42:40",
+  "user_id": "Nakita"
+},
+{
+  "_id": {
+    "$oid": "681cb4d453dd431ad2a487d2"
+  },
+  "task_id": "insq_prescreen_0",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": "101",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "102",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "103",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "104",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "105",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "106",
+      "labels": {
+        "informativeness": 2
+      }
+    }
+  ],
+  "date_time": "2025-05-08 13:42:44",
+  "user_id": "Nakita"
+},
+{
+  "_id": {
+    "$oid": "681cb4d753dd431ad2a487d3"
+  },
+  "task_id": "insq_prescreen_0",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": "101",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "102",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "103",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "104",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "105",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "106",
+      "labels": {
+        "informativeness": 2
+      }
+    }
+  ],
+  "date_time": "2025-05-08 13:42:47",
+  "user_id": "Nakita"
+},
+{
+  "_id": {
+    "$oid": "681cb4d753dd431ad2a487d4"
+  },
+  "task_id": "insq_prescreen_0",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": "101",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "102",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "103",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "104",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "105",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "106",
+      "labels": {
+        "informativeness": 2
+      }
+    }
+  ],
+  "date_time": "2025-05-08 13:42:47",
+  "user_id": "Nakita"
+},
+{
+  "_id": {
+    "$oid": "681cb4d753dd431ad2a487d5"
+  },
+  "task_id": "insq_prescreen_0",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": "101",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "102",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "103",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "104",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "105",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "106",
+      "labels": {
+        "informativeness": 2
+      }
+    }
+  ],
+  "date_time": "2025-05-08 13:42:47",
+  "user_id": "Nakita"
+},
+{
+  "_id": {
+    "$oid": "681cb4d753dd431ad2a487d6"
+  },
+  "task_id": "insq_prescreen_0",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": "101",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "102",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "103",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "104",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "105",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "106",
+      "labels": {
+        "informativeness": 2
+      }
+    }
+  ],
+  "date_time": "2025-05-08 13:42:47",
+  "user_id": "Nakita"
+},
+{
+  "_id": {
+    "$oid": "681cb4d753dd431ad2a487d7"
+  },
+  "task_id": "insq_prescreen_0",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": "101",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "102",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "103",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "104",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "105",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "106",
+      "labels": {
+        "informativeness": 2
+      }
+    }
+  ],
+  "date_time": "2025-05-08 13:42:47",
+  "user_id": "Nakita"
+},
+{
+  "_id": {
+    "$oid": "681cb4d853dd431ad2a487d8"
+  },
+  "task_id": "insq_prescreen_0",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": "101",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "102",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "103",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "104",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "105",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "106",
+      "labels": {
+        "informativeness": 2
+      }
+    }
+  ],
+  "date_time": "2025-05-08 13:42:48",
+  "user_id": "Nakita"
+},
+{
+  "_id": {
+    "$oid": "681cb4d853dd431ad2a487d9"
+  },
+  "task_id": "insq_prescreen_0",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": "101",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "102",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "103",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "104",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "105",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "106",
+      "labels": {
+        "informativeness": 2
+      }
+    }
+  ],
+  "date_time": "2025-05-08 13:42:48",
+  "user_id": "Nakita"
+},
+{
+  "_id": {
+    "$oid": "681cb4d853dd431ad2a487da"
+  },
+  "task_id": "insq_prescreen_0",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": "101",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "102",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "103",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "104",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "105",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "106",
+      "labels": {
+        "informativeness": 2
+      }
+    }
+  ],
+  "date_time": "2025-05-08 13:42:48",
+  "user_id": "Nakita"
+},
+{
+  "_id": {
+    "$oid": "681cb4e753dd431ad2a487dc"
+  },
+  "task_id": "insq_prescreen_0",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": "101",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "102",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "103",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "104",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "105",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "106",
+      "labels": {
+        "informativeness": 3
+      }
+    }
+  ],
+  "date_time": "2025-05-08 13:43:03",
+  "user_id": "Nakita"
+},
+{
+  "_id": {
+    "$oid": "681cb4e953dd431ad2a487dd"
+  },
+  "task_id": "insq_prescreen_0",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": "101",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "102",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "103",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "104",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "105",
+      "labels": {
+        "informativeness": 3
+      }
+    },
+    {
+      "utterance_id": "106",
+      "labels": {
+        "informativeness": 3
+      }
+    }
+  ],
+  "date_time": "2025-05-08 13:43:05",
+  "user_id": "Nakita"
+},
+{
+  "_id": {
+    "$oid": "681cb4ec53dd431ad2a487de"
+  },
+  "task_id": "insq_prescreen_0",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": "101",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "102",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "103",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "104",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "105",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "106",
+      "labels": {
+        "informativeness": 2
+      }
+    }
+  ],
+  "date_time": "2025-05-08 13:43:08",
+  "user_id": "Nakita"
+},
+{
+  "_id": {
+    "$oid": "681cb4ec53dd431ad2a487df"
+  },
+  "task_id": "insq_prescreen_0",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": "101",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "102",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "103",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "104",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "105",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "106",
+      "labels": {
+        "informativeness": 2
+      }
+    }
+  ],
+  "date_time": "2025-05-08 13:43:08",
+  "user_id": "Nakita"
+},
+{
+  "_id": {
+    "$oid": "681cb4ec53dd431ad2a487e0"
+  },
+  "task_id": "insq_prescreen_0",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": "101",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "102",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "103",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "104",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "105",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "106",
+      "labels": {
+        "informativeness": 2
+      }
+    }
+  ],
+  "date_time": "2025-05-08 13:43:08",
+  "user_id": "Nakita"
+},
+{
+  "_id": {
+    "$oid": "681cb4ed53dd431ad2a487e1"
+  },
+  "task_id": "insq_prescreen_0",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": "101",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "102",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "103",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "104",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "105",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "106",
+      "labels": {
+        "informativeness": 2
+      }
+    }
+  ],
+  "date_time": "2025-05-08 13:43:09",
+  "user_id": "Nakita"
+},
+{
+  "_id": {
+    "$oid": "681cb4ed53dd431ad2a487e2"
+  },
+  "task_id": "insq_prescreen_0",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": "101",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "102",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "103",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "104",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "105",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "106",
+      "labels": {
+        "informativeness": 2
+      }
+    }
+  ],
+  "date_time": "2025-05-08 13:43:09",
+  "user_id": "Nakita"
+},
+{
+  "_id": {
+    "$oid": "681cb4ed53dd431ad2a487e3"
+  },
+  "task_id": "insq_prescreen_0",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": "101",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "102",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "103",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "104",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "105",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "106",
+      "labels": {
+        "informativeness": 2
+      }
+    }
+  ],
+  "date_time": "2025-05-08 13:43:09",
+  "user_id": "Nakita"
+},
+{
+  "_id": {
+    "$oid": "681cb4ed53dd431ad2a487e4"
+  },
+  "task_id": "insq_prescreen_0",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": "101",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "102",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "103",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "104",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "105",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "106",
+      "labels": {
+        "informativeness": 2
+      }
+    }
+  ],
+  "date_time": "2025-05-08 13:43:09",
+  "user_id": "Nakita"
+},
+{
+  "_id": {
+    "$oid": "681cb4ee53dd431ad2a487e5"
+  },
+  "task_id": "insq_prescreen_0",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": "101",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "102",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "103",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "104",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "105",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "106",
+      "labels": {
+        "informativeness": 2
+      }
+    }
+  ],
+  "date_time": "2025-05-08 13:43:10",
+  "user_id": "Nakita"
+},
+{
+  "_id": {
+    "$oid": "681cb4ee53dd431ad2a487e6"
+  },
+  "task_id": "insq_prescreen_0",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": "101",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "102",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "103",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "104",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "105",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "106",
+      "labels": {
+        "informativeness": 2
+      }
+    }
+  ],
+  "date_time": "2025-05-08 13:43:10",
+  "user_id": "Nakita"
+},
+{
+  "_id": {
+    "$oid": "681cb4ee53dd431ad2a487e7"
+  },
+  "task_id": "insq_prescreen_0",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": "101",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "102",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "103",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "104",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "105",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "106",
+      "labels": {
+        "informativeness": 2
+      }
+    }
+  ],
+  "date_time": "2025-05-08 13:43:10",
+  "user_id": "Nakita"
+},
+{
+  "_id": {
+    "$oid": "681cb4ef53dd431ad2a487e8"
+  },
+  "task_id": "insq_prescreen_0",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": "101",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "102",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "103",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "104",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "105",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "106",
+      "labels": {
+        "informativeness": 2
+      }
+    }
+  ],
+  "date_time": "2025-05-08 13:43:11",
+  "user_id": "Nakita"
+},
+{
+  "_id": {
+    "$oid": "681cb4ef53dd431ad2a487e9"
+  },
+  "task_id": "insq_prescreen_0",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": "101",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "102",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "103",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "104",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "105",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "106",
+      "labels": {
+        "informativeness": 2
+      }
+    }
+  ],
+  "date_time": "2025-05-08 13:43:11",
+  "user_id": "Nakita"
+},
+{
+  "_id": {
+    "$oid": "681cb4ef53dd431ad2a487ea"
+  },
+  "task_id": "insq_prescreen_0",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": "101",
+      "labels": {
+        "informativeness": 3
+      }
+    },
+    {
+      "utterance_id": "102",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "103",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "104",
+      "labels": {
+        "informativeness": 3
+      }
+    },
+    {
+      "utterance_id": "105",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "106",
+      "labels": {
+        "informativeness": 3
+      }
+    }
+  ],
+  "date_time": "2025-05-08 13:43:11",
+  "user_id": "677c4ac5878568e38dae405a"
+},
+{
+  "_id": {
+    "$oid": "681cb4f153dd431ad2a487eb"
+  },
+  "task_id": "insq_prescreen_0",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": "101",
+      "labels": {
+        "informativeness": 3
+      }
+    },
+    {
+      "utterance_id": "102",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "103",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "104",
+      "labels": {
+        "informativeness": 3
+      }
+    },
+    {
+      "utterance_id": "105",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "106",
+      "labels": {
+        "informativeness": 3
+      }
+    }
+  ],
+  "date_time": "2025-05-08 13:43:13",
+  "user_id": "677c4ac5878568e38dae405a"
+},
+{
+  "_id": {
+    "$oid": "681cb51353dd431ad2a487ed"
+  },
+  "task_id": "insq_prescreen_0",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": "101",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "102",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "103",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "104",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "105",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "106",
+      "labels": {
+        "informativeness": 2
+      }
+    }
+  ],
+  "date_time": "2025-05-08 13:43:47",
+  "user_id": "Nakita"
+},
+{
+  "_id": {
+    "$oid": "681cb51453dd431ad2a487ee"
+  },
+  "task_id": "insq_prescreen_0",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": "101",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "102",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "103",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "104",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "105",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "106",
+      "labels": {
+        "informativeness": 2
+      }
+    }
+  ],
+  "date_time": "2025-05-08 13:43:48",
+  "user_id": "Nakita"
+},
+{
+  "_id": {
+    "$oid": "681cb51553dd431ad2a487ef"
+  },
+  "task_id": "insq_prescreen_0",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": "101",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "102",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "103",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "104",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "105",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "106",
+      "labels": {
+        "informativeness": 2
+      }
+    }
+  ],
+  "date_time": "2025-05-08 13:43:49",
+  "user_id": "Nakita"
+},
+{
+  "_id": {
+    "$oid": "681cb51653dd431ad2a487f0"
+  },
+  "task_id": "insq_prescreen_0",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": "101",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "102",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "103",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "104",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "105",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "106",
+      "labels": {
+        "informativeness": 2
+      }
+    }
+  ],
+  "date_time": "2025-05-08 13:43:50",
+  "user_id": "345"
+},
+{
+  "_id": {
+    "$oid": "681cb51753dd431ad2a487f1"
+  },
+  "task_id": "insq_prescreen_0",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": "101",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "102",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "103",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "104",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "105",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "106",
+      "labels": {
+        "informativeness": 2
+      }
+    }
+  ],
+  "date_time": "2025-05-08 13:43:51",
+  "user_id": "Nakita"
+},
+{
+  "_id": {
+    "$oid": "681cb51753dd431ad2a487f2"
+  },
+  "task_id": "insq_prescreen_0",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": "101",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "102",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "103",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "104",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "105",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "106",
+      "labels": {
+        "informativeness": 2
+      }
+    }
+  ],
+  "date_time": "2025-05-08 13:43:51",
+  "user_id": "Nakita"
+},
+{
+  "_id": {
+    "$oid": "681cb51753dd431ad2a487f3"
+  },
+  "task_id": "insq_prescreen_0",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": "101",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "102",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "103",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "104",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "105",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "106",
+      "labels": {
+        "informativeness": 2
+      }
+    }
+  ],
+  "date_time": "2025-05-08 13:43:51",
+  "user_id": "Nakita"
+},
+{
+  "_id": {
+    "$oid": "681cb51853dd431ad2a487f4"
+  },
+  "task_id": "insq_prescreen_0",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": "101",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "102",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "103",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "104",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "105",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "106",
+      "labels": {
+        "informativeness": 2
+      }
+    }
+  ],
+  "date_time": "2025-05-08 13:43:52",
+  "user_id": "Nakita"
+},
+{
+  "_id": {
+    "$oid": "681cb51853dd431ad2a487f5"
+  },
+  "task_id": "insq_prescreen_0",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": "101",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "102",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "103",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "104",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "105",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "106",
+      "labels": {
+        "informativeness": 2
+      }
+    }
+  ],
+  "date_time": "2025-05-08 13:43:52",
+  "user_id": "Nakita"
+},
+{
+  "_id": {
+    "$oid": "681cb51853dd431ad2a487f6"
+  },
+  "task_id": "insq_prescreen_0",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": "101",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "102",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "103",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "104",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "105",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "106",
+      "labels": {
+        "informativeness": 2
+      }
+    }
+  ],
+  "date_time": "2025-05-08 13:43:52",
+  "user_id": "Nakita"
+},
+{
+  "_id": {
+    "$oid": "681cb51853dd431ad2a487f7"
+  },
+  "task_id": "insq_prescreen_0",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": "101",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "102",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "103",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "104",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "105",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "106",
+      "labels": {
+        "informativeness": 2
+      }
+    }
+  ],
+  "date_time": "2025-05-08 13:43:52",
+  "user_id": "Nakita"
+},
+{
+  "_id": {
+    "$oid": "681cb51953dd431ad2a487f8"
+  },
+  "task_id": "insq_prescreen_0",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": "101",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "102",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "103",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "104",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "105",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "106",
+      "labels": {
+        "informativeness": 2
+      }
+    }
+  ],
+  "date_time": "2025-05-08 13:43:53",
+  "user_id": "Nakita"
+},
+{
+  "_id": {
+    "$oid": "681cb51953dd431ad2a487f9"
+  },
+  "task_id": "insq_prescreen_0",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": "101",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "102",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "103",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "104",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "105",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "106",
+      "labels": {
+        "informativeness": 2
+      }
+    }
+  ],
+  "date_time": "2025-05-08 13:43:53",
+  "user_id": "Nakita"
+},
+{
+  "_id": {
+    "$oid": "681cb51a53dd431ad2a487fa"
+  },
+  "task_id": "insq_prescreen_0",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": "101",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "102",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "103",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "104",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "105",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "106",
+      "labels": {
+        "informativeness": 2
+      }
+    }
+  ],
+  "date_time": "2025-05-08 13:43:54",
+  "user_id": "Nakita"
+},
+{
+  "_id": {
+    "$oid": "681cb51a53dd431ad2a487fb"
+  },
+  "task_id": "insq_prescreen_0",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": "101",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "102",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "103",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "104",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "105",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "106",
+      "labels": {
+        "informativeness": 2
+      }
+    }
+  ],
+  "date_time": "2025-05-08 13:43:54",
+  "user_id": "345"
+},
+{
+  "_id": {
+    "$oid": "681cb51a53dd431ad2a487fc"
+  },
+  "task_id": "insq_prescreen_0",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": "101",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "102",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "103",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "104",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "105",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "106",
+      "labels": {
+        "informativeness": 2
+      }
+    }
+  ],
+  "date_time": "2025-05-08 13:43:54",
+  "user_id": "345"
+},
+{
+  "_id": {
+    "$oid": "681cb51a53dd431ad2a487fd"
+  },
+  "task_id": "insq_prescreen_0",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": "101",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "102",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "103",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "104",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "105",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "106",
+      "labels": {
+        "informativeness": 2
+      }
+    }
+  ],
+  "date_time": "2025-05-08 13:43:54",
+  "user_id": "Nakita"
+},
+{
+  "_id": {
+    "$oid": "681cb51a53dd431ad2a487fe"
+  },
+  "task_id": "insq_prescreen_0",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": "101",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "102",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "103",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "104",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "105",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "106",
+      "labels": {
+        "informativeness": 2
+      }
+    }
+  ],
+  "date_time": "2025-05-08 13:43:54",
+  "user_id": "Nakita"
+},
+{
+  "_id": {
+    "$oid": "681cb51a53dd431ad2a487ff"
+  },
+  "task_id": "insq_prescreen_0",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": "101",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "102",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "103",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "104",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "105",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "106",
+      "labels": {
+        "informativeness": 2
+      }
+    }
+  ],
+  "date_time": "2025-05-08 13:43:54",
+  "user_id": "345"
+},
+{
+  "_id": {
+    "$oid": "681cb51a53dd431ad2a48800"
+  },
+  "task_id": "insq_prescreen_0",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": "101",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "102",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "103",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "104",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "105",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "106",
+      "labels": {
+        "informativeness": 2
+      }
+    }
+  ],
+  "date_time": "2025-05-08 13:43:54",
+  "user_id": "345"
+},
+{
+  "_id": {
+    "$oid": "681cb51a53dd431ad2a48801"
+  },
+  "task_id": "insq_prescreen_0",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": "101",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "102",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "103",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "104",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "105",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "106",
+      "labels": {
+        "informativeness": 2
+      }
+    }
+  ],
+  "date_time": "2025-05-08 13:43:54",
+  "user_id": "345"
+},
+{
+  "_id": {
+    "$oid": "681cb51a53dd431ad2a48802"
+  },
+  "task_id": "insq_prescreen_0",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": "101",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "102",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "103",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "104",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "105",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "106",
+      "labels": {
+        "informativeness": 2
+      }
+    }
+  ],
+  "date_time": "2025-05-08 13:43:54",
+  "user_id": "Nakita"
+},
+{
+  "_id": {
+    "$oid": "681cb51a53dd431ad2a48803"
+  },
+  "task_id": "insq_prescreen_0",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": "101",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "102",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "103",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "104",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "105",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "106",
+      "labels": {
+        "informativeness": 2
+      }
+    }
+  ],
+  "date_time": "2025-05-08 13:43:54",
+  "user_id": "345"
+},
+{
+  "_id": {
+    "$oid": "681cb51a53dd431ad2a48804"
+  },
+  "task_id": "insq_prescreen_0",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": "101",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "102",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "103",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "104",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "105",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "106",
+      "labels": {
+        "informativeness": 2
+      }
+    }
+  ],
+  "date_time": "2025-05-08 13:43:54",
+  "user_id": "Nakita"
+},
+{
+  "_id": {
+    "$oid": "681cb51b53dd431ad2a48805"
+  },
+  "task_id": "insq_prescreen_0",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": "101",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "102",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "103",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "104",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "105",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "106",
+      "labels": {
+        "informativeness": 2
+      }
+    }
+  ],
+  "date_time": "2025-05-08 13:43:55",
+  "user_id": "345"
+},
+{
+  "_id": {
+    "$oid": "681cb51b53dd431ad2a48806"
+  },
+  "task_id": "insq_prescreen_0",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": "101",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "102",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "103",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "104",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "105",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "106",
+      "labels": {
+        "informativeness": 2
+      }
+    }
+  ],
+  "date_time": "2025-05-08 13:43:55",
+  "user_id": "Nakita"
+},
+{
+  "_id": {
+    "$oid": "681cb51b53dd431ad2a48807"
+  },
+  "task_id": "insq_prescreen_0",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": "101",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "102",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "103",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "104",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "105",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "106",
+      "labels": {
+        "informativeness": 2
+      }
+    }
+  ],
+  "date_time": "2025-05-08 13:43:55",
+  "user_id": "Nakita"
+},
+{
+  "_id": {
+    "$oid": "681cb51b53dd431ad2a48808"
+  },
+  "task_id": "insq_prescreen_0",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": "101",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "102",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "103",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "104",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "105",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "106",
+      "labels": {
+        "informativeness": 2
+      }
+    }
+  ],
+  "date_time": "2025-05-08 13:43:55",
+  "user_id": "Nakita"
+},
+{
+  "_id": {
+    "$oid": "681cb51b53dd431ad2a48809"
+  },
+  "task_id": "insq_prescreen_0",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": "101",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "102",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "103",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "104",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "105",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "106",
+      "labels": {
+        "informativeness": 2
+      }
+    }
+  ],
+  "date_time": "2025-05-08 13:43:55",
+  "user_id": "345"
+},
+{
+  "_id": {
+    "$oid": "681cb51b53dd431ad2a4880a"
+  },
+  "task_id": "insq_prescreen_0",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": "101",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "102",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "103",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "104",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "105",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "106",
+      "labels": {
+        "informativeness": 2
+      }
+    }
+  ],
+  "date_time": "2025-05-08 13:43:55",
+  "user_id": "Nakita"
+},
+{
+  "_id": {
+    "$oid": "681cb51b53dd431ad2a4880b"
+  },
+  "task_id": "insq_prescreen_0",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": "101",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "102",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "103",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "104",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "105",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "106",
+      "labels": {
+        "informativeness": 2
+      }
+    }
+  ],
+  "date_time": "2025-05-08 13:43:55",
+  "user_id": "345"
+},
+{
+  "_id": {
+    "$oid": "681cb51b53dd431ad2a4880c"
+  },
+  "task_id": "insq_prescreen_0",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": "101",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "102",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "103",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "104",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "105",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "106",
+      "labels": {
+        "informativeness": 2
+      }
+    }
+  ],
+  "date_time": "2025-05-08 13:43:55",
+  "user_id": "Nakita"
+},
+{
+  "_id": {
+    "$oid": "681cb51b53dd431ad2a4880d"
+  },
+  "task_id": "insq_prescreen_0",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": "101",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "102",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "103",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "104",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "105",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "106",
+      "labels": {
+        "informativeness": 2
+      }
+    }
+  ],
+  "date_time": "2025-05-08 13:43:55",
+  "user_id": "345"
+},
+{
+  "_id": {
+    "$oid": "681cb51b53dd431ad2a4880e"
+  },
+  "task_id": "insq_prescreen_0",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": "101",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "102",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "103",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "104",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "105",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "106",
+      "labels": {
+        "informativeness": 2
+      }
+    }
+  ],
+  "date_time": "2025-05-08 13:43:55",
+  "user_id": "345"
+},
+{
+  "_id": {
+    "$oid": "681cb51b53dd431ad2a4880f"
+  },
+  "task_id": "insq_prescreen_0",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": "101",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "102",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "103",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "104",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "105",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "106",
+      "labels": {
+        "informativeness": 2
+      }
+    }
+  ],
+  "date_time": "2025-05-08 13:43:55",
+  "user_id": "Nakita"
+},
+{
+  "_id": {
+    "$oid": "681cb51b53dd431ad2a48810"
+  },
+  "task_id": "insq_prescreen_0",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": "101",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "102",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "103",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "104",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "105",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "106",
+      "labels": {
+        "informativeness": 2
+      }
+    }
+  ],
+  "date_time": "2025-05-08 13:43:55",
+  "user_id": "Nakita"
+},
+{
+  "_id": {
+    "$oid": "681cb51c53dd431ad2a48811"
+  },
+  "task_id": "insq_prescreen_0",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": "101",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "102",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "103",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "104",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "105",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "106",
+      "labels": {
+        "informativeness": 2
+      }
+    }
+  ],
+  "date_time": "2025-05-08 13:43:56",
+  "user_id": "345"
+},
+{
+  "_id": {
+    "$oid": "681cb52953dd431ad2a48812"
+  },
+  "task_id": "insq_prescreen_0",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": "101",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "102",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "103",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "104",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "105",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "106",
+      "labels": {
+        "informativeness": 2
+      }
+    }
+  ],
+  "date_time": "2025-05-08 13:44:09",
+  "user_id": "345"
+},
+{
+  "_id": {
+    "$oid": "681cb52953dd431ad2a48813"
+  },
+  "task_id": "insq_prescreen_0",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": "101",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "102",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "103",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "104",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "105",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "106",
+      "labels": {
+        "informativeness": 2
+      }
+    }
+  ],
+  "date_time": "2025-05-08 13:44:09",
+  "user_id": "345"
+},
+{
+  "_id": {
+    "$oid": "681cb52953dd431ad2a48814"
+  },
+  "task_id": "insq_prescreen_0",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": "101",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "102",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "103",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "104",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "105",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "106",
+      "labels": {
+        "informativeness": 2
+      }
+    }
+  ],
+  "date_time": "2025-05-08 13:44:09",
+  "user_id": "345"
+},
+{
+  "_id": {
+    "$oid": "681cb52953dd431ad2a48815"
+  },
+  "task_id": "insq_prescreen_0",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": "101",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "102",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "103",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "104",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "105",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "106",
+      "labels": {
+        "informativeness": 2
+      }
+    }
+  ],
+  "date_time": "2025-05-08 13:44:09",
+  "user_id": "345"
+},
+{
+  "_id": {
+    "$oid": "681cb52953dd431ad2a48816"
+  },
+  "task_id": "insq_prescreen_0",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": "101",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "102",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "103",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "104",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "105",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "106",
+      "labels": {
+        "informativeness": 2
+      }
+    }
+  ],
+  "date_time": "2025-05-08 13:44:09",
+  "user_id": "345"
+},
+{
+  "_id": {
+    "$oid": "681cb52a53dd431ad2a48817"
+  },
+  "task_id": "insq_prescreen_0",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": "101",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "102",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "103",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "104",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "105",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "106",
+      "labels": {
+        "informativeness": 2
+      }
+    }
+  ],
+  "date_time": "2025-05-08 13:44:10",
+  "user_id": "345"
+},
+{
+  "_id": {
+    "$oid": "681cb52a53dd431ad2a48818"
+  },
+  "task_id": "insq_prescreen_0",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": "101",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "102",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "103",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "104",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "105",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "106",
+      "labels": {
+        "informativeness": 2
+      }
+    }
+  ],
+  "date_time": "2025-05-08 13:44:10",
+  "user_id": "345"
+},
+{
+  "_id": {
+    "$oid": "681cb52a53dd431ad2a48819"
+  },
+  "task_id": "insq_prescreen_0",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": "101",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "102",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "103",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "104",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "105",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "106",
+      "labels": {
+        "informativeness": 2
+      }
+    }
+  ],
+  "date_time": "2025-05-08 13:44:10",
+  "user_id": "345"
+},
+{
+  "_id": {
+    "$oid": "681cb52a53dd431ad2a4881a"
+  },
+  "task_id": "insq_prescreen_0",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": "101",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "102",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "103",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "104",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "105",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "106",
+      "labels": {
+        "informativeness": 2
+      }
+    }
+  ],
+  "date_time": "2025-05-08 13:44:10",
+  "user_id": "345"
+},
+{
+  "_id": {
+    "$oid": "681cb52a53dd431ad2a4881b"
+  },
+  "task_id": "insq_prescreen_0",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": "101",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "102",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "103",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "104",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "105",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "106",
+      "labels": {
+        "informativeness": 2
+      }
+    }
+  ],
+  "date_time": "2025-05-08 13:44:10",
+  "user_id": "345"
+},
+{
+  "_id": {
+    "$oid": "681cb52a53dd431ad2a4881c"
+  },
+  "task_id": "insq_prescreen_0",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": "101",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "102",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "103",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "104",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "105",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "106",
+      "labels": {
+        "informativeness": 2
+      }
+    }
+  ],
+  "date_time": "2025-05-08 13:44:10",
+  "user_id": "345"
+},
+{
+  "_id": {
+    "$oid": "681cb52b53dd431ad2a4881d"
+  },
+  "task_id": "insq_prescreen_0",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": "101",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "102",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "103",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "104",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "105",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "106",
+      "labels": {
+        "informativeness": 2
+      }
+    }
+  ],
+  "date_time": "2025-05-08 13:44:11",
+  "user_id": "345"
+},
+{
+  "_id": {
+    "$oid": "681cb52b53dd431ad2a4881e"
+  },
+  "task_id": "insq_prescreen_0",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": "101",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "102",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "103",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "104",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "105",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "106",
+      "labels": {
+        "informativeness": 2
+      }
+    }
+  ],
+  "date_time": "2025-05-08 13:44:11",
+  "user_id": "345"
+},
+{
+  "_id": {
+    "$oid": "681cb52b53dd431ad2a4881f"
+  },
+  "task_id": "insq_prescreen_0",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": "101",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "102",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "103",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "104",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "105",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "106",
+      "labels": {
+        "informativeness": 2
+      }
+    }
+  ],
+  "date_time": "2025-05-08 13:44:11",
+  "user_id": "345"
+},
+{
+  "_id": {
+    "$oid": "681cb52b53dd431ad2a48820"
+  },
+  "task_id": "insq_prescreen_0",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": "101",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "102",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "103",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "104",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "105",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "106",
+      "labels": {
+        "informativeness": 2
+      }
+    }
+  ],
+  "date_time": "2025-05-08 13:44:11",
+  "user_id": "345"
+},
+{
+  "_id": {
+    "$oid": "681cb52b53dd431ad2a48821"
+  },
+  "task_id": "insq_prescreen_0",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": "101",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "102",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "103",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "104",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "105",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "106",
+      "labels": {
+        "informativeness": 2
+      }
+    }
+  ],
+  "date_time": "2025-05-08 13:44:11",
+  "user_id": "345"
+},
+{
+  "_id": {
+    "$oid": "681cb52b53dd431ad2a48822"
+  },
+  "task_id": "insq_prescreen_0",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": "101",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "102",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "103",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "104",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "105",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "106",
+      "labels": {
+        "informativeness": 2
+      }
+    }
+  ],
+  "date_time": "2025-05-08 13:44:11",
+  "user_id": "345"
+},
+{
+  "_id": {
+    "$oid": "681cb52c53dd431ad2a48823"
+  },
+  "task_id": "insq_prescreen_0",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": "101",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "102",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "103",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "104",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "105",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "106",
+      "labels": {
+        "informativeness": 2
+      }
+    }
+  ],
+  "date_time": "2025-05-08 13:44:12",
+  "user_id": "345"
+},
+{
+  "_id": {
+    "$oid": "681cb52c53dd431ad2a48824"
+  },
+  "task_id": "insq_prescreen_0",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": "101",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "102",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "103",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "104",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "105",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "106",
+      "labels": {
+        "informativeness": 2
+      }
+    }
+  ],
+  "date_time": "2025-05-08 13:44:12",
+  "user_id": "345"
+},
+{
+  "_id": {
+    "$oid": "681cb52c53dd431ad2a48825"
+  },
+  "task_id": "insq_prescreen_0",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": "101",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "102",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "103",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "104",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "105",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "106",
+      "labels": {
+        "informativeness": 2
+      }
+    }
+  ],
+  "date_time": "2025-05-08 13:44:12",
+  "user_id": "345"
+},
+{
+  "_id": {
+    "$oid": "681cb52c53dd431ad2a48826"
+  },
+  "task_id": "insq_prescreen_0",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": "101",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "102",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "103",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "104",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "105",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "106",
+      "labels": {
+        "informativeness": 2
+      }
+    }
+  ],
+  "date_time": "2025-05-08 13:44:12",
+  "user_id": "345"
+},
+{
+  "_id": {
+    "$oid": "681cb52c53dd431ad2a48827"
+  },
+  "task_id": "insq_prescreen_0",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": "101",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "102",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "103",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "104",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "105",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "106",
+      "labels": {
+        "informativeness": 2
+      }
+    }
+  ],
+  "date_time": "2025-05-08 13:44:12",
+  "user_id": "345"
+},
+{
+  "_id": {
+    "$oid": "681cb5d053dd431ad2a48828"
+  },
+  "task_id": "insq_prescreen_0",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": "101",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "102",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "103",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "104",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "105",
+      "labels": {
+        "informativeness": 3
+      }
+    },
+    {
+      "utterance_id": "106",
+      "labels": {
+        "informativeness": 2
+      }
+    }
+  ],
+  "date_time": "2025-05-08 13:46:56",
+  "user_id": "63af557b3d4f219c3226b7d6"
+},
+{
+  "_id": {
+    "$oid": "681cb5d253dd431ad2a48829"
+  },
+  "task_id": "insq_prescreen_0",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": "101",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "102",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "103",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "104",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "105",
+      "labels": {
+        "informativeness": 3
+      }
+    },
+    {
+      "utterance_id": "106",
+      "labels": {
+        "informativeness": 2
+      }
+    }
+  ],
+  "date_time": "2025-05-08 13:46:58",
+  "user_id": "63af557b3d4f219c3226b7d6"
+},
+{
+  "_id": {
+    "$oid": "681cb5d853dd431ad2a4882a"
+  },
+  "task_id": "insq_prescreen_0",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": "101",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "102",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "103",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "104",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "105",
+      "labels": {
+        "informativeness": 3
+      }
+    },
+    {
+      "utterance_id": "106",
+      "labels": {
+        "informativeness": 2
+      }
+    }
+  ],
+  "date_time": "2025-05-08 13:47:04",
+  "user_id": "63af557b3d4f219c3226b7d6"
+},
+{
+  "_id": {
+    "$oid": "681cb5d853dd431ad2a4882b"
+  },
+  "task_id": "insq_prescreen_0",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": "101",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "102",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "103",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "104",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "105",
+      "labels": {
+        "informativeness": 3
+      }
+    },
+    {
+      "utterance_id": "106",
+      "labels": {
+        "informativeness": 2
+      }
+    }
+  ],
+  "date_time": "2025-05-08 13:47:04",
+  "user_id": "63af557b3d4f219c3226b7d6"
+},
+{
+  "_id": {
+    "$oid": "681cb5dc53dd431ad2a4882c"
+  },
+  "task_id": "insq_prescreen_0",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": "101",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "102",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "103",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "104",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "105",
+      "labels": {
+        "informativeness": 3
+      }
+    },
+    {
+      "utterance_id": "106",
+      "labels": {
+        "informativeness": 2
+      }
+    }
+  ],
+  "date_time": "2025-05-08 13:47:08",
+  "user_id": "63af557b3d4f219c3226b7d6"
+},
+{
+  "_id": {
+    "$oid": "681cb5f753dd431ad2a4882e"
+  },
+  "task_id": "insq_prescreen_0",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": "101",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "102",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "103",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "104",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "105",
+      "labels": {
+        "informativeness": 3
+      }
+    },
+    {
+      "utterance_id": "106",
+      "labels": {
+        "informativeness": 2
+      }
+    }
+  ],
+  "date_time": "2025-05-08 13:47:35",
+  "user_id": "67aa21a12b1a6e9475bc61b2"
+},
+{
+  "_id": {
+    "$oid": "681cb5f953dd431ad2a4882f"
+  },
+  "task_id": "insq_prescreen_0",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": "101",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "102",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "103",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "104",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "105",
+      "labels": {
+        "informativeness": 3
+      }
+    },
+    {
+      "utterance_id": "106",
+      "labels": {
+        "informativeness": 2
+      }
+    }
+  ],
+  "date_time": "2025-05-08 13:47:37",
+  "user_id": "63af557b3d4f219c3226b7d6"
+},
+{
+  "_id": {
+    "$oid": "681cb5fa53dd431ad2a48830"
+  },
+  "task_id": "insq_prescreen_0",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": "101",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "102",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "103",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "104",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "105",
+      "labels": {
+        "informativeness": 3
+      }
+    },
+    {
+      "utterance_id": "106",
+      "labels": {
+        "informativeness": 2
+      }
+    }
+  ],
+  "date_time": "2025-05-08 13:47:38",
+  "user_id": "63af557b3d4f219c3226b7d6"
+},
+{
+  "_id": {
+    "$oid": "681cb5fb53dd431ad2a48831"
+  },
+  "task_id": "insq_prescreen_0",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": "101",
+      "labels": {
+        "informativeness": 3
+      }
+    },
+    {
+      "utterance_id": "102",
+      "labels": {
+        "informativeness": 3
+      }
+    },
+    {
+      "utterance_id": "103",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "104",
+      "labels": {
+        "informativeness": 3
+      }
+    },
+    {
+      "utterance_id": "105",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "106",
+      "labels": {
+        "informativeness": 2
+      }
+    }
+  ],
+  "date_time": "2025-05-08 13:47:39",
+  "user_id": "67fd46db088825e305648e1a"
+},
+{
+  "_id": {
+    "$oid": "681cb5fd53dd431ad2a48832"
+  },
+  "task_id": "insq_prescreen_0",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": "101",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "102",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "103",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "104",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "105",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "106",
+      "labels": {
+        "informativeness": 2
+      }
+    }
+  ],
+  "date_time": "2025-05-08 13:47:41",
+  "user_id": "678"
+},
+{
+  "_id": {
+    "$oid": "681cb60553dd431ad2a48833"
+  },
+  "task_id": "insq_prescreen_0",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": "101",
+      "labels": {
+        "informativeness": 3
+      }
+    },
+    {
+      "utterance_id": "102",
+      "labels": {
+        "informativeness": 3
+      }
+    },
+    {
+      "utterance_id": "103",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "104",
+      "labels": {
+        "informativeness": 3
+      }
+    },
+    {
+      "utterance_id": "105",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "106",
+      "labels": {
+        "informativeness": 2
+      }
+    }
+  ],
+  "date_time": "2025-05-08 13:47:49",
+  "user_id": "67fd46db088825e305648e1a"
+},
+{
+  "_id": {
+    "$oid": "681cb61b53dd431ad2a48834"
+  },
+  "task_id": "insq_prescreen_0",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": "101",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "102",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "103",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "104",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "105",
+      "labels": {
+        "informativeness": 3
+      }
+    },
+    {
+      "utterance_id": "106",
+      "labels": {
+        "informativeness": 2
+      }
+    }
+  ],
+  "date_time": "2025-05-08 13:48:11",
+  "user_id": "63af557b3d4f219c3226b7d6"
+},
+{
+  "_id": {
+    "$oid": "681cb623e49b95a618a3968a"
+  },
+  "task_id": "insq_prescreen_0",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": "101",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "102",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "103",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "104",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "105",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "106",
+      "labels": {
+        "informativeness": 2
+      }
+    }
+  ],
+  "date_time": "2025-05-08 23:48:19",
+  "user_id": "123"
+},
+{
+  "_id": {
+    "$oid": "681cb623e49b95a618a3968b"
+  },
+  "task_id": "insq_prescreen_0",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": "101",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "102",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "103",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "104",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "105",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "106",
+      "labels": {
+        "informativeness": 2
+      }
+    }
+  ],
+  "date_time": "2025-05-08 23:48:19",
+  "user_id": "123"
+},
+{
+  "_id": {
+    "$oid": "681cb624e49b95a618a3968c"
+  },
+  "task_id": "insq_prescreen_0",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": "101",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "102",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "103",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "104",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "105",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "106",
+      "labels": {
+        "informativeness": 2
+      }
+    }
+  ],
+  "date_time": "2025-05-08 23:48:20",
+  "user_id": "123"
+},
+{
+  "_id": {
+    "$oid": "681cb624e49b95a618a3968d"
+  },
+  "task_id": "insq_prescreen_0",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": "101",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "102",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "103",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "104",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "105",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "106",
+      "labels": {
+        "informativeness": 2
+      }
+    }
+  ],
+  "date_time": "2025-05-08 23:48:20",
+  "user_id": "123"
+},
+{
+  "_id": {
+    "$oid": "681cb624e49b95a618a3968e"
+  },
+  "task_id": "insq_prescreen_0",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": "101",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "102",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "103",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "104",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "105",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "106",
+      "labels": {
+        "informativeness": 2
+      }
+    }
+  ],
+  "date_time": "2025-05-08 23:48:20",
+  "user_id": "123"
+},
+{
+  "_id": {
+    "$oid": "681cb62f53dd431ad2a48835"
+  },
+  "task_id": "insq_prescreen_0",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": "101",
+      "labels": {
+        "informativeness": 3
+      }
+    },
+    {
+      "utterance_id": "102",
+      "labels": {
+        "informativeness": 3
+      }
+    },
+    {
+      "utterance_id": "103",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "104",
+      "labels": {
+        "informativeness": 3
+      }
+    },
+    {
+      "utterance_id": "105",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "106",
+      "labels": {
+        "informativeness": 2
+      }
+    }
+  ],
+  "date_time": "2025-05-08 13:48:31",
+  "user_id": "67fd46db088825e305648e1a"
+},
+{
+  "_id": {
+    "$oid": "681cb652e49b95a618a3968f"
+  },
+  "task_id": "insq_prescreen_0",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": "101",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "102",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "103",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "104",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "105",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "106",
+      "labels": {
+        "informativeness": 2
+      }
+    }
+  ],
+  "date_time": "2025-05-08 23:48:52",
+  "user_id": "123"
+},
+{
+  "_id": {
+    "$oid": "681cb66453dd431ad2a48836"
+  },
+  "task_id": "insq_prescreen_0",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": "101",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "102",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "103",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "104",
+      "labels": {
+        "informativeness": 3
+      }
+    },
+    {
+      "utterance_id": "105",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "106",
+      "labels": {
+        "informativeness": 3
+      }
+    }
+  ],
+  "date_time": "2025-05-08 13:49:24",
+  "user_id": "677c4ac5878568e38dae405a"
+},
+{
+  "_id": {
+    "$oid": "681cb66453dd431ad2a48837"
+  },
+  "task_id": "insq_prescreen_0",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": "101",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "102",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "103",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "104",
+      "labels": {
+        "informativeness": 3
+      }
+    },
+    {
+      "utterance_id": "105",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "106",
+      "labels": {
+        "informativeness": 3
+      }
+    }
+  ],
+  "date_time": "2025-05-08 13:49:24",
+  "user_id": "677c4ac5878568e38dae405a"
+},
+{
+  "_id": {
+    "$oid": "681cb7d0f9ddf748e27e1046"
+  },
+  "task_id": "insq_prescreen_0",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": "101",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "102",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "103",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "104",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "105",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "106",
+      "labels": {
+        "informativeness": 2
+      }
+    }
+  ],
+  "date_time": "2025-05-08 23:55:28",
+  "user_id": "123"
+},
+{
+  "_id": {
+    "$oid": "681cb7f7bc3ea89ea188f5ab"
+  },
+  "task_id": "insq_prescreen_0",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": "101",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "102",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "103",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "104",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "105",
+      "labels": {
+        "informativeness": 3
+      }
+    },
+    {
+      "utterance_id": "106",
+      "labels": {
+        "informativeness": 2
+      }
+    }
+  ],
+  "date_time": "2025-05-08 13:56:07",
+  "user_id": "654455ad0b76675379c66db4"
+},
+{
+  "_id": {
+    "$oid": "681cb7f8bc3ea89ea188f5ac"
+  },
+  "task_id": "insq_prescreen_0",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": "101",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "102",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "103",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "104",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "105",
+      "labels": {
+        "informativeness": 3
+      }
+    },
+    {
+      "utterance_id": "106",
+      "labels": {
+        "informativeness": 2
+      }
+    }
+  ],
+  "date_time": "2025-05-08 13:56:08",
+  "user_id": "654455ad0b76675379c66db4"
+},
+{
+  "_id": {
+    "$oid": "681cb831bc3ea89ea188f5ad"
+  },
+  "task_id": "insq_prescreen_0",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": "101",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "102",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "103",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "104",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "105",
+      "labels": {
+        "informativeness": 3
+      }
+    },
+    {
+      "utterance_id": "106",
+      "labels": {
+        "informativeness": 2
+      }
+    }
+  ],
+  "date_time": "2025-05-08 13:57:05",
+  "user_id": "654455ad0b76675379c66db4"
+},
+{
+  "_id": {
+    "$oid": "681cb832bc3ea89ea188f5ae"
+  },
+  "task_id": "insq_prescreen_0",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": "101",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "102",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "103",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "104",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "105",
+      "labels": {
+        "informativeness": 3
+      }
+    },
+    {
+      "utterance_id": "106",
+      "labels": {
+        "informativeness": 2
+      }
+    }
+  ],
+  "date_time": "2025-05-08 13:57:06",
+  "user_id": "654455ad0b76675379c66db4"
+},
+{
+  "_id": {
+    "$oid": "681cb833bc3ea89ea188f5af"
+  },
+  "task_id": "insq_prescreen_0",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": "101",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "102",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "103",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "104",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "105",
+      "labels": {
+        "informativeness": 3
+      }
+    },
+    {
+      "utterance_id": "106",
+      "labels": {
+        "informativeness": 2
+      }
+    }
+  ],
+  "date_time": "2025-05-08 13:57:07",
+  "user_id": "654455ad0b76675379c66db4"
+},
+{
+  "_id": {
+    "$oid": "681cb834bc3ea89ea188f5b0"
+  },
+  "task_id": "insq_prescreen_0",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": "101",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "102",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "103",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "104",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "105",
+      "labels": {
+        "informativeness": 3
+      }
+    },
+    {
+      "utterance_id": "106",
+      "labels": {
+        "informativeness": 2
+      }
+    }
+  ],
+  "date_time": "2025-05-08 13:57:08",
+  "user_id": "654455ad0b76675379c66db4"
+},
+{
+  "_id": {
+    "$oid": "681cb834bc3ea89ea188f5b1"
+  },
+  "task_id": "insq_prescreen_0",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": "101",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "102",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "103",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "104",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "105",
+      "labels": {
+        "informativeness": 3
+      }
+    },
+    {
+      "utterance_id": "106",
+      "labels": {
+        "informativeness": 2
+      }
+    }
+  ],
+  "date_time": "2025-05-08 13:57:08",
+  "user_id": "654455ad0b76675379c66db4"
+},
+{
+  "_id": {
+    "$oid": "681cb834bc3ea89ea188f5b2"
+  },
+  "task_id": "insq_prescreen_0",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": "101",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "102",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "103",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "104",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "105",
+      "labels": {
+        "informativeness": 3
+      }
+    },
+    {
+      "utterance_id": "106",
+      "labels": {
+        "informativeness": 2
+      }
+    }
+  ],
+  "date_time": "2025-05-08 13:57:08",
+  "user_id": "654455ad0b76675379c66db4"
+},
+{
+  "_id": {
+    "$oid": "681cb834bc3ea89ea188f5b3"
+  },
+  "task_id": "insq_prescreen_0",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": "101",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "102",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "103",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "104",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "105",
+      "labels": {
+        "informativeness": 3
+      }
+    },
+    {
+      "utterance_id": "106",
+      "labels": {
+        "informativeness": 2
+      }
+    }
+  ],
+  "date_time": "2025-05-08 13:57:08",
+  "user_id": "654455ad0b76675379c66db4"
+},
+{
+  "_id": {
+    "$oid": "681cb838bc3ea89ea188f5b4"
+  },
+  "task_id": "insq_prescreen_0",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": "101",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "102",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "103",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "104",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "105",
+      "labels": {
+        "informativeness": 3
+      }
+    },
+    {
+      "utterance_id": "106",
+      "labels": {
+        "informativeness": 2
+      }
+    }
+  ],
+  "date_time": "2025-05-08 13:57:12",
+  "user_id": "654455ad0b76675379c66db4"
+},
+{
+  "_id": {
+    "$oid": "681cb846bc3ea89ea188f5b5"
+  },
+  "task_id": "insq_prescreen_0",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": "101",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "102",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "103",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "104",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "105",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "106",
+      "labels": {
+        "informativeness": 2
+      }
+    }
+  ],
+  "date_time": "2025-05-08 13:57:26",
+  "user_id": "345"
+},
+{
+  "_id": {
+    "$oid": "681cb857bc3ea89ea188f5b6"
+  },
+  "task_id": "insq_prescreen_0",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": "101",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "102",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "103",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "104",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "105",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "106",
+      "labels": {
+        "informativeness": 2
+      }
+    }
+  ],
+  "date_time": "2025-05-08 13:57:43",
+  "user_id": "345"
+},
+{
+  "_id": {
+    "$oid": "681cb893bc3ea89ea188f5b7"
+  },
+  "task_id": "insq_prescreen_0",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": "101",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "102",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "103",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "104",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "105",
+      "labels": {
+        "informativeness": 3
+      }
+    },
+    {
+      "utterance_id": "106",
+      "labels": {
+        "informativeness": 2
+      }
+    }
+  ],
+  "date_time": "2025-05-08 13:58:43",
+  "user_id": "654455ad0b76675379c66db4"
+},
+{
+  "_id": {
+    "$oid": "681cb894bc3ea89ea188f5b8"
+  },
+  "task_id": "insq_prescreen_0",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": "101",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "102",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "103",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "104",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "105",
+      "labels": {
+        "informativeness": 3
+      }
+    },
+    {
+      "utterance_id": "106",
+      "labels": {
+        "informativeness": 2
+      }
+    }
+  ],
+  "date_time": "2025-05-08 13:58:44",
+  "user_id": "654455ad0b76675379c66db4"
+},
+{
+  "_id": {
+    "$oid": "681cb894bc3ea89ea188f5b9"
+  },
+  "task_id": "insq_prescreen_0",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": "101",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "102",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "103",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "104",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "105",
+      "labels": {
+        "informativeness": 3
+      }
+    },
+    {
+      "utterance_id": "106",
+      "labels": {
+        "informativeness": 2
+      }
+    }
+  ],
+  "date_time": "2025-05-08 13:58:44",
+  "user_id": "654455ad0b76675379c66db4"
+},
+{
+  "_id": {
+    "$oid": "681cb894bc3ea89ea188f5ba"
+  },
+  "task_id": "insq_prescreen_0",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": "101",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "102",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "103",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "104",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "105",
+      "labels": {
+        "informativeness": 3
+      }
+    },
+    {
+      "utterance_id": "106",
+      "labels": {
+        "informativeness": 2
+      }
+    }
+  ],
+  "date_time": "2025-05-08 13:58:44",
+  "user_id": "654455ad0b76675379c66db4"
+},
+{
+  "_id": {
+    "$oid": "681cb894bc3ea89ea188f5bb"
+  },
+  "task_id": "insq_prescreen_0",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": "101",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "102",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "103",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "104",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "105",
+      "labels": {
+        "informativeness": 3
+      }
+    },
+    {
+      "utterance_id": "106",
+      "labels": {
+        "informativeness": 2
+      }
+    }
+  ],
+  "date_time": "2025-05-08 13:58:44",
+  "user_id": "654455ad0b76675379c66db4"
+},
+{
+  "_id": {
+    "$oid": "681cb894bc3ea89ea188f5bc"
+  },
+  "task_id": "insq_prescreen_0",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": "101",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "102",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "103",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "104",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "105",
+      "labels": {
+        "informativeness": 3
+      }
+    },
+    {
+      "utterance_id": "106",
+      "labels": {
+        "informativeness": 2
+      }
+    }
+  ],
+  "date_time": "2025-05-08 13:58:44",
+  "user_id": "654455ad0b76675379c66db4"
+},
+{
+  "_id": {
+    "$oid": "681cb895bc3ea89ea188f5bd"
+  },
+  "task_id": "insq_prescreen_0",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": "101",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "102",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "103",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "104",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "105",
+      "labels": {
+        "informativeness": 3
+      }
+    },
+    {
+      "utterance_id": "106",
+      "labels": {
+        "informativeness": 2
+      }
+    }
+  ],
+  "date_time": "2025-05-08 13:58:45",
+  "user_id": "654455ad0b76675379c66db4"
+},
+{
+  "_id": {
+    "$oid": "681cb895bc3ea89ea188f5be"
+  },
+  "task_id": "insq_prescreen_0",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": "101",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "102",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "103",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "104",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "105",
+      "labels": {
+        "informativeness": 3
+      }
+    },
+    {
+      "utterance_id": "106",
+      "labels": {
+        "informativeness": 2
+      }
+    }
+  ],
+  "date_time": "2025-05-08 13:58:45",
+  "user_id": "654455ad0b76675379c66db4"
+},
+{
+  "_id": {
+    "$oid": "681cb895bc3ea89ea188f5bf"
+  },
+  "task_id": "insq_prescreen_0",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": "101",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "102",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "103",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "104",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "105",
+      "labels": {
+        "informativeness": 3
+      }
+    },
+    {
+      "utterance_id": "106",
+      "labels": {
+        "informativeness": 2
+      }
+    }
+  ],
+  "date_time": "2025-05-08 13:58:45",
+  "user_id": "654455ad0b76675379c66db4"
+},
+{
+  "_id": {
+    "$oid": "681cb895bc3ea89ea188f5c0"
+  },
+  "task_id": "insq_prescreen_0",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": "101",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "102",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "103",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "104",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "105",
+      "labels": {
+        "informativeness": 3
+      }
+    },
+    {
+      "utterance_id": "106",
+      "labels": {
+        "informativeness": 2
+      }
+    }
+  ],
+  "date_time": "2025-05-08 13:58:45",
+  "user_id": "654455ad0b76675379c66db4"
+},
+{
+  "_id": {
+    "$oid": "681cb895bc3ea89ea188f5c1"
+  },
+  "task_id": "insq_prescreen_0",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": "101",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "102",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "103",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "104",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "105",
+      "labels": {
+        "informativeness": 3
+      }
+    },
+    {
+      "utterance_id": "106",
+      "labels": {
+        "informativeness": 2
+      }
+    }
+  ],
+  "date_time": "2025-05-08 13:58:45",
+  "user_id": "654455ad0b76675379c66db4"
+},
+{
+  "_id": {
+    "$oid": "681cb895bc3ea89ea188f5c2"
+  },
+  "task_id": "insq_prescreen_0",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": "101",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "102",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "103",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "104",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "105",
+      "labels": {
+        "informativeness": 3
+      }
+    },
+    {
+      "utterance_id": "106",
+      "labels": {
+        "informativeness": 2
+      }
+    }
+  ],
+  "date_time": "2025-05-08 13:58:45",
+  "user_id": "654455ad0b76675379c66db4"
+},
+{
+  "_id": {
+    "$oid": "681cb896bc3ea89ea188f5c3"
+  },
+  "task_id": "insq_prescreen_0",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": "101",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "102",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "103",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "104",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "105",
+      "labels": {
+        "informativeness": 3
+      }
+    },
+    {
+      "utterance_id": "106",
+      "labels": {
+        "informativeness": 2
+      }
+    }
+  ],
+  "date_time": "2025-05-08 13:58:46",
+  "user_id": "654455ad0b76675379c66db4"
+},
+{
+  "_id": {
+    "$oid": "681cb89dbc3ea89ea188f5c4"
+  },
+  "task_id": "insq_prescreen_0",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": "101",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "102",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "103",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "104",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "105",
+      "labels": {
+        "informativeness": 3
+      }
+    },
+    {
+      "utterance_id": "106",
+      "labels": {
+        "informativeness": 2
+      }
+    }
+  ],
+  "date_time": "2025-05-08 13:58:53",
+  "user_id": "654455ad0b76675379c66db4"
+},
+{
+  "_id": {
+    "$oid": "681cb89dbc3ea89ea188f5c5"
+  },
+  "task_id": "insq_prescreen_0",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": "101",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "102",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "103",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "104",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "105",
+      "labels": {
+        "informativeness": 3
+      }
+    },
+    {
+      "utterance_id": "106",
+      "labels": {
+        "informativeness": 2
+      }
+    }
+  ],
+  "date_time": "2025-05-08 13:58:53",
+  "user_id": "654455ad0b76675379c66db4"
+},
+{
+  "_id": {
+    "$oid": "681cb89dbc3ea89ea188f5c6"
+  },
+  "task_id": "insq_prescreen_0",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": "101",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "102",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "103",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "104",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "105",
+      "labels": {
+        "informativeness": 3
+      }
+    },
+    {
+      "utterance_id": "106",
+      "labels": {
+        "informativeness": 2
+      }
+    }
+  ],
+  "date_time": "2025-05-08 13:58:53",
+  "user_id": "654455ad0b76675379c66db4"
+},
+{
+  "_id": {
+    "$oid": "681cb89dbc3ea89ea188f5c7"
+  },
+  "task_id": "insq_prescreen_0",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": "101",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "102",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "103",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "104",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "105",
+      "labels": {
+        "informativeness": 3
+      }
+    },
+    {
+      "utterance_id": "106",
+      "labels": {
+        "informativeness": 2
+      }
+    }
+  ],
+  "date_time": "2025-05-08 13:58:53",
+  "user_id": "654455ad0b76675379c66db4"
+},
+{
+  "_id": {
+    "$oid": "681cb89ebc3ea89ea188f5c8"
+  },
+  "task_id": "insq_prescreen_0",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": "101",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "102",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "103",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "104",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "105",
+      "labels": {
+        "informativeness": 3
+      }
+    },
+    {
+      "utterance_id": "106",
+      "labels": {
+        "informativeness": 2
+      }
+    }
+  ],
+  "date_time": "2025-05-08 13:58:54",
+  "user_id": "654455ad0b76675379c66db4"
+},
+{
+  "_id": {
+    "$oid": "681cb89ebc3ea89ea188f5c9"
+  },
+  "task_id": "insq_prescreen_0",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": "101",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "102",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "103",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "104",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "105",
+      "labels": {
+        "informativeness": 3
+      }
+    },
+    {
+      "utterance_id": "106",
+      "labels": {
+        "informativeness": 2
+      }
+    }
+  ],
+  "date_time": "2025-05-08 13:58:54",
+  "user_id": "654455ad0b76675379c66db4"
+},
+{
+  "_id": {
+    "$oid": "681cb8a0bc3ea89ea188f5ca"
+  },
+  "task_id": "insq_prescreen_0",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": "101",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "102",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "103",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "104",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "105",
+      "labels": {
+        "informativeness": 3
+      }
+    },
+    {
+      "utterance_id": "106",
+      "labels": {
+        "informativeness": 2
+      }
+    }
+  ],
+  "date_time": "2025-05-08 13:58:56",
+  "user_id": "654455ad0b76675379c66db4"
+},
+{
+  "_id": {
+    "$oid": "681cb8acbc3ea89ea188f5cb"
+  },
+  "task_id": "insq_prescreen_0",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": "101",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "102",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "103",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "104",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "105",
+      "labels": {
+        "informativeness": 3
+      }
+    },
+    {
+      "utterance_id": "106",
+      "labels": {
+        "informativeness": 2
+      }
+    }
+  ],
+  "date_time": "2025-05-08 13:59:08",
+  "user_id": "654455ad0b76675379c66db4"
+},
+{
+  "_id": {
+    "$oid": "681cb91abc3ea89ea188f5cc"
+  },
+  "task_id": "insq_prescreen_0",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": "101",
+      "labels": {
+        "informativeness": 3
+      }
+    },
+    {
+      "utterance_id": "102",
+      "labels": {
+        "informativeness": 3
+      }
+    },
+    {
+      "utterance_id": "103",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "104",
+      "labels": {
+        "informativeness": 3
+      }
+    },
+    {
+      "utterance_id": "105",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "106",
+      "labels": {
+        "informativeness": 2
+      }
+    }
+  ],
+  "date_time": "2025-05-08 14:00:58",
+  "user_id": "67fd46db088825e305648e1a"
+},
+{
+  "_id": {
+    "$oid": "681cb91ebc3ea89ea188f5cd"
+  },
+  "task_id": "insq_prescreen_0",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": "101",
+      "labels": {
+        "informativeness": 3
+      }
+    },
+    {
+      "utterance_id": "102",
+      "labels": {
+        "informativeness": 3
+      }
+    },
+    {
+      "utterance_id": "103",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "104",
+      "labels": {
+        "informativeness": 3
+      }
+    },
+    {
+      "utterance_id": "105",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "106",
+      "labels": {
+        "informativeness": 2
+      }
+    }
+  ],
+  "date_time": "2025-05-08 14:01:02",
+  "user_id": "67fd46db088825e305648e1a"
+},
+{
+  "_id": {
+    "$oid": "681cbd96bc3ea89ea188f5ce"
+  },
+  "task_id": "insq_prescreen_0",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": "101",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "102",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "103",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "104",
+      "labels": {
+        "informativeness": 3
+      }
+    },
+    {
+      "utterance_id": "105",
+      "labels": {
+        "informativeness": 3
+      }
+    },
+    {
+      "utterance_id": "106",
+      "labels": {
+        "informativeness": 3
+      }
+    }
+  ],
+  "date_time": "2025-05-08 14:20:06",
+  "user_id": "67edb75b0744561f1cf6ff9d"
+},
+{
+  "_id": {
+    "$oid": "681cbe08bc3ea89ea188f5cf"
+  },
+  "task_id": "insq_prescreen_0",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": "101",
+      "labels": {
+        "informativeness": 4
+      }
+    },
+    {
+      "utterance_id": "102",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "103",
+      "labels": {
+        "informativeness": 1
+      }
+    },
+    {
+      "utterance_id": "104",
+      "labels": {
+        "informativeness": 3
+      }
+    },
+    {
+      "utterance_id": "105",
+      "labels": {
+        "informativeness": 3
+      }
+    },
+    {
+      "utterance_id": "106",
+      "labels": {
+        "informativeness": 2
+      }
+    }
+  ],
+  "date_time": "2025-05-08 14:22:00",
+  "user_id": "67edb75b0744561f1cf6ff9d"
+},
+{
+  "_id": {
+    "$oid": "681cc059bc3ea89ea188f5d0"
+  },
+  "task_id": "insq_prescreen_0",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": "101",
+      "labels": {
+        "informativeness": 3
+      }
+    },
+    {
+      "utterance_id": "102",
+      "labels": {
+        "informativeness": 3
+      }
+    },
+    {
+      "utterance_id": "103",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "104",
+      "labels": {
+        "informativeness": 3
+      }
+    },
+    {
+      "utterance_id": "105",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "106",
+      "labels": {
+        "informativeness": 2
+      }
+    }
+  ],
+  "date_time": "2025-05-08 14:31:53",
+  "user_id": "67fd46db088825e305648e1a"
+},
+{
+  "_id": {
+    "$oid": "681cc05ebc3ea89ea188f5d1"
+  },
+  "task_id": "insq_prescreen_0",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": "101",
+      "labels": {
+        "informativeness": 3
+      }
+    },
+    {
+      "utterance_id": "102",
+      "labels": {
+        "informativeness": 3
+      }
+    },
+    {
+      "utterance_id": "103",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "104",
+      "labels": {
+        "informativeness": 3
+      }
+    },
+    {
+      "utterance_id": "105",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "106",
+      "labels": {
+        "informativeness": 2
+      }
+    }
+  ],
+  "date_time": "2025-05-08 14:31:58",
+  "user_id": "67fd46db088825e305648e1a"
+},
+{
+  "_id": {
+    "$oid": "681cc0aabc3ea89ea188f5d2"
+  },
+  "task_id": "insq_prescreen_0",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": "101",
+      "labels": {
+        "informativeness": 3
+      }
+    },
+    {
+      "utterance_id": "102",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "103",
+      "labels": {
+        "informativeness": 3
+      }
+    },
+    {
+      "utterance_id": "104",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "105",
+      "labels": {
+        "informativeness": 3
+      }
+    },
+    {
+      "utterance_id": "106",
+      "labels": {
+        "informativeness": 3
+      }
+    }
+  ],
+  "date_time": "2025-05-08 14:33:14",
+  "user_id": "67fd46db088825e305648e1a"
+},
+{
+  "_id": {
+    "$oid": "681cc0c2bc3ea89ea188f5d3"
+  },
+  "task_id": "insq_prescreen_0",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": "101",
+      "labels": {
+        "informativeness": 3
+      }
+    },
+    {
+      "utterance_id": "102",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "103",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "104",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "105",
+      "labels": {
+        "informativeness": 3
+      }
+    },
+    {
+      "utterance_id": "106",
+      "labels": {
+        "informativeness": 2
+      }
+    }
+  ],
+  "date_time": "2025-05-08 14:33:38",
+  "user_id": "67fd46db088825e305648e1a"
+},
+{
+  "_id": {
+    "$oid": "681cc0d5bc3ea89ea188f5d4"
+  },
+  "task_id": "insq_prescreen_0",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": "101",
+      "labels": {
+        "informativeness": 3
+      }
+    },
+    {
+      "utterance_id": "102",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "103",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "104",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "105",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "106",
+      "labels": {
+        "informativeness": 2
+      }
+    }
+  ],
+  "date_time": "2025-05-08 14:33:57",
+  "user_id": "67fd46db088825e305648e1a"
+},
+{
+  "_id": {
+    "$oid": "681cc0eebc3ea89ea188f5d5"
+  },
+  "task_id": "insq_prescreen_0",
+  "task_type": "info",
+  "target_utterances": [
+    {
+      "utterance_id": "101",
+      "labels": {
+        "informativeness": 3
+      }
+    },
+    {
+      "utterance_id": "102",
+      "labels": {
+        "informativeness": 3
+      }
+    },
+    {
+      "utterance_id": "103",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "104",
+      "labels": {
+        "informativeness": 2
+      }
+    },
+    {
+      "utterance_id": "105",
+      "labels": {
+        "informativeness": 3
+      }
+    },
+    {
+      "utterance_id": "106",
+      "labels": {
+        "informativeness": 2
+      }
+    }
+  ],
+  "date_time": "2025-05-08 14:34:22",
+  "user_id": "67fd46db088825e305648e1a"
+}]

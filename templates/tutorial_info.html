@@ -1,0 +1,414 @@
+{% extends 'base.html' %}
+{% block title %}Annotation Tutorial – Informativeness (1-4){% endblock %}
+
+{% block content %}
+<div class="card shadow-sm mx-auto" style="max-width: 900px;">
+  <div class="card-header text-center">
+    <h2>Annotation Tutorial – Conversational Information Gain</h2>
+  </div>
+  <div class="card-body">
+    <p>
+      Informed public discussion is a cornerstone of a healthy democracy. While forums and debates are intended to inform the public, many conversations fail to do so, often devolving into the repetition of established talking points rather than providing new substance. Our goal is to understand how an audience perceives and judges the degree of new information gained from a discussion on a public matter. <br><br>
+
+To this end, we introduce the concept of <strong>Conversational Information Gain</strong>. The emphasis is on the "gain"—a comment is not informative if it merely restates what is already widely known or has just been said. <br><br>
+
+In this project, you will act as an informed observer or an audience of a public discussion. Given the established background knowledge on a topic and the ongoing dialogue, your task is to assign each new response a rating for its Conversational Information Gain on a scale of 1 to 4. As you evaluate each entry, ask yourself: <strong>"Does this statement provide a new perspective, novel evidence, or a substantive insight that helps me better understand or resolve the issue?"</strong><br><br>
+
+    </p>
+
+    <h3>Conversational Information Gain (1-4)</h3>
+    <p>
+        <strong>Measures how much a response advances the group’s shared understanding or helps resolve the topic, considering both their prior knowledge and the preceding dialogue.</strong>
+    </p>
+      <p>
+          **Core Question:** <strong> Given what the group already knows, does this response help them understand the topic more deeply or move the discussion forward?</strong>
+      </p>
+    <ul>
+      <li>
+        1: <strong>No gain at all</strong>
+        (Obstructs, is completely irrelevant, or repeats established information without adding meaning. Includes verbatim repetition or paraphrasing with no semantic change.)
+      </li>
+      <li>
+        2: <strong>Minimal gain</strong>
+        (Adds a small clarification, a minor supporting detail, or a slight nuance to an existing idea. The addition is noticeable but does not significantly expand understanding.)
+      </li>
+      <li>
+        3: <strong>Incremental gain</strong>
+        (Builds meaningfully on the discussion by adding new evidence, reasoning, or examples that go well beyond what was previously established.)
+      </li>
+      <li>
+        4: <strong>Insightful gain</strong>
+        (Substantially deepens understanding by introducing a novel perspective, or offering a reframing/solution that shifts the conversation in a valuable way.)
+      </li>
+    </ul>
+
+
+<h3>What might have <em>low</em> CIG:</h3>
+<ul>
+    <li>
+        <strong>Repeat:</strong>
+        Repeating or paraphrasing already-known information (common knowledge or previously discussed/mentioned content).
+    </li>
+
+    <li>
+        <strong>Questioning:</strong>
+        Simple questions that request information but don't provide new information themselves—unless they're rhetorical and implicitly convey new insight.
+    </li>
+
+    <li>
+        <strong>Situational:</strong>
+        Information limited strictly to personal, temporal, or situational context that doesn't generalize meaningfully (e.g., "You agreed with me yesterday").
+    </li>
+
+    <li>
+        <strong>Expected or Obvious Information:</strong>
+        Statements that present obviously inferable or trivial information, not adding meaningful novelty (e.g., "I’ve never had a child before." from a child).
+    </li>
+
+    <li>
+        <strong>Vague Statements:</strong>
+        Statements too vague or general to provide specific implications or meaningful insights (e.g., "Everyone will die someday.").
+    </li>
+
+    <li>
+        <strong>Off-topic or Irrelevant Information:</strong>
+        Information unrelated to the main topic or conversational goals, not meaningfully contributing to understanding.
+    </li>
+
+    <li>
+        <strong>Common Knowledge or Self-evident Statements:</strong>
+        Universally known or trivial facts that offer no substantive or novel contribution to the discussion.
+    </li>
+
+</ul>
+
+    <h4 class="mt-4">Annotation Process</h4>
+    <ol>
+      <li><strong>Check the debate topic or goal</strong> to understand the overarching issue being discussed.</li>
+
+      <li>
+        <strong>Carefully read the prior knowledge section(which summarise what have been discussed so far) and the prior dialogue right before the target dialogue.</strong>
+        We also have highlighted potentially important <strong>key phrases</strong> to guide your attention.
+      </li>
+
+      <li>
+        <strong>Examine each target response carefully.</strong>
+        Key phrases within the response that are <em>semantically similar</em> to those in the prior context have been highlighted.
+        These highlights <em>do not guarantee repetition or paraphrasing</em>, but they signal areas where close comparison is required.
+      </li>
+
+      <li>
+        For each response, assign an <strong><em>Conversational Information Gain</em></strong> score (1–4).
+        Consider <strong>who the speaker is</strong>, their <strong>stance</strong>, and <strong>what they have previously stated</strong>.
+      </li>
+
+      <li>
+        <strong>Enter your ratings</strong> using the Likert scale in the annotation interface.
+      </li>
+
+      <li>
+        Once all required responses are annotated and no cards remain highlighted in pink, <strong>submit your annotation</strong>.
+      </li>
+    </ol>
+
+
+    <hr>
+
+    <h2>Example responses &amp; Annotations</h2>
+
+    <h3 class="mt‑4">Conversation Background Introduction:</h3>
+        <p>
+          The dialogue segment below is taken from the televised debate series
+          <strong>“Intelligence&nbsp;Squared.”</strong>
+          Each episode centres on a single motion/topic debated by two teams—one arguing <strong>for</strong> the motion/topic and the
+          other <strong>against</strong>—while a neutral moderator keeps the discussion on track.
+          In the interface, every utterance is labelled in the upper‑right corner with the speaker’s name and a
+          colour‑coded stance tag:
+          <span style="color:#0d6efd;"><strong>blue&nbsp;=&nbsp;for</strong></span>,
+          <span style="color:#dc3545;"><strong>red&nbsp;=&nbsp;against</strong></span>, and
+          <span style="color:#198754;"><strong>green&nbsp;=&nbsp;moderator</strong></span>.
+        </p>
+    <h3 class="mt-3">Topic: “Gun Reduces Crime”</h3>
+
+
+<!-- ───────────────  Prior Summary  ─────────────── -->
+<h3 class="mt-4">Prior Knowledge</h3>
+
+<div class="card mb-3">
+  <div class="card-header bg-danger text-white">
+    Prior Conversation Summary
+  </div>
+  <div class="card-body">
+    <p>The debate opened with two distinct perspectives on the relationship between firearms and public safety, each grounded in decades of professional experience.</p>
+
+<p>On one side, <strong>criminologist</strong> Gary Kleck, citing his <strong>forty years</strong> of research on <strong>firearms and crime</strong>, argued that an <strong>armed citizenry deters violent offenders</strong> and ultimately <strong>saves lives</strong>. He contended that <strong>public policy</strong> should <strong>respect responsible gun ownership</strong> and stated his goal was to clarify the debate around <strong>defensive-gun-use statistics</strong>.</p>
+
+<p>In opposition, R. Gil Kerlikowske drew upon his <strong>four decades</strong> in <strong>law-enforcement leadership</strong>, including as <strong>Seattle Police Chief</strong> and the nation’s “<strong>Drug Czar</strong>.” He argued that the <strong>prevalence of firearms</strong> <strong>complicates policing</strong> and <strong>endangers</strong> both <strong>officers and civilians</strong>. He maintained that gun availability <strong>does not reduce crime</strong> and that improvements in <strong>public-safety</strong> require <strong>tighter controls</strong> and <strong>smart prevention strategies</strong>, not more <strong>weapons on the street</strong>.</p>
+  </div>
+</div>
+
+<!-- ─────────────────────────────────────────────────────────── -->
+
+
+
+    <!-- Prior Conversation History -->
+    <div class="card shadow-sm mx-auto mb-4" style="max-width: 900px;">
+      <div class="card-header">
+          <h4>Prior Conversation History</h4>
+      </div>
+      <div class="card-body bg-light rounded" style="white-space: pre-wrap; border: 1px solid #ccc;">
+        <p class="card-text"> John Donvan (mod): “Okay, I—I think we have an impasse on this… and I—I want to go to Chief Kerlikowske, <strong>Seattle police chief</strong>, because you were talking about <strong>British police</strong> being <strong>unarmed</strong>, and preferring that in many situations because they felt being armed would <strong>invite assault</strong>, as there were some reported cases of<strong>causality with stolen police guns</strong>. And yet Gary Kleck, arguing for the motion, said why are police <strong>armed</strong> in the first place unless it is to <strong>deter assault</strong>; can you take that on?”</p>
+      </div>
+    </div>
+
+
+    <hr>
+<!-- Example 1 -->
+<div class="card mb-3 utterance-card" data-utterance-id="ex‑1"
+     style="border-left:4px solid #4F959D;">
+  <div class="card-body">
+    <h5 class="card-title">
+      ID: Example 1
+      <span class="float-end">
+        <span class="badge bg-secondary">Speaker: R. Gil Kerlikowske</span>
+        <span class="badge bg-danger ms-2">against</span>
+      </span>
+    </h5>
+
+    <p class="card-text">
+      Yes I can, and, remember what Truman said, if I could line up all the economists end to end,
+      wouldn’t that be a beautiful sight, so that, I just— And one, and one is on my panel. So…getting
+      away from the statistics and going to that <strong>police officers</strong> are highly trained with <strong>firearms</strong>. They
+      practice and qualify, they can’t graduate from the academy without qualifying. Without question, they
+      can use the gun in a defensive mode. But when you look at the numbers of <strong>police officers</strong> in the
+      United States and I remember—I can picture every moment to this day, of the first time I had an
+      officer killed in the line of duty. Young, bright, talented, incredible shape, shot 13 times with his
+      own handgun. Wasn’t a question of training, wasn’t a question of anything else. <strong>Officers are routinely
+      wounded and assaulted with their own guns</strong>. That’s why—
+    </p>
+
+
+    <!-- Static rating -->
+    <div class="rating-section" style="display:block;">
+  <label class="statement dimension">Conversational Information Gain (1-4)</label>
+  <ul class="likert">
+    <li>
+      <input  id="ex‑1‑1" class="form-check-input" type="radio" disabled>
+      <label for="ex‑1‑1">1<small>No gain at all</small></label>
+    </li>
+    <li>
+      <input  id="ex‑1‑2" class="form-check-input" type="radio" disabled>
+      <label for="ex‑1‑2">2<small>Minimal gain</small></label>
+    </li>
+    <li>
+      <input  id="ex‑1‑3" class="form-check-input" type="radio" checked disabled>
+      <label for="ex‑1‑3">3<small>Incremental</small></label>
+    </li>
+    <li>
+      <input  id="ex‑1‑4" class="form-check-input" type="radio" disabled>
+      <label for="ex‑1‑4">4<small>Insightful</small></label>
+    </li>
+  </ul>
+</div>
+
+
+    <p><strong>Explanation:</strong> Provides a moderately informative anecdote about police firearm risks with self experience.
+        However, considering his stance is known and "a few reported cases" have been mentioned in the prior conversation,
+        the anecdote only provide incremental information of details but not new concept or angle. The first few sentences abut a brief
+          tangent about economists do not improve understanding of the topic or the arguments.</p>
+  </div>
+</div>
+
+<!-- Example 2 -->
+<div class="card mb-3 utterance-card" data-utterance-id="ex‑2"
+     style="border-left:4px solid #4F959D;">
+  <div class="card-body">
+    <h5 class="card-title">
+      ID: Example 2
+      <span class="float-end">
+        <span class="badge bg-secondary">Speaker: Gary Kleck</span>
+        <span class="badge bg-primary ms-2">for</span>
+      </span>
+    </h5>
+
+    <p class="card-text">“That’s not true—absolutely, unequivocally not true. I’ve said it before and I’ll say it again: as a criminologist with more than four decades—yes, forty solid years—spent poring over every credible dataset on guns and crime, I can assure you the facts speak for themselves. An armed citizenry deters violent offenders, saves innocent lives, and does so far more often than it ever puts anyone in danger.”</p>
+
+    <div class="rating-section" style="display:block;">
+  <label class="statement dimension">Conversational Information Gain&nbsp;(1-4)</label>
+  <ul class="likert">
+    <li>
+      <input  id="ex‑2‑1" class="form-check-input" type="radio" disabled checked>
+      <label for="ex‑2‑1">1<small>No gain at all</small></label> <!-- ← score 1 -->
+    </li>
+    <li>
+      <input  id="ex‑2‑2" class="form-check-input" type="radio" disabled>
+      <label for="ex‑2‑2">2<small>Minimal gain</small></label>
+    </li>
+    <li>
+      <input  id="ex‑2‑3" class="form-check-input" type="radio" disabled>
+      <label for="ex‑2‑3">3<small>Incremental</small></label>
+    </li>
+    <li>
+      <input  id="ex‑2‑4" class="form-check-input" type="radio" disabled>
+      <label for="ex‑2‑4">4<small>Insightful</small></label>
+    </li>
+  </ul>
+</div>
+
+
+    <p><strong>Explanation:</strong> A long denial provides no new insight; it merely restates opposition and paraphrases his prior statement.</p>
+  </div>
+</div>
+
+<!-- Example 3 -->
+<div class="card mb-3 utterance-card" data-utterance-id="ex‑3"
+     style="border-left:4px solid #4F959D;">
+  <div class="card-body">
+    <h5 class="card-title">
+      ID: Example 3
+      <span class="float-end">
+        <span class="badge bg-secondary">Speaker: R. Gil Kerlikowske</span>
+        <span class="badge bg-danger ms-2">against</span>
+      </span>
+    </h5>
+
+    <p class="card-text">
+        “By the way, could someone please adjust the air conditioning? It’s absolutely sweltering in here—easily thirty-two degrees at least,
+        and I’m starting to feel dizzy from the heat. My shirt’s stuck to me, the lights are glaring, and I can’t help but wonder if anyone
+        else is wilting as badly as I am. Honestly, it feels like we’re in a greenhouse rather than a debate hall. Perhaps
+        we should discuss climate change instead of <strong>gun ownership</strong>, as it might actually kill more people.
+        So…um, what exactly is not true?”
+    </p>
+
+        <div class="rating-section" style="display:block;">
+  <label class="statement dimension">Conversational Information Gain&nbsp;(1-4)</label>
+  <ul class="likert">
+    <li>
+      <input  id="ex‑3‑1" class="form-check-input" type="radio" disabled checked>
+      <label for="ex‑3‑1">1<small>No gain at all</small></label> <!-- ← score 1 -->
+    </li>
+    <li>
+      <input  id="ex‑3‑2" class="form-check-input" type="radio" disabled>
+      <label for="ex‑3‑2">2<small>Minimal gain</small></label>
+    </li>
+    <li>
+      <input  id="ex‑3‑3" class="form-check-input" type="radio" disabled>
+      <label for="ex‑3‑3">3<small>Incremental</small></label>
+    </li>
+    <li>
+      <input  id="ex‑3‑4" class="form-check-input" type="radio" disabled>
+      <label for="ex‑3‑4">4<small>Insightful</small></label>
+    </li>
+  </ul>
+</div>
+
+    <p><strong>Explanation:</strong> Despite its vivid, hyperbolic description of the room’s stifling heat and a tongue-in-cheek segue to climate change, this remark remains tangential to the debate on gun ownership, offering no substantive evidence or argument about the motion itself—hence it’s still low in Conversational Information Gain.</p>
+  </div>
+</div>
+
+<!-- Example 4 -->
+<div class="card mb-3 utterance-card" data-utterance-id="ex‑4"
+     style="border-left:4px solid #4F959D;">
+  <div class="card-body">
+    <h5 class="card-title">
+      ID: Example 4
+      <span class="float-end">
+        <span class="badge bg-secondary">Speaker: Gary Kleck</span>
+        <span class="badge bg-primary ms-2">for</span>
+      </span>
+    </h5>
+
+    <p class="card-text">
+      “I mean, sure, there have been cases where a criminal managed to <strong>steal a gun from a trained officer</strong>. But if
+      someone is bold enough to disarm <strong>law enforcement</strong>, what more dangerous things might they do to an
+      <strong>unarmed citizen</strong>? I was talking to some unbelievable folks—real patriots, salt of the earth—and they’ve
+      got some very interesting ways of keeping things safe, let me tell you. Why should we abandon <strong>firearms</strong>
+      altogether, instead of exploring smarter solutions—like securing guns with personal biometric locks? There
+      is a startup in Detroit that has developed a fingerprint-based AI gun-lock. They have trialed with the local
+      <strong>police departments</strong>, and have seen a significant decline of <strong>stolen guns</strong>.”
+    </p>
+
+
+        <div class="rating-section" style="display:block;">
+  <label class="statement dimension">Conversational Information Gain&nbsp;(1-4)</label>
+  <ul class="likert">
+    <li>
+      <input  id="ex‑4‑1" class="form-check-input" type="radio" disabled>
+      <label for="ex‑4‑1">1<small>No gain at all</small></label>
+    </li>
+    <li>
+      <input  id="ex‑4‑2" class="form-check-input" type="radio" disabled>
+      <label for="ex‑4‑2">2<small>Minimal gain</small></label>
+    </li>
+    <li>
+      <input  id="ex‑4‑3" class="form-check-input" type="radio" disabled>
+      <label for="ex‑4‑3">3<small>Incremental</small></label>
+    </li>
+    <li>
+      <input  id="ex‑4‑4" class="form-check-input" type="radio" checked disabled>
+      <label for="ex‑4‑4">4<small>Insightful</small></label><!-- ← score 4 -->
+    </li>
+  </ul>
+</div>
+
+    <p><strong>Explanation:</strong> This response re-frames the issue of gun theft by highlighting a broader threat
+        to public safety. The speaker argues that if criminals can steal guns even from well-trained officers, unarmed
+        citizens are at an even greater risk. The appeal is twofold: it implies that self-defense by armed, law-abiding
+        citizens may be necessary, and it introduces a technological solution—biometric gun locks—to reduce the risk of
+        theft. By citing a successful example from a Detroit-based startup, the argument is enriched with concrete
+        evidence and practical innovation, making the case highly informative.</p>
+  </div>
+</div>
+
+
+      {% if not codebook%}
+    <p class="mt-4">
+      When you’re ready, click <strong>Next</strong> to proceed. You will be directed
+      to the pre-study page, where a short study will be conducted to assess your understanding of the annotation labels and process
+    </p>
+
+    <div class="text-center mt-4">
+      <form method="post" action="{{ url_for('tutorial') }}">
+        <button type="submit" class="btn btn-primary">Next</button>
+      </form>
+    </div>
+      {% endif %}
+  </div>
+</div>
+{% endblock %}
+
+
+{% block scripts %}
+
+<style>
+/* --- Likert scale (same rules as annotation.html) ------------------------ */
+ul.likert {
+  list-style-type: none;
+  margin: 0 0 24px;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 2px solid #efefef;
+}
+ul.likert li {
+  text-align: center;
+  margin: 0 5px;
+}
+ul.likert li input[type=radio] {
+  display: block;
+  margin: 0 auto 5px;
+}
+ul.likert li label {
+  display: block;
+  font-size: 0.9rem;
+  cursor: default;          /* read‑only */
+}
+ul.likert li small {
+  display: block;
+  font-size: 0.75rem;
+  color: #6c757d;
+}
+</style>
+
+
+{% endblock %}

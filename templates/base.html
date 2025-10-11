@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>{% block title %}Annotation Interface{% endblock %}</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: whitesmoke;
+    }
+    pre {
+      white-space: pre-wrap;
+      background-color: #fff;
+      border: 1px solid #4F959D;
+      border-radius: 15px;
+      padding: 15px;
+    }
+    .card {
+      border: 1px solid #4F959D;
+      border-radius: 15px;
+      background-color: whitesmoke;
+      margin-top: 50px;
+    }
+    .card-header {
+      background-color: #4F959D;
+      color: whitesmoke;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+    }
+    .btn-primary {
+      background-color: #98D2C0;
+      border-color: #98D2C0;
+    }
+    .btn-primary:hover {
+      background-color: #85bfae;
+      border-color: #85bfae;
+    }
+    .reminder {
+      font-size: 0.9em;
+      color: #205781;
+    }
+  </style>
+  {% block head %}{% endblock %}
+</head>
+<body>
+  <!-- Include the reusable navbar -->
+  {% include 'navbar.html' %}
+
+  <div class="container my-5">
+    {% block content %}{% endblock %}
+  </div>
+
+  <!-- Include the reusable footer -->
+  {% include 'footer.html' %}
+
+  <!-- Bootstrap JS Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  {% block scripts %}{% endblock %}
+</body>
+</html>

@@ -1,0 +1,563 @@
+{% extends 'base.html' %}
+{% block title %}Conditional Pre-Screen{% endblock %}
+
+{% block content %}
+<!-- Card 1: Instructions -->
+<div class="card shadow-sm mx-auto" style="max-width: 900px;">
+  <div class="card-header text-center">
+    <h2>Pre-Screen Test – {{ task_type|capitalize }}</h2>
+  </div>
+  <div class="card-body">
+    {% if task_type == "info" %}
+      <p>
+        This is a <strong>pre-screen test</strong> focusing on
+        <span class="dimension" data-bs-toggle="tooltip" data-bs-placement="top"
+              title="Given the context, the overall value of an response in enhancing understanding of the topic or meaningfully advancing the conversation toward the goal.">
+          Informativeness (1-4)
+        </span>.
+        Label how informative each utterance is, from 1 (not at all) to 5 (extremely).
+      </p>
+    {% elif task_type == "mix" %}
+      <p>
+        This is a <strong>pre-screen test</strong> focusing on
+        <span class="dimension" data-bs-toggle="tooltip" data-bs-placement="top"
+              title="The extent to which the response introduces new, previously unknown information within the conversation or context.">
+          Novelty
+        </span>,
+        <span class="dimension" data-bs-toggle="tooltip" data-bs-placement="top"
+              title="The extent to which the utterance introduces new, previously unknown information within the conversation or context.">
+          Relevance
+        </span>,
+        and
+        <span class="dimension" data-bs-toggle="tooltip" data-bs-placement="top"
+              title="The extent to which the utterance directly addresses, relates to, or aligns with the topic/goal of the current conversation.">
+          Scope
+        </span>
+        (each 1–3). Label how each utterance contributes new information, stays on-topic,
+        and applies broadly or narrowly.
+      </p>
+    {% else %}
+      <p class="text-danger">
+        Unknown <strong>task_type</strong>. No fields will be displayed.
+      </p>
+    {% endif %}
+
+    <p>
+      Please read each utterance, then click on its card to reveal the rating section.
+      Any card with a <strong>pink border</strong> is incomplete/out-of-range; once you
+      fill it properly, the pink color will vanish. The <strong>Submit Pre-Screen</strong>
+      button is disabled until all utterances are fully labeled.
+    </p>
+  </div>
+</div>
+
+<!-- Card 2: Topic -->
+<div class="card shadow-sm mx-auto mb-4" style="max-width: 900px;">
+  <div class="card-header text-center">
+    <h4>Topic</h4>
+  </div>
+  <div class="card-body text-center" style="font-size: 2rem;">
+    {{ task.topic }}
+  </div>
+</div>
+
+<!-- Card 3: Prior Conversation History -->
+{% if task.prior_history %}
+<div class="card shadow-sm mx-auto mb-4" style="max-width: 900px;">
+  <div class="card-header">
+    <h4>Prior Conversation History</h4>
+  </div>
+  <div class="card-body bg-light rounded" style="white-space: pre-wrap; border: 1px solid #ccc;">
+    {{ task.prior_history }}
+  </div>
+</div>
+{% endif %}
+
+<!-- Card 4: Target Utterances -->
+<div class="card shadow-sm mx-auto mt-4" style="max-width: 900px;">
+  <div class="card-header">
+    <h4 class="mb-0">Target Utterances</h4>
+  </div>
+  <div class="card-body">
+    <p class="text-muted mb-3">
+      Click "Submit Pre-Screen" after labeling <strong>all</strong> utterances.
+    </p>
+
+    <form id="prescreenForm">
+      {% for utt in task["target_utterances"] %}
+
+      <!-- Determine a Bootstrap background color for the role badge -->
+      {% set roleClass = '' %}
+      {% if utt.role == 'mod' %}
+        {% set roleClass = 'bg-success' %}
+      {% elif utt.role == 'for' %}
+        {% set roleClass = 'bg-primary' %}
+      {% elif utt.role == 'against' %}
+        {% set roleClass = 'bg-danger' %}
+      {% elif utt.role == 'other' %}
+        {% set roleClass = 'bg-light text-dark' %}
+      {% endif %}
+
+      <div class="card mb-3 utterance-card" data-utterance-id="{{ utt.utterance_id }}"
+           style="cursor: pointer; border: 2px solid pink;">
+        <div class="card-body">
+          <h5 class="card-title">
+            Utterance ID: {{ utt.utterance_id }}
+            <!-- Speaker + Role Badges on the right -->
+            <span class="float-end">
+              <span class="badge bg-secondary">Speaker: {{ utt.utterance_speaker }}</span>
+              {% if utt.role %}
+                <span class="badge {{ roleClass }} ms-2">{{ utt.role }}</span>
+              {% endif %}
+            </span>
+          </h5>
+          <p class="card-text">{{ utt.utterance_text }}</p>
+
+           <!-- The rating-section is toggled on card click (except radio) -->
+        <div class="rating-section" style="display: none; margin-top: 10px;">
+          {% if task_type == "info" %}
+            <!-- 1-4 Likert for Informativeness -->
+            <label class="statement dimension"
+                   data-bs-toggle="tooltip"
+                   data-bs-placement="top"
+                   title="Given the context, the overall value of an utterance in enhancing understanding of the topic or meaningfully advancing the conversation toward the goal.
+">
+              Informativeness (1-4)
+            </label>
+            <ul class="likert">
+              <li>
+                <input class="form-check-input rating-input"
+                       type="radio"
+                       name="info-{{ utt.utterance_id }}"
+                       id="info-{{ utt.utterance_id }}-1"
+                       value="1">
+                <label for="info-{{ utt.utterance_id }}-1">1 (Not at all)</label>
+              </li>
+              <li>
+                <input class="form-check-input rating-input"
+                       type="radio"
+                       name="info-{{ utt.utterance_id }}"
+                       id="info-{{ utt.utterance_id }}-2"
+                       value="2">
+                <label for="info-{{ utt.utterance_id }}-2">2 (Slightly)</label>
+              </li>
+              <li>
+                <input class="form-check-input rating-input"
+                       type="radio"
+                       name="info-{{ utt.utterance_id }}"
+                       id="info-{{ utt.utterance_id }}-3"
+                       value="3">
+                <label for="info-{{ utt.utterance_id }}-3">3 (Moderate)</label>
+              </li>
+              <li>
+                <input class="form-check-input rating-input"
+                       type="radio"
+                       name="info-{{ utt.utterance_id }}"
+                       id="info-{{ utt.utterance_id }}-4"
+                       value="4">
+                <label for="info-{{ utt.utterance_id }}-4">4 (Very)</label>
+              </li>
+              <li>
+                <input class="form-check-input rating-input"
+                       type="radio"
+                       name="info-{{ utt.utterance_id }}"
+                       id="info-{{ utt.utterance_id }}-5"
+                       value="5">
+                <label for="info-{{ utt.utterance_id }}-5">5 (Extremely)</label>
+              </li>
+            </ul>
+
+          {% elif task_type == "mix" %}
+            <!-- 1–3 Likerts for Novelty, Relevance, Scope -->
+            <label class="statement dimension"
+                   data-bs-toggle="tooltip"
+                   data-bs-placement="top"
+                   title="The extent to which the utterance introduces new, previously unknown information within the conversation or context.">
+              Novelty (1–3)
+            </label>
+            <ul class="likert">
+              <li>
+                <input class="form-check-input rating-input"
+                       type="radio"
+                       name="novelty-{{ utt.utterance_id }}"
+                       id="novelty-{{ utt.utterance_id }}-1"
+                       value="1">
+                <label for="novelty-{{ utt.utterance_id }}-1">1 (No novelty)</label>
+              </li>
+              <li>
+                <input class="form-check-input rating-input"
+                       type="radio"
+                       name="novelty-{{ utt.utterance_id }}"
+                       id="novelty-{{ utt.utterance_id }}-2"
+                       value="2">
+                <label for="novelty-{{ utt.utterance_id }}-2">2 (Somewhat novel)</label>
+              </li>
+              <li>
+                <input class="form-check-input rating-input"
+                       type="radio"
+                       name="novelty-{{ utt.utterance_id }}"
+                       id="novelty-{{ utt.utterance_id }}-3"
+                       value="3">
+                <label for="novelty-{{ utt.utterance_id }}-3">3 (Very Novel)</label>
+              </li>
+            </ul>
+
+            <label class="statement dimension"
+                   data-bs-toggle="tooltip"
+                   data-bs-placement="top"
+                   title="The extent to which the utterance directly addresses, relates to, or aligns with the topic/goal of the current conversation.">
+              Relevance (1–3)
+            </label>
+            <ul class="likert">
+              <li>
+                <input class="form-check-input rating-input"
+                       type="radio"
+                       name="relevance-{{ utt.utterance_id }}"
+                       id="relevance-{{ utt.utterance_id }}-1"
+                       value="1">
+                <label for="relevance-{{ utt.utterance_id }}-1">1 (Not relevant)</label>
+              </li>
+              <li>
+                <input class="form-check-input rating-input"
+                       type="radio"
+                       name="relevance-{{ utt.utterance_id }}"
+                       id="relevance-{{ utt.utterance_id }}-2"
+                       value="2">
+                <label for="relevance-{{ utt.utterance_id }}-2">2 (Potentially relevant)</label>
+              </li>
+              <li>
+                <input class="form-check-input rating-input"
+                       type="radio"
+                       name="relevance-{{ utt.utterance_id }}"
+                       id="relevance-{{ utt.utterance_id }}-3"
+                       value="3">
+                <label for="relevance-{{ utt.utterance_id }}-3">3 (Directly/Highly relevant)</label>
+              </li>
+            </ul>
+
+            <label class="statement dimension"
+                   data-bs-toggle="tooltip"
+                   data-bs-placement="top"
+                   title="The degree to which the meaning/intention of the utterance applies generally, beyond the immediate speaker, context, or situation.">
+              Scope (1–3)
+            </label>
+            <ul class="likert">
+              <li>
+                <input class="form-check-input rating-input"
+                       type="radio"
+                       name="scope-{{ utt.utterance_id }}"
+                       id="scope-{{ utt.utterance_id }}-1"
+                       value="1">
+                <label for="scope-{{ utt.utterance_id }}-1">1 (Narrow scope)</label>
+              </li>
+              <li>
+                <input class="form-check-input rating-input"
+                       type="radio"
+                       name="scope-{{ utt.utterance_id }}"
+                       id="scope-{{ utt.utterance_id }}-2"
+                       value="2">
+                <label for="scope-{{ utt.utterance_id }}-2">2 (Moderate scope)</label>
+              </li>
+              <li>
+                <input class="form-check-input rating-input"
+                       type="radio"
+                       name="scope-{{ utt.utterance_id }}"
+                       id="scope-{{ utt.utterance_id }}-3"
+                       value="3">
+                <label for="scope-{{ utt.utterance_id }}-3">3 (Broad/Public scope)</label>
+              </li>
+            </ul>
+
+            {% else %}
+              <p class="text-danger">No fields for unrecognized task type.</p>
+            {% endif %}
+          </div>
+        </div>
+      </div>
+
+      {% endfor %}
+
+      <div class="text-center mt-4">
+        <button type="submit" class="btn btn-secondary" id="submitPrescreenBtn" disabled>
+          Submit Pre-Screen
+        </button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<!-- Modal for prescreen result -->
+<div class="modal fade" id="prescreenResultModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content" id="prescreenModalContent">
+      <div class="modal-header">
+        <h5 class="modal-title" id="prescreenModalTitle">Pre-Screen Result</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
+                onclick="closePrescreenModal()"></button>
+      </div>
+      <div class="modal-body" id="prescreenModalBody">
+        <!-- Content set by JavaScript -->
+      </div>
+      <div class="modal-footer" id="prescreenModalFooter">
+        <!-- Buttons set by JavaScript -->
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<style>
+/* Minimal styling for the Likert scale */
+.statement {
+  font-weight: bold;
+  margin-top: 10px;
+  display: inline-block;
+}
+.dimension {
+  font-weight: bold;
+  color: #205781; /* Example color for dimension name */
+  cursor: pointer;
+}
+ul.likert {
+  list-style-type: none;
+  margin: 0 0 24px;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 2px solid #efefef;
+}
+ul.likert li {
+  text-align: center;
+  vertical-align: top;
+  margin: 0 5px;
+}
+ul.likert li input[type=radio] {
+  display: block;
+  margin: 0 auto 5px;
+}
+ul.likert li label {
+  display: block;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+</style>
+
+<script>
+let ratings = {};  // Key: utterance_id => { relevant fields }
+const taskType = "{{ task_type }}";
+
+// Initialize BS5 tooltips
+document.addEventListener('DOMContentLoaded', function() {
+  let tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+  tooltipTriggerList.forEach(function (tooltipEl) {
+    new bootstrap.Tooltip(tooltipEl);
+  });
+});
+
+// On form submit => build JSON & POST
+document.getElementById('prescreenForm').addEventListener('submit', function(event) {
+  event.preventDefault();
+
+  const payload = {
+    "task_type": taskType,
+    "target_utterances": []
+  };
+
+  // Gather user inputs
+  const utteranceCards = document.querySelectorAll('.utterance-card[data-utterance-id]');
+  utteranceCards.forEach(card => {
+    const uttId = card.getAttribute('data-utterance-id');
+    let labels = {};
+
+    if (taskType === "info") {
+      const sel = card.querySelector(`input[name="info-${uttId}"]:checked`);
+      labels["informativeness"] = sel ? parseInt(sel.value) : null;
+    }
+    else if (taskType === "mix") {
+      const novSel = card.querySelector(`input[name="novelty-${uttId}"]:checked`);
+      const relSel = card.querySelector(`input[name="relevance-${uttId}"]:checked`);
+      const scpSel = card.querySelector(`input[name="scope-${uttId}"]:checked`);
+
+      labels["novelty"] = novSel ? parseInt(novSel.value) : null;
+      labels["relevance"] = relSel ? parseInt(relSel.value) : null;
+      labels["scope"] = scpSel ? parseInt(scpSel.value) : null;
+    }
+
+    payload.target_utterances.push({
+      "utterance_id": uttId,
+      "labels": labels
+    });
+  });
+
+  fetch('/prescreen', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(payload)
+  })
+  .then(response => response.json())
+  .then(data => {
+    // data => { passed: bool, acc_score: number? }
+    showPrescreenModal(data.passed, data.acc_score);
+  })
+  .catch(err => {
+    console.error("Error submitting prescreen:", err);
+    showPrescreenModal(false, 0, "Error submitting prescreen. Please retry.");
+  });
+});
+
+// Toggle rating-section on card click (if not clicking radio/label)
+document.querySelectorAll('.utterance-card').forEach(card => {
+  card.addEventListener('click', function(event) {
+    if (event.target.closest('.rating-section') || event.target.classList.contains('rating-input')) {
+      return; // do not toggle if user clicked inside rating area
+    }
+    const ratingSection = card.querySelector('.rating-section');
+    ratingSection.style.display = (ratingSection.style.display === 'none') ? 'block' : 'none';
+  });
+});
+
+// For each rating input => update pink border & checkAllLabeled
+document.querySelectorAll('.rating-input').forEach(input => {
+  input.addEventListener('change', function() {
+    const card = this.closest('.utterance-card[data-utterance-id]');
+    const uttId = card.getAttribute('data-utterance-id');
+
+    let ratingObj = {};
+    if (taskType === "info") {
+      const sel = card.querySelector(`input[name="info-${uttId}"]:checked`);
+      ratingObj["informativeness"] = sel ? parseInt(sel.value) : null;
+    }
+    else if (taskType === "mix") {
+      const novSel = card.querySelector(`input[name="novelty-${uttId}"]:checked`);
+      const relSel = card.querySelector(`input[name="relevance-${uttId}"]:checked`);
+      const scpSel = card.querySelector(`input[name="scope-${uttId}"]:checked`);
+
+      ratingObj["novelty"] = novSel ? parseInt(novSel.value) : null;
+      ratingObj["relevance"] = relSel ? parseInt(relSel.value) : null;
+      ratingObj["scope"] = scpSel ? parseInt(scpSel.value) : null;
+    }
+    ratings[uttId] = ratingObj;
+
+    updateCardBorder(card, ratingObj);
+    checkAllLabeled();
+  });
+});
+
+function updateCardBorder(card, ratingObj) {
+  let incomplete = false;
+  if (taskType === "info") {
+    const val = ratingObj["informativeness"];
+    if (!val || val<1 || val>5) { incomplete = true; }
+  }
+  else if (taskType === "mix") {
+    const n = ratingObj["novelty"];
+    const r = ratingObj["relevance"];
+    const s = ratingObj["scope"];
+    if (!n || n<1 || n>3 ||
+        !r || r<1 || r>3 ||
+        !s || s<1 || s>3) { incomplete = true; }
+  } else {
+    incomplete = true;
+  }
+  card.style.border = incomplete ? '2px solid pink' : '';
+}
+
+function checkAllLabeled() {
+  const totalCards = document.querySelectorAll('.utterance-card[data-utterance-id]').length;
+  if (Object.keys(ratings).length < totalCards) {
+    disableSubmit();
+    return;
+  }
+  for (const uttId in ratings) {
+    let incomplete = false;
+    const obj = ratings[uttId];
+
+    if (taskType === "info") {
+      const info = obj["informativeness"];
+      if (!info || info<1 || info>5) { incomplete = true; }
+    }
+    else if (taskType === "mix") {
+      const n = obj["novelty"];
+      const r = obj["relevance"];
+      const s = obj["scope"];
+      if (!n || n<1 || n>3 ||
+          !r || r<1 || r>3 ||
+          !s || s<1 || s>3) {
+        incomplete = true;
+      }
+    } else {
+      incomplete = true;
+    }
+    if (incomplete) {
+      disableSubmit();
+      return;
+    }
+  }
+  enableSubmit();
+}
+
+function disableSubmit() {
+  const btn = document.getElementById('submitPrescreenBtn');
+  btn.disabled = true;
+  btn.classList.remove('btn-primary');
+  btn.classList.add('btn-secondary');
+}
+
+function enableSubmit() {
+  const btn = document.getElementById('submitPrescreenBtn');
+  btn.disabled = false;
+  btn.classList.remove('btn-secondary');
+  btn.classList.add('btn-primary');
+}
+
+// Show prescreen result in modal
+function showPrescreenModal(passed, score, failMsg=null) {
+  const modalTitle = document.getElementById('prescreenModalTitle');
+  const modalBody = document.getElementById('prescreenModalBody');
+  const modalFooter = document.getElementById('prescreenModalFooter');
+
+  let titleText, bodyHtml, footerHtml;
+  if (passed) {
+    titleText = "Pre-Screen Passed!";
+    bodyHtml = `<p>You have passed the pre-screen!<br>Score: ${score}</p>`;
+    footerHtml = `
+      <button type="button" class="btn btn-primary" onclick="proceedAfterPrescreen()">
+        Proceed
+      </button>
+    `;
+  } else {
+    titleText = "Pre-Screen Failed";
+    const msg = failMsg || `Score: ${score}. Please re-check your entries.`;
+    bodyHtml = `<p>${msg}</p>`;
+    footerHtml = `
+      <button type="button" class="btn btn-secondary" onclick="closePrescreenModal()">
+        OK, I'll check again
+      </button>
+    `;
+  }
+
+  modalTitle.textContent = titleText;
+  modalBody.innerHTML = bodyHtml;
+  modalFooter.innerHTML = footerHtml;
+
+  let prescreenModal = new bootstrap.Modal(document.getElementById('prescreenResultModal'), {
+    backdrop: 'static',
+    keyboard: false
+  });
+  prescreenModal.show();
+}
+
+function proceedAfterPrescreen() {
+  window.location.href = "/annotation";
+}
+
+function closePrescreenModal() {
+  let prescreenModalEl = document.getElementById('prescreenResultModal');
+  let modalInstance = bootstrap.Modal.getInstance(prescreenModalEl);
+  if (modalInstance) {
+    modalInstance.hide();
+  }
+}
+</script>
+{% endblock %}

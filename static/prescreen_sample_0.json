@@ -1,0 +1,100 @@
+{
+  "task_id": "insq_prescreen_0",
+  "corpus_id": "insq",
+  "conversation_id": "0",
+  "segment_id": 0,
+  "topic": "Aid to Africa is Doing More Harm Than Good",
+  "target_utterances": [
+    {
+      "conversation_id": 0,
+      "phase": 1,
+      "utterance_id": 100,
+      "utterance_index": 0,
+      "utterance_speaker": "William Easterly",
+      "role": "for",
+      "utterance_text": "I’ve said it before and I’ll say it again: corruption eats aid alive. You can throw as much money as you want at a broken system. One of the biggest problems with foreign aid is that it distorts political incentives. When governments can rely on external funding instead of tax revenues, they become less accountable to their own citizens. In countries like Ethiopia and Uganda, we’ve seen authoritarian regimes strengthened—not weakened—by large aid flows. The road to development should start with empowering citizens, not bypassing them.",
+      "segment": 0,
+      "answers":{"informativeness": 3, "novelty": 3, "relevance": 3, "scope": 4}
+    },
+    {
+      "conversation_id": 0,
+      "phase": 1,
+      "utterance_id": 101,
+      "utterance_index": 1,
+      "utterance_speaker": "Gayle Smith",
+      "role": "against",
+      "utterance_text": "It’s misleading to suggest that aid inherently undermines accountability. Take the substantial reductions in HIV/AIDS cases, for instance—aid supported government-run programs that dramatically reduced the spread of the disease. What matters is how aid is designed and monitored. Blanket critiques overlook the difference between strategic investment and careless spending.",
+      "segment": 0,
+      "answers":{"informativeness": 2, "novelty": 1, "relevance": 4, "scope": 4}
+    },
+    {
+      "conversation_id": 0,
+      "phase": 1,
+      "utterance_id": 102,
+      "utterance_index": 3,
+      "utterance_speaker": "William Easterly",
+      "role": "for",
+      "utterance_text": "Gayle, could you please step forward a bit more, so people can hear? I don't get your point.",
+      "segment": 0,
+      "answers":{"informativeness": 1, "novelty": 1, "relevance": 1, "scope": 1}
+    },
+    {
+      "conversation_id": 0,
+      "phase": 1,
+      "utterance_id": 103,
+      "utterance_index": 4,
+      "utterance_speaker": "Gayle Smith",
+      "role": "against",
+      "utterance_text": "Let me have a sip of coffee, then I will continue. Here we have the Ethiopia blend.",
+      "segment": 0,
+      "answers":{"informativeness": 1, "novelty": 3, "relevance": 1, "scope": 1}
+    },
+    {
+      "conversation_id": 0,
+      "phase": 1,
+      "utterance_id": 104,
+      "utterance_index": 5,
+      "utterance_speaker": "William Easterly",
+      "role": "for",
+      "utterance_text": "Speaking of coffee, I want to share a book called A Good African Story: How a Small Company Built a Global Coffee Brand, which is about an enterprise that helped thousands of coffee farmers and created more impact than trillions in aid. They need to be independent. They know better than we do about what they really need.",
+      "segment": 0,
+      "answers":{"informativeness": 4, "novelty": 4, "relevance": 4, "scope": 4}
+    },
+    {
+      "conversation_id": 0,
+      "phase": 1,
+      "utterance_id": 105,
+      "utterance_index": 6,
+      "utterance_speaker": "Gayle Smith",
+      "role": "against",
+      "utterance_text": "But why coffee farmers? With aid, they could move beyond growing coffee. They could build economies based on IT, medical science, and many other high-end industries. It’s because of past colonialism that their economies are limited to coffee. It’s our responsibility to help restore what was lost.",
+      "segment": 0,
+      "answers":{"informativeness": 4, "novelty": 4, "relevance": 4, "scope": 4}
+    },
+    {
+      "conversation_id": 0,
+      "phase": 1,
+      "utterance_id": 106,
+      "utterance_index": 7,
+      "utterance_speaker": "William Easterly",
+      "role": "for",
+      "utterance_text": "But aid is what makes them stick with coffee. It caused dependency. We have responsibilities to too many things. Why aren’t we talking about climate change? That’s going to affect everyone. I have a climate change discussion meeting tomorrow—I believe that’s where the attention should be.",
+      "segment": 0,
+      "answers":{"informativeness": 2, "novelty": 3, "relevance": 2, "scope": 3}
+    },
+    {
+      "conversation_id": 0,
+      "phase": 1,
+      "utterance_id": 107,
+      "utterance_index": 10,
+      "utterance_speaker": "Gayle Smith",
+      "role": "against",
+      "utterance_text": "Now I can literally sense your colonialism pride.",
+      "segment": 0,
+      "answers":{"informativeness": 1, "novelty": 2, "relevance": 1, "scope": 1}
+    }
+  ],
+  "prior_history": "John(mod): Today's debate topic is \"Aid to Africa is Doing More Harm Than Good.\" Let's begin with your opening remarks. William Easterly, you argue in favor of the motion—please begin.\n\n\n William Easterly(for): Thank you. My position is clear: the current aid system is fundamentally flawed and ineffective. It not only fails to deliver substantial progress but also unintentionally supports corruption. I'm not saying aid can't ever be helpful; rather, I differentiate sharply between the potential of a reformed aid system and the reality we currently face. Without significant reforms, aid to Africa will continue to cause more harm than good.\n\n\n John(mod): Thank you, Mr. Easterly. Gayle Smith, you oppose this motion. Your response?\n\n\n Gayle Smith(against): I acknowledge the issues William raised—the aid system indeed has flaws. But it's critical to recognize that these issues don't overshadow the significant achievements aid has accomplished. Programs like Ethiopia's commodity exchange and substantial reductions in HIV/AIDS cases highlight how targeted, responsible aid can effectively support communities without necessarily empowering corrupt leaders. The evidence is clear that aid, despite imperfections, does more good than harm.\n\n\n",
+  "reading_times": [],
+  "target_total_reading_time": -1
+}

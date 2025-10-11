@@ -1,0 +1,6 @@
+method,mse_mean,mse_std,kappa_mean,kappa_std
+aspect_summary,0.361,0.572,0.788,0.263
+direct_summary,0.344,0.574,0.808,0.241
+memory_summary,0.379,0.632,0.782,0.26
+no_summary,0.48,0.604,0.763,0.256
+prior_summary,0.356,0.541,0.8,0.251
