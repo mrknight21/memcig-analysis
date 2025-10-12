@@ -22,12 +22,9 @@ stops = set(stopwords.words('english'))
 load_dotenv()
 
 def load_json_data(path):
-    try:
-        with open(path) as f:
-            json_objs = json.load(f)
-            return json_objs
-    except Exception as e:
-        pass
+    with open(path) as f:
+        json_objs = json.load(f)
+        return json_objs
 
 def clean_concls_intro(convo, speaker, is_concls):
     if is_concls:
@@ -216,7 +213,7 @@ def meta_to_string(meta, speaker_info=True):
 
 def load_dialogue(corpus, context_len=10, remove_water_mark = True, local_cache_only=False):
     # corpus = Corpus(filename=download("iq2-corpus"))
-    raw_dfs_files = glob(f"../data/raw/{corpus}/*.csv")
+    raw_dfs_files = glob(f"./data/raw/{corpus}/*.csv")
     dataset = []
     meta_dict = {}
     for i, dff in enumerate(raw_dfs_files):

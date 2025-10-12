@@ -138,7 +138,7 @@ def calculate_entropy():
     test_dataframe["model"] = model_name
 
     # ----- Save
-    out_dir = "../output"
+    out_dir = "./output"
     os.makedirs(out_dir, exist_ok=True)
     output_file = os.path.join(out_dir, (args.output_file or f"{mode_string}.csv"))
     logging.info(f"Saving dataframe to {output_file}")
