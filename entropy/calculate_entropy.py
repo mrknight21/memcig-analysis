@@ -13,7 +13,7 @@ from transformers import AutoModelForCausalLM, LlamaForCausalLM
 from transformers import DataCollatorForLanguageModeling
 
 from entropy.entropy_computation import batch_predict_logits_lm, test_predict_entropy, results_to_df
-from load_dataset import get_preprocessed_dataset_for_entropy
+from entropy.load_dataset import get_preprocessed_dataset_for_entropy
 
 
 
