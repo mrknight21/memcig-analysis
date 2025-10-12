@@ -11,7 +11,6 @@ import json
 from transformers import AutoTokenizer
 import pandas as pd
 from datasets import Dataset
-from openai import OpenAI
 from dotenv import load_dotenv
 import re
 from collections import defaultdict
@@ -21,8 +20,6 @@ from nltk.corpus import stopwords
 stops = set(stopwords.words('english'))
 
 load_dotenv()
-# Initialize OpenAI API with your API key
-client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"), organization=os.getenv("OPENAI_ORG_KEY"))
 
 def load_json_data(path):
     try:
