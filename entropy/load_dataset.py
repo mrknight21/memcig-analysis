@@ -202,12 +202,9 @@ def get_conversation_meta(convo):
     return meta
 
 def meta_to_string(meta, speaker_info=True):
-    meta_string = f"title: {meta['title']} \n"
+    meta_string = f"title: {meta['topic']} \n"
     if speaker_info:
         meta_string += f"moderator: {meta['moderator']} \n"
-        meta_string += f"speakers: \n"
-        for s, prof in meta["speakers"].items():
-            meta_string += f"name: {s}, stance: {prof['stance']}, bio: {prof['bio']} \n"
         meta_string += "\n\n"
     return meta_string
 
