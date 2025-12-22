@@ -9,3 +9,16 @@ MarkupSafe==3.0.2
 pymongo==4.12.0
 python-dotenv==1.1.0
 Werkzeug==3.1.3
+
+# Dependencies for dialogue_rating.py
+google-genai
+numpy
+pandas
+tqdm
+scikit-learn
+openai
+transformers
+torch
+accelerate
+bitsandbytes
+vllm  # Uncomment if using vLLM backend
