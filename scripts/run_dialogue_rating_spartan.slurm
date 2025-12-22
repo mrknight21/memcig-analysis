@@ -23,7 +23,9 @@ module load CUDA/12.2.0
 
 # Activate virtual environment
 # Adjust the path to your actual venv
-source ~/venvs/myenv/bin/activate
+# make conda available in non-interactive shells
+source /data/projects/punim0478/bryan/anaconda3/etc/profile.d/conda.sh
+conda activate vllm_env
 
 # Put caches somewhere with space (adjust to your project filesystem)
 mkdir -p "$HF_HOME" "$VLLM_CACHE_ROOT"
