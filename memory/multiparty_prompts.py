@@ -348,9 +348,9 @@ PRIMARY TARGET‑SELECTION PRIORITY
 Evaluate A against *all* memories B₁…Bₙ.  Choose **exactly one** B (or none)
 using this deterministic ladder:
 
-1. **SAME speaker & equivalent**  
-2. **SAME speaker & (contradiction OR forward_entail)**  
-3. **SAME speaker & backward_entail**  
+1. **SAME speaker & equivalent**
+2. **SAME speaker & backward_entail**  
+3. **SAME speaker & (contradiction OR forward_entail)**  
 4. **DIFFERENT speaker & any non‑neutral relation**  
 5. *No eligible B*→ treat A as neutral (ADD, target=null)
 

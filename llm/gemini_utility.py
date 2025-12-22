@@ -9,7 +9,7 @@ import random
 
 load_dotenv()
 
-gemini_models = ["gemini-2.5-pro"]
+gemini_models = ["gemini-2.5-pro", "gemini-2.5-flash"]
 
 
 # ── Gemini helper ──────────────────────────────────────────────────────
@@ -79,7 +79,6 @@ def _build_config(
     #    - grounding: None (if present in your SDK version)
     base["tools"] = []                 # prevent function/tool use
     base["tool_config"] = None
-    base["thinking_config"] = types.ThinkingConfig(thinking_budget=-1)
     # base["grounding"] = None           # ensure no google search grounding (if supported)
 
     return gatypes.GenerateContentConfig(**base)
@@ -142,7 +141,7 @@ async def call_gemini_async(
     while attempts_left > 0:
         attempts_left -= 1
         try:
-            resp = gemini_client.models.generate_content(
+            resp = await gemini_client.aio.models.generate_content(
                 model=model,
                 contents=prompt,
                 config=config

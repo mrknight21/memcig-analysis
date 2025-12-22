@@ -124,6 +124,105 @@ def krippendorff_alpha(
 
     return 1.0 - (Do / De)
 
+def compute_human_variation_soft(
+    df_all: pd.DataFrame,
+    outlier_report: Optional[pd.DataFrame],
+    do_calibration: Literal["quantile","center",None] = "quantile",
+    dirichlet_alpha: float = 0.5,
+    hard_strategy: Literal["two_mean_then_halfrule","median_then_soft"] = "two_mean_then_halfrule",
+    halfrule: Literal["down","up","even","soft","prior"] = "down",
+    soft_tiebreak: Literal["lower","upper","prior"] = "lower",
+    min_raters_per_item: int = 2,
+) -> pd.DataFrame:
+    """
+    Human LOO baselines per corpus × aspect, using SOFT labels:
+      - human_mae_mean/std: for each rater, MAE between their integer rating and
+        the LOO continuous consensus y_cont (computed from *filtered* annotations).
+    Returns columns:
+      [corpus, aspect, n_raters, n_items, human_mae_mean, human_mae_std]
+    """
+    # 1) filter dropped annotators (outlier removal)
+    df = _apply_outlier_filter(df_all, outlier_report)
+    if df.empty:
+        return pd.DataFrame(columns=[
+            "corpus","aspect","n_raters","n_items","human_mae_mean","human_mae_std"
+        ])
+
+    # 2) calibration (match your main aggregation choice)
+    df = _calibrate(df, do_calibration)
+
+    # global priors for LOO hard tie-breaking (used by _loo_consensus_for_group when needed)
+    counts_all = df["rating_calib"].value_counts().reindex([1,2,3,4], fill_value=0).values.astype(float)
+    priors = counts_all / max(counts_all.sum(), 1.0)
+
+    rows = []
+    # Work per corpus × aspect
+    for (corpus, aspect), dca in df.groupby(["corpus","aspect"], sort=False):
+        # keep only items with at least min_raters_per_item
+        valid_items = (
+            dca.groupby("utterance_id")
+               .filter(lambda g: g["rater_id"].nunique() >= min_raters_per_item)
+        )
+        if valid_items.empty:
+            rows.append({
+                "corpus": corpus, "aspect": aspect,
+                "n_raters": int(dca["rater_id"].nunique()),
+                "n_items": 0,
+                "human_mae_mean": np.nan,
+                "human_mae_std": np.nan,
+            })
+            continue
+
+        # Build per-item groups once
+        groups_by_item = {
+            utt: g[["rater_id","rating_calib"]].copy()
+            for utt, g in valid_items.groupby("utterance_id", sort=False)
+        }
+
+        # Collect per-rater MAE over all their evaluated items
+        mae_by_rater: Dict[str, list] = defaultdict(list)
+
+        for utt, g in groups_by_item.items():
+            # need at least 2 raters to do LOO
+            if g["rater_id"].nunique() < min_raters_per_item:
+                continue
+
+            # LOO consensus map for this item: rater_id -> (y_cont_loo, y_hard_loo)
+            loo_map = _loo_consensus_for_group(
+                g,
+                rater_col="rater_id",
+                rating_col="rating_calib",
+                dirichlet_alpha=dirichlet_alpha,
+                hard_strategy=hard_strategy,
+                halfrule=halfrule,
+                priors=priors,
+                soft_tiebreak=soft_tiebreak,
+            )
+
+            for _, row in g.iterrows():
+                rid = str(row["rater_id"])
+                if rid not in loo_map:
+                    continue
+                y_cont_loo, _ = loo_map[rid]
+                r_val = int(row["rating_calib"])
+                mae_by_rater[rid].append(abs(r_val - y_cont_loo))
+
+        # roll-up per-rater → corpus×aspect summary
+        per_rater_mae = [float(np.mean(v)) for v in mae_by_rater.values() if len(v) > 0]
+
+        rows.append({
+            "corpus": corpus,
+            "aspect": aspect,
+            "n_raters": int(dca["rater_id"].nunique()),
+            "n_items": int(valid_items["utterance_id"].nunique()),
+            "human_mae_mean": float(np.mean(per_rater_mae)) if per_rater_mae else np.nan,
+            "human_mae_std": float(np.std(per_rater_mae, ddof=0)) if per_rater_mae else np.nan,
+        })
+
+    return pd.DataFrame(rows).sort_values(["corpus","aspect"]).reset_index(drop=True)
+
+
+
 
 def compute_corpus_alphas(
     df_all: pd.DataFrame,
@@ -1193,5 +1292,19 @@ def main():
     human_bounds = human_range_table(human_var)
     print("\n=== Human (LOO) acceptable range: mean ± 1 SD ===")
     print(human_bounds[["corpus", "aspect", "mean_qwk", "lower", "upper"]])
+
+    # Soft-label Human LOO (MAE) on filtered annotations
+    human_soft = compute_human_variation_soft(
+        df_all,
+        outlier_report=outlier_report,
+        do_calibration=None,  # match your aggregation choice above
+        dirichlet_alpha=0.0,  # match aggregation choice
+        hard_strategy="two_mean_then_halfrule",
+        halfrule="down",
+        soft_tiebreak="prior",
+        min_raters_per_item=2
+    )
+    print("\n=== Human LOO (soft label) — MAE per corpus × aspect ===")
+    print(human_soft)
 if __name__ == "__main__":
     main()

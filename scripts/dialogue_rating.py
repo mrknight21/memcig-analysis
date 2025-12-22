@@ -1,7 +1,8 @@
 from __future__ import annotations
 
-import os, io, json, re, glob, asyncio, tempfile, shutil
+import os, io, json, re, glob, asyncio, tempfile, shutil, argparse
 from typing import Dict, Any, List, Tuple, Optional, Literal, Callable
+from google.genai import types
 
 import numpy as np
 import pandas as pd
@@ -16,13 +17,14 @@ from prompts import (
     build_eval_prompt_using_external_ratings,
     EVAL_CLAIMS_WITH_MEMORY_PROMPT_FULL,
     FullRatingClass,
-    InfomrativeRatingClass,  # keeping your exact class names
+    InformativeRatingClass,  # keeping your exact class names
     MixedRatingClass,
 )
 from task_utility import remove_code_blocks, slice_to_text, strip_html_regex
 from util import load_json
 from llm.openai_utility import call_openai_async
 from llm.gemini_utility import call_gemini_async, call_gemini_sync
+from llm.oss_utility import call_oss_async, call_oss
 from memory.multiparty_memory import generate_formatted_memories
 
 
@@ -30,7 +32,7 @@ from memory.multiparty_memory import generate_formatted_memories
 #  Globals / Settings
 # ---------------------------------------------------------------------------
 
-_BackendName = Literal["openai", "gemini"]
+_BackendName = Literal["openai", "gemini", "oss"]
 _Backend = Tuple[_BackendName, str]  # (provider, model)
 
 SELECTED_CONVIDS: Dict[str, List[int]] = {
@@ -45,6 +47,22 @@ RETRY_ATTEMPTS = 5
 # ---------------------------------------------------------------------------
 #  Utilities
 # ---------------------------------------------------------------------------
+
+def _oss_config_for_mode(_: str, model_name: str = ""):
+    # Deterministic JSON-style behavior for rating
+    # Auto-enable 4-bit for large models (70B+)
+    is_large = "72B" in model_name or "70B" in model_name
+    
+    return {
+        "temperature": 0.0,
+        "top_p": 0.9,
+        "max_output_tokens": 1024,
+        "stop": None,
+        "load_4bit": is_large,
+        # Optional: you can pass "system" here if you want a strict instruction
+        # "system": "You must ONLY return a valid JSON array with integers 1-4."
+    }
+
 
 def atomic_write_json(path: str, data: Any) -> None:
     """Write JSON atomically to avoid file corruption on crashes."""
@@ -161,35 +179,52 @@ def _extract_text(output: Any) -> str:
     return m.group(1).strip() if m else s.strip()
 
 
+
+# You have two easy options:
+#     Prefix the model string (no changes elsewhere):
+#         ("oss", "hf:Qwen/Qwen2.5-7B-Instruct") → HF backend
+#         ("oss", "vllm:Qwen/Qwen2.5-7B-Instruct") → vLLM backend
 def _get_llm(backend: _Backend, *, use_async: bool = True) -> Callable:
-    """Return an LLM callable for the requested backend."""
+    """
+    Map (provider, model) -> callable(prompt, model=..., generation_config=..., valid_func=...)
+    """
     provider, _model = backend
     if provider == "openai":
-        # OpenAI path is async
-        return call_openai_async
-    # Gemini path supports both
-    return call_gemini_async if use_async else call_gemini_sync
+        return call_openai_async                      # your existing utility
+    if provider == "gemini":
+        return call_gemini_async if use_async else call_gemini_sync
+    if provider in ("oss", "oss-hf", "oss-vllm"):
+        # For oss we always return the async wrapper (it runs sync HF/vLLM in a thread)
+        return call_oss_async
+    raise ValueError(f"Unknown provider: {provider}")
 
 
-def _gemini_config_for_mode(mode: str):
+
+def _gemini_config_for_mode(mode: str, thinking_budget: int = 1024):
     """Schema’d responses for Gemini by rating mode."""
+    # Common config with thinking budget
+    base_config = {
+        "temperature": 0.0,
+        "thinking_config": types.ThinkingConfig(thinking_budget=thinking_budget),
+    }
+
     if mode == "info":
         return {
+            **base_config,
             "response_mime_type": "application/json",
-            "response_schema": list[InfomrativeRatingClass],
-            "temperature": 0.0,
+            "response_schema": list[InformativeRatingClass],
         }
     if mode == "mix":
         return {
+            **base_config,
             "response_mime_type": "application/json",
             "response_schema": list[MixedRatingClass],
-            "temperature": 0.0,
         }
     # default "full"
     return {
+        **base_config,
         "response_mime_type": "application/json",
         "response_schema": list[FullRatingClass],
-        "temperature": 0.0,
     }
 
 
@@ -294,13 +329,16 @@ async def _call_rater(
     prompt: str,
     valid_func,
     attempts: int = RETRY_ATTEMPTS,
+    mode: str = "full",
 ) -> Any:
     """Generic retry wrapper for model calls, returning parsed JSON."""
     provider, model = backend
     if provider == "gemini":
-        gen_config = _gemini_config_for_mode("full")  # default; the caller can render prompt per mode already
-    else:
-        gen_config = _openai_config_for_mode("full")
+        gen_config = _gemini_config_for_mode(mode)
+    elif provider == "openai":
+        gen_config = _openai_config_for_mode(mode)
+    else:  # OSS
+        gen_config = _oss_config_for_mode(mode, model_name=model)
 
     last_err = None
     text = None
@@ -415,6 +453,7 @@ async def rate_text(
     input_obj: Dict[str, Any],
     backend: _Backend,
     mode: str = "full",
+    thinking_budget: int = 1024,
 ):
     """Utterance-level rating for a segment, returning a list of ratings."""
     # Render prompt
@@ -423,9 +462,11 @@ async def rate_text(
     # Backend-specific generation config
     provider, _ = backend
     if provider == "gemini":
-        gen_config = _gemini_config_for_mode(mode)
-    else:
+        gen_config = _gemini_config_for_mode(mode, thinking_budget=thinking_budget)
+    elif provider == "openai":
         gen_config = _openai_config_for_mode(mode)
+    else:  # OSS
+        gen_config = _oss_config_for_mode(mode, model_name=backend[1])
 
     # Retry with validation
     attempts = RETRY_ATTEMPTS
@@ -460,6 +501,7 @@ async def generate_rating_variants(
     methods: List[str] | None = None,
     split_aspects: bool = False,
     use_external_ratings: bool = False,
+    thinking_budget: int = 1024,
 ) -> Tuple[Dict[str, str], Dict[str, List[Any]]]:
     """
     Generate multiple rating variants for a dialogue segment under different knowledge views.
@@ -501,7 +543,7 @@ async def generate_rating_variants(
         }
         async with sem:
             try:
-                resp = await rate_text(llm, payload, backend=backend, mode=mode)
+                resp = await rate_text(llm, payload, backend=backend, mode=mode, thinking_budget=thinking_budget)
             except Exception:
                 resp = None
         # Normalize failure to []
@@ -615,7 +657,8 @@ async def predict_utterances_ratings(all_tasks,
                                      backend: _Backend, output,
                                      split_aspects: bool = False,
                                      external_ratings: str = None,
-                                     on_segment: bool = True):
+                                     on_segment: bool = True,
+                                     thinking_budget: int = 1024):
     tasks: List[Dict[str, Any]] = []
 
     ex_df = None
@@ -659,7 +702,7 @@ async def predict_utterances_ratings(all_tasks,
             print(f'catch incomplete task: {task["task_id"]}')
 
         segment_id = task["segment_id"]
-        segments = load_json(f"../data/processed_segments/{provider}/{conv_id}_meta_checkpoint.json")
+        segments = load_json(f"../data/processed_segments/openai/{conv_id}_meta_checkpoint.json")
         segment = segments["segmentation"]["segments"][segment_id]
         start, end = segment["intervals"]
         start = task["target_utterances"][0]["utterance_index"]
@@ -690,7 +733,7 @@ async def predict_utterances_ratings(all_tasks,
                 "memory": memory,
                 "interval": [start, end],
             }
-            _, ratings = await generate_rating_variants(info, backend, split_aspects=split_aspects, use_external_ratings=use_external_ratings)
+            _, ratings = await generate_rating_variants(info, backend, split_aspects=split_aspects, use_external_ratings=use_external_ratings, thinking_budget=thinking_budget)
             if len(ratings["full"]) == 0:
                 erro_count += 1
 
@@ -714,7 +757,7 @@ async def predict_utterances_ratings(all_tasks,
                 }
 
                 _, utt_ratings = await generate_rating_variants(info, backend, split_aspects=split_aspects,
-                                                            use_external_ratings=use_external_ratings)
+                                                            use_external_ratings=use_external_ratings, thinking_budget=thinking_budget)
                 ratings.append(utt_ratings)
 
 
@@ -730,7 +773,12 @@ async def predict_utterances_ratings(all_tasks,
 #  CLAIM-LEVEL RATING (COMPLETED)
 # ---------------------------------------------------------------------------
 
-async def predict_claims_ratings(backend: _Backend):
+async def predict_claims_ratings(
+    all_tasks: List[Dict[str, Any]],
+    backend: _Backend,
+    output: str,
+    thinking_budget: int = 1024
+):
     """
     For each selected task:
       - Walk segment utterances
@@ -738,14 +786,13 @@ async def predict_claims_ratings(backend: _Backend):
       - Ask the model to rate each claim (with existing-memory and immediate context)
       - Save to task["claim_predictions"][model][<utterance_index>] = List[ratings]
     """
-    all_tasks = load_json("../data/ratings/tasks_ratings.json")
     tasks: List[Dict[str, Any]] = []
 
     for task in all_tasks:
         conv_id_prefix, conv_num = task["conversation_id"].split("_")
         if conv_id_prefix in SELECTED_CONVIDS and int(conv_num) in SELECTED_CONVIDS[conv_id_prefix]:
             tasks.append(task)
-
+    
     # Map conversation csv files
     dfs_dict: Dict[str, str] = {}
     for file in glob.glob("../data/raw/insq/*.csv") + glob.glob("../data/raw/fora/*.csv"):
@@ -841,7 +888,7 @@ async def predict_claims_ratings(backend: _Backend):
                     # We'll reuse _call_rater with an injected generation_config via prompt; simpler to inline here:
 
                     provider, mdl = backend
-                    gen_config = _gemini_config_for_mode("full") if provider == "gemini" else _openai_config_for_mode("full")
+                    gen_config = _gemini_config_for_mode("full", thinking_budget=thinking_budget) if provider == "gemini" else _openai_config_for_mode("full")
 
                     # Retry loop
                     last_err, txt = None, None
@@ -874,7 +921,7 @@ async def predict_claims_ratings(backend: _Backend):
 
         if not claim_call_futures:
             # Nothing to rate in this segment
-            atomic_write_json("../data/ratings/tasks_ratings.json", all_tasks)
+            atomic_write_json(output, tasks)
             continue
 
         results = await asyncio.gather(*claim_call_futures, return_exceptions=True)
@@ -888,7 +935,7 @@ async def predict_claims_ratings(backend: _Backend):
             out_bucket[str(u_idx)] = ratings  # save under string key for JSON stability
 
         # Persist after each task to allow resuming
-        atomic_write_json("../data/ratings/tasks_ratings.json", all_tasks)
+        atomic_write_json(output, tasks)
 
 
 # ---------------------------------------------------------------------------
@@ -896,15 +943,57 @@ async def predict_claims_ratings(backend: _Backend):
 # ---------------------------------------------------------------------------
 
 def main():
-    # Example: run claim-level ratings with OpenAI
-    models = ["gpt-5"]
-    for i in range(1,2):
-        print("Iteration {}".format(i))
-        for m in models:
-            print("Model: {}".format(m))
-            tasks = load_json(f"../data/ratings/tasks_ratings_gptex.json")
-            asyncio.run(predict_utterances_ratings(tasks, ("openai", m), output=f"../data/ratings/tasks_ratings_gptex.json", external_ratings="gpt_ex", split_aspects=True, on_segment=True))
-            # asyncio.run(predict_claims_ratings(("openai", m)))
+    parser = argparse.ArgumentParser(description="Run dialogue rating pipeline.")
+    parser.add_argument("--model", type=str, required=True, help="Model name (e.g., gemini-2.5-pro, Qwen/Qwen2.5-72B-Instruct)")
+    parser.add_argument("--backend", type=str, required=True, choices=["gemini", "openai", "oss"], help="Backend provider")
+    parser.add_argument("--input", type=str, default="../data/ratings/tasks_ratings_{}.json", help="Input path pattern (use {} for iteration)")
+    parser.add_argument("--output", type=str, default="../data/ratings/tasks_ratings_{}_{}.json", help="Output path pattern (use {} for backend and iteration)")
+    parser.add_argument("--iterations", type=int, default=1, help="Number of iterations to run")
+    parser.add_argument("--external-ratings", type=str, default=None, choices=["hm", "gpt_ex"], help="External ratings source")
+    parser.add_argument("--split-aspects", action="store_true", help="Split aspects into separate calls")
+    parser.add_argument("--on-segment", action="store_true", help="Run on segment level")
+    parser.add_argument("--thinking-budget", type=int, default=1024, help="Gemini thinking budget")
+    parser.add_argument("--level", type=str, default="utterance", choices=["utterance", "claim"], help="Rating level")
+
+    args = parser.parse_args()
+
+    for i in range(args.iterations):
+        print(f"Iteration {i}")
+        
+        # Format paths
+        input_path = args.input.format(i) if "{}" in args.input else args.input
+        # Handle output path formatting flexibly
+        if args.output.count("{}") == 2:
+            output_path = args.output.format(args.backend, i)
+        elif args.output.count("{}") == 1:
+            output_path = args.output.format(i)
+        else:
+            output_path = args.output
+
+        print(f"Model: {args.model}")
+        print(f"Backend: {args.backend}")
+        print(f"Input: {input_path}")
+        print(f"Output: {output_path}")
+        
+        tasks = load_json(input_path)
+        
+        if args.level == "utterance":
+            asyncio.run(predict_utterances_ratings(
+                tasks, 
+                (args.backend, args.model), 
+                output=output_path, 
+                split_aspects=args.split_aspects, 
+                on_segment=args.on_segment,
+                external_ratings=args.external_ratings,
+                thinking_budget=args.thinking_budget
+            ))
+        elif args.level == "claim":
+            asyncio.run(predict_claims_ratings(
+                tasks,
+                (args.backend, args.model),
+                output=output_path,
+                thinking_budget=args.thinking_budget
+            ))
 
 
 if __name__ == "__main__":

@@ -213,14 +213,14 @@ def prompts_list_to_jsonl(data_list: list, filename: str) -> None:
 
 def post_openai_batch_request(batch_data_file, metadata):
     # upload batch request data
-    batch_input_file = client.files.create(
+    batch_input_file = client_async.files.create(
         file=open(batch_data_file, "rb"),
         purpose="batch"
     )
 
     batch_input_file_id = batch_input_file.id
 
-    response = client.batches.create(
+    response = client_async.batches.create(
         input_file_id=batch_input_file_id,
         endpoint="/v1/chat/completions",
         completion_window="24h",
@@ -244,22 +244,22 @@ def check_status(file):
         if len(records) > 0:
             for index, ids in records.items():
                 print(f"part {index} status:")
-                batch_info = client.batches.retrieve(ids["batch_id"])
+                batch_info = client_async.batches.retrieve(ids["batch_id"])
                 print(batch_info.status)
 
 def check_single_batch_status(batch_id):
-    batch_info = client.batches.retrieve(batch_id)
+    batch_info = client_async.batches.retrieve(batch_id)
     print(batch_info.status)
     return batch_info.status
 
 
 def download_batch_output(batch_id):
     print(f"{batch_id} status:")
-    batch_info = client.batches.retrieve(batch_id)
+    batch_info = client_async.batches.retrieve(batch_id)
     print(batch_info.status)
     outputs = []
     if batch_info.status == "completed":
-        content = client.files.content(batch_info.output_file_id)
+        content = client_async.files.content(batch_info.output_file_id)
         for l in content.iter_lines():
             json_output = json.loads(l)
             custom_id = json_output["custom_id"]

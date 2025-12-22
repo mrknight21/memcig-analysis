@@ -459,18 +459,18 @@ def generate_intro_summaries(*, backend: _Backend = "gemini", use_async: bool = 
 
 
 def generate_segment_summaries(backend, overwrite: bool = False) -> None:
-    dialogue_files = glob.glob("../data/raw/insq/*.csv")
+    dialogue_files = glob.glob("../data/raw/fora/*.csv")
     memory = MultipartyMemory(backend=backend["memory"][0])
     for idx, df_path in enumerate(dialogue_files, start=1):
         logger.info("Summarising (%d/%d): %s", idx, len(dialogue_files), df_path)
 
         cov_id = int(df_path.split("_")[-1].replace(".csv", ""))
 
-        if cov_id not in [17957]:
+        if cov_id not in [2245]:
             continue
 
         meta_path = df_path.replace(".csv", "_meta.json")
-        checkpoint_path = meta_path.replace(".json", "_checkpoint.json").replace("/raw/insq/", f"/processed_segments/openai/")
+        checkpoint_path = meta_path.replace(".json", "_checkpoint.json").replace("/raw/fora/", f"/processed_segments/openai/")
         meta_path = checkpoint_path
         output_path = checkpoint_path
 

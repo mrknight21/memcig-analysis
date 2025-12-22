@@ -552,7 +552,7 @@ def process_conversation_segment_memory(segment_df, meta, memory, run_id, contex
         start = 0
     else:
         dialogue_df = pd.concat([context_df, segment_df], ignore_index=True)
-        start = context_k
+        start = min(context_k, len(context_df))
 
     dialogue_df = dialogue_df.sort_values(by='utterance_index').reset_index(drop=True)
     results = []

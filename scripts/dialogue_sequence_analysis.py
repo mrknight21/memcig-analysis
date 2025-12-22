@@ -74,7 +74,9 @@ def aggregate_sequence_dfs():
                 utt_id = row.utterance_id
                 utt_record = {"corpus_id": corpus, "conv_id": conv_id,
                               "utterance_id": utt_id, "utt_index": utt_index,
+                              "segment_id": row.segment,
                               "role": role, "text": text,
+                              "speaker": row.utterance_speaker,
                               "info": rating["informativeness"],
                               "novo": rating["novelty"],
                               "relv": rating["relevance"],
@@ -347,6 +349,7 @@ def summarize_adjacency(part):
     return baseline, out[['feature','level','mean','sem','count','lift_vs_overall','lift_vs_overall_marked','p_value']]
 
 def main():
+    aggregate_sequence_dfs()
     seq_files = glob.glob("../data/whow_sequences/*.csv")
     seq_dfs = [pd.read_csv(f) for f in seq_files]
     seq_dfs = [df for df in seq_dfs if len(df) > 100]

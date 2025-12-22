@@ -641,7 +641,7 @@ class FullRatingClass(BaseModel):
     relevance: int
     implication_scope: int
 
-class InfomrativeRatingClass(BaseModel):
+class InformativeRatingClass(BaseModel):
     utterance_index: int
     informativeness: int
 
