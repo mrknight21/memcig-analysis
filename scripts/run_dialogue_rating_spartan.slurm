@@ -3,6 +3,9 @@
 #SBATCH --nodes=1
 #SBATCH --ntasks=1
 #SBATCH --cpus-per-task=16
+#SBATCH --constraint=dlg5
+#SBATCH --qos=gpgpudeeplearn
+#SBATCH -A punim0478
 #SBATCH --mem=128G
 #SBATCH --time=04:00:00
 #SBATCH --partition=gpu-h100
@@ -10,6 +13,10 @@
 #SBATCH --chdir=/home/mingbin/punim0478/memcig-analysis
 #SBATCH --output=logs/rating_%j.out
 #SBATCH --error=logs/rating_%j.err
+#SBATCH --mail-user=mingbin@unimelb.edu.au
+#SBATCH --mail-type=FAIL
+#SBATCH --mail-type=BEGIN
+#SBATCH --mail-type=END
 
 
 set -euo pipefail
