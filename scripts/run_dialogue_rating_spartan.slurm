@@ -31,8 +31,15 @@ python -c "import torch; print('torch:', torch.__version__); print('cuda availab
 nvidia-smi || true
 echo "================="
 
-# Put caches somewhere with space (adjust to your project filesystem)
+# Ensure imports like "from prompts import ..." work
+export PYTHONPATH="$PWD:$PYTHONPATH"
+
+# Put caches somewhere with space (already set in your .bashrc, but safe)
 mkdir -p "$HF_HOME" "$VLLM_CACHE_ROOT"
+
+# HuggingFace hub timeouts (helps on compute nodes)
+export HF_HUB_ETAG_TIMEOUT=60
+export HF_HUB_DOWNLOAD_TIMEOUT=600
 
 # Set up environment variables for vLLM
 export VLLM_WORKER_MULTIPROC_METHOD=spawn
