@@ -14,25 +14,23 @@
 #SBATCH --output=logs/rating_%j.out
 #SBATCH --error=logs/rating_%j.err
 #SBATCH --mail-user=mingbin@unimelb.edu.au
-#SBATCH --mail-type=FAIL
-#SBATCH --mail-type=BEGIN
-#SBATCH --mail-type=END
+#SBATCH --mail-type=FAIL,BEGIN,END
 
 
 set -euo pipefail
 
 mkdir -p logs
 
-# Load necessary modules
-module purge
-module load Python/3.11.3
-module load CUDA/12.2.0
-
-# Activate virtual environment
-# Adjust the path to your actual venv
-# make conda available in non-interactive shells
+# Activate conda env (non-interactive safe)
 source /data/projects/punim0478/bryan/anaconda3/etc/profile.d/conda.sh
 conda activate vllm_env
+
+# (Optional) quick sanity checks in log
+echo "=== ENV CHECK ==="
+which python
+python -c "import torch; print('torch:', torch.__version__); print('cuda available:', torch.cuda.is_available()); print('device:', torch.cuda.get_device_name(0) if torch.cuda.is_available() else 'CPU')"
+nvidia-smi || true
+echo "================="
 
 # Put caches somewhere with space (adjust to your project filesystem)
 mkdir -p "$HF_HOME" "$VLLM_CACHE_ROOT"
