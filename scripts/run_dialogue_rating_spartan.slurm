@@ -32,7 +32,7 @@ nvidia-smi || true
 echo "================="
 
 # Ensure imports like "from prompts import ..." work
-export PYTHONPATH="$PWD:$PYTHONPATH"
+export PYTHONPATH="$PWD:${PYTHONPATH:-}"
 
 # Put caches somewhere with space (already set in your .bashrc, but safe)
 mkdir -p "$HF_HOME" "$VLLM_CACHE_ROOT"
