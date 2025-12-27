@@ -78,19 +78,19 @@ for i in $(seq 1 120); do
   sleep 2
 done
 
-# Run the rating script
-# Note: We pass "vllm:$MODEL_PATH" to tell the script to use the vLLM backend logic
-# but since we set VLLM_BASE_URL, the oss_utility should pick it up.
-# Actually, looking at oss_utility.py:
-# if model.startswith("vllm:"): backend="vllm", raw_model=model[5:]
-# So we should pass --model "vllm:$MODEL_PATH" --backend oss
-
 echo "Running dialogue_rating.py..."
-python -m scripts.dialogue_rating \
+
+REPO="/data/gpfs/projects/punim0478/bryan/memcig-analysis"
+export PYTHONPATH="$REPO:${PYTHONPATH:-}"
+
+cd "$REPO/scripts"
+
+python dialogue_rating.py \
   --model "vllm:$MODEL_PATH" \
   --backend oss \
-  --input "data/ratings/tasks_ratings_{}.json" \
-  --output "data/ratings/tasks_ratings_{}_{}.json" \
+  --input "../data/ratings/tasks_ratings_{}.json" \
+  --output "../data/ratings/tasks_ratings_{}_{}.json" \
   --iterations 1 \
   --thinking-budget 1024
+
 
