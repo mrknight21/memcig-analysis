@@ -32,7 +32,7 @@ nvidia-smi || true
 echo "================="
 
 # Ensure imports like "from prompts import ..." work
-export PYTHONPATH="$PWD:${PYTHONPATH:-}"
+# export PYTHONPATH="$PWD:${PYTHONPATH:-}"
 
 # Put caches somewhere with space (already set in your .bashrc, but safe)
 mkdir -p "$HF_HOME" "$VLLM_CACHE_ROOT"
@@ -86,11 +86,11 @@ done
 # So we should pass --model "vllm:$MODEL_PATH" --backend oss
 
 echo "Running dialogue_rating.py..."
-python scripts/dialogue_rating.py \
-    --model "vllm:$MODEL_PATH" \
-    --backend oss \
-    --input "data/ratings/tasks_ratings_{}.json" \
-    --output "data/ratings/tasks_ratings_{}_{}.json" \
-    --iterations 1 \
-    --thinking-budget 1024
+python -m scripts.dialogue_rating \
+  --model "vllm:$MODEL_PATH" \
+  --backend oss \
+  --input "data/ratings/tasks_ratings_{}.json" \
+  --output "data/ratings/tasks_ratings_{}_{}.json" \
+  --iterations 1 \
+  --thinking-budget 1024
 
