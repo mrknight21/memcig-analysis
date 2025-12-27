@@ -44,7 +44,8 @@ export HF_HUB_DOWNLOAD_TIMEOUT=600
 # Set up environment variables for vLLM
 export VLLM_WORKER_MULTIPROC_METHOD=spawn
 
-MODEL_PATH="Qwen/Qwen3-30B-A3B-Instruct-2507"
+# MODEL_PATH="Qwen/Qwen3-30B-A3B-Instruct-2507"
+MODEL_PATH="Qwen/Qwen3-4B-Instruct-2507"
 
 
 # Pick a random port
