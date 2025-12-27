@@ -44,7 +44,7 @@ export HF_HUB_DOWNLOAD_TIMEOUT=600
 # Set up environment variables for vLLM
 export VLLM_WORKER_MULTIPROC_METHOD=spawn
 
-MODEL_PATH="Qwen/Qwen3-30B-A3B-Instruct-2507-FP8"
+MODEL_PATH="Qwen/Qwen3-30B-A3B-Instruct-2507"
 
 
 # Pick a random port
@@ -90,7 +90,7 @@ python dialogue_rating.py \
   --backend oss \
   --input "../data/ratings/tasks_ratings_{}.json" \
   --output "../data/ratings/tasks_ratings_{}_{}.json" \
-  --iterations 1 \
+  --iterations 3 \
   --thinking-budget 1024
 
 
