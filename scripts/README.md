@@ -38,7 +38,7 @@ The full-conversation output is for local analysis unless transcript redistribut
 
 ## Latency Appendix
 
-- `benchmark_memory_latency_debug.py`: benchmark memory-operation latency with per-operation logs.
+- `benchmark_memory_latency.py`: benchmark memory-operation latency with per-operation logs.
 - `benchmark_rating_latency.py`: benchmark rating inference latency in memory mode.
 
 INSQ can be run directly from the release metadata:
@@ -52,7 +52,7 @@ python scripts/benchmark_rating_latency.py \
 ```
 
 ```bash
-python scripts/benchmark_memory_latency_debug.py \
+python scripts/benchmark_memory_latency.py \
   --corpus insq \
   --episode-id insq_2228 \
   --segments 0,1,2 \

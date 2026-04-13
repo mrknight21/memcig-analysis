@@ -17,9 +17,7 @@ This codebase was originally developed as a working research repository. The cur
 - tester-specific blacklist handles were removed from public defaults
 - the finalized annotation dump was exported locally and anonymized
 
-Some parts of the repo are still exploratory or environment-specific, especially notebooks and model-running scripts. The sections below describe the intended release surface.
-
-Before publishing, use `RELEASE_TODO.md` as the final release checklist.
+Some parts of the repo require external services or model backends, but the sections below describe the intended release surface.
 
 ## Repository Layout
 
@@ -116,7 +114,7 @@ The main reusable pipeline pieces are:
 - segmentation and summarisation workflow: `scripts/dialogue_segmentation.py` and `scripts/dialogue_summarisation.py`
 - rating workflow: `scripts/dialogue_rating.py`
 - integrated label table builder: `python scripts/build_integrated_label_release.py --help`
-- latency benchmark scripts: `scripts/benchmark_memory_latency_debug.py` and `scripts/benchmark_rating_latency.py`
+- latency benchmark scripts: `scripts/benchmark_memory_latency.py` and `scripts/benchmark_rating_latency.py`
 
 For the web interface:
 

@@ -19,5 +19,5 @@ Model settings used for the latency runs:
 
 Related scripts:
 
-- `scripts/benchmark_memory_latency_debug.py`
+- `scripts/benchmark_memory_latency.py`
 - `scripts/benchmark_rating_latency.py`
