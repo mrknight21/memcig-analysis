@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import os, io, json, re, glob, asyncio, tempfile, shutil, argparse
+from pathlib import Path
 from typing import Dict, Any, List, Tuple, Optional, Literal, Callable
 from google.genai import types
 
@@ -78,6 +79,33 @@ def atomic_write_json(path: str, data: Any) -> None:
                 os.remove(tmp)
         except Exception:
             pass
+
+
+def _conversation_csv_map(include_fora: bool = False) -> Dict[str, str]:
+    patterns = ["data/raw/insq/*.csv"]
+    if include_fora:
+        patterns.append("data/raw/fora/*.csv")
+    dfs_dict: Dict[str, str] = {}
+    for pattern in patterns:
+        for file in glob.glob(pattern):
+            cid = os.path.basename(file).split(".")[0]
+            dfs_dict[cid] = file
+    return dfs_dict
+
+
+def _load_segment_meta(conv_id: str, provider: str = "openai") -> Dict[str, Any]:
+    corpus = conv_id.split("_", 1)[0]
+    release_meta = Path("data") / "raw" / corpus / f"{conv_id}_meta.json"
+    if release_meta.exists():
+        meta = load_json(str(release_meta))
+        if meta.get("segmentation", {}).get("segments"):
+            return meta
+
+    archived = Path("data") / "archive_local" / "processed_segments" / provider / f"{conv_id}_meta_checkpoint.json"
+    if archived.exists():
+        return load_json(str(archived))
+
+    raise FileNotFoundError(f"No segment metadata found for {conv_id}: {release_meta} or {archived}")
 
 
 def restructure_ratings(ratings: Dict[str, Dict[str, List[Dict[str, Any]]]]
@@ -230,7 +258,7 @@ def _gemini_config_for_mode(mode: str, thinking_budget: int = 1024):
 
 def _openai_config_for_mode(_: str):
     """OpenAI JSON-ish response config (uses your utility’s args)."""
-    return {"reason_effort": "medium", "verbosity": "low", "format": "json_object"}
+    return {"reasoning_effort": "minimal"}
 
 
 def _make_prompt(mode: str, input_obj: Dict[str, Any]) -> str:
@@ -676,11 +704,9 @@ async def predict_utterances_ratings(all_tasks,
         if conv_id_prefix in SELECTED_CONVIDS and int(conv_num) in SELECTED_CONVIDS[conv_id_prefix]:
             tasks.append(task)
 
-    # Map conversation csv files
-    dfs_dict: Dict[str, str] = {}
-    for file in glob.glob("../data/raw/insq/*.csv") + glob.glob("../data/raw/fora/*.csv"):
-        cid = os.path.basename(file).split(".")[0]
-        dfs_dict[cid] = file
+    # Map redistributable conversation CSV files. FORA raw text is intentionally
+    # excluded from the public release unless users add it locally.
+    dfs_dict = _conversation_csv_map(include_fora=False)
 
     provider, model = backend
 
@@ -702,7 +728,7 @@ async def predict_utterances_ratings(all_tasks,
             print(f'catch incomplete task: {task["task_id"]}')
 
         segment_id = task["segment_id"]
-        segments = load_json(f"../data/processed_segments/openai/{conv_id}_meta_checkpoint.json")
+        segments = _load_segment_meta(conv_id, provider="openai")
         segment = segments["segmentation"]["segments"][segment_id]
         start, end = segment["intervals"]
         start = task["target_utterances"][0]["utterance_index"]
@@ -793,11 +819,9 @@ async def predict_claims_ratings(
         if conv_id_prefix in SELECTED_CONVIDS and int(conv_num) in SELECTED_CONVIDS[conv_id_prefix]:
             tasks.append(task)
     
-    # Map conversation csv files
-    dfs_dict: Dict[str, str] = {}
-    for file in glob.glob("../data/raw/insq/*.csv") + glob.glob("../data/raw/fora/*.csv"):
-        cid = os.path.basename(file).split(".")[0]
-        dfs_dict[cid] = file
+    # Map redistributable conversation CSV files. FORA raw text is intentionally
+    # excluded from the public release unless users add it locally.
+    dfs_dict = _conversation_csv_map(include_fora=False)
 
     provider, model = backend
     llm = _get_llm(backend, use_async=True)
@@ -818,7 +842,7 @@ async def predict_claims_ratings(
         if task["claim_predictions"][model]:
             continue
 
-        segments = load_json(f"../data/processed_segments/{provider}/{conv_id}_meta_checkpoint.json")
+        segments = _load_segment_meta(conv_id, provider=provider)
         segment = segments["segmentation"]["segments"][segment_id]
 
         start, end = segment["intervals"]
@@ -946,8 +970,8 @@ def main():
     parser = argparse.ArgumentParser(description="Run dialogue rating pipeline.")
     parser.add_argument("--model", type=str, required=True, help="Model name (e.g., gemini-2.5-pro, Qwen/Qwen2.5-72B-Instruct)")
     parser.add_argument("--backend", type=str, required=True, choices=["gemini", "openai", "oss"], help="Backend provider")
-    parser.add_argument("--input", type=str, default="../data/ratings/tasks_ratings_{}.json", help="Input path pattern (use {} for iteration)")
-    parser.add_argument("--output", type=str, default="../data/ratings/tasks_ratings_{}_{}.json", help="Output path pattern (use {} for backend and iteration)")
+    parser.add_argument("--input", type=str, default="data/archive_local/ratings/tasks_ratings_{}.json", help="Input path pattern (use {} for iteration)")
+    parser.add_argument("--output", type=str, default="data/archive_local/ratings/tasks_ratings_{}_{}.json", help="Output path pattern (use {} for backend and iteration)")
     parser.add_argument("--iterations", type=int, default=1, help="Number of iterations to run")
     parser.add_argument("--external-ratings", type=str, default=None, choices=["hm", "gpt_ex"], help="External ratings source")
     parser.add_argument("--split-aspects", action="store_true", help="Split aspects into separate calls")

@@ -1,0 +1,9 @@
+{
+  "output": "data/release/insq/labels_only.csv",
+  "rows": 3984,
+  "label_source_counts": {
+    "human_individual": 2960,
+    "human_consensus": 1024
+  },
+  "conversation_text_joined": false
+}

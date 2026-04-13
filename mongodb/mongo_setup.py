@@ -5,7 +5,6 @@ import random
 from pymongo import MongoClient
 import os
 from dotenv import load_dotenv
-from mongo_users import add_new_user
 
 
 # Load environment variables from the .env file
@@ -27,8 +26,9 @@ studys_collection = db['studies']
 
 max_annotation_per_task = 3
 
-# Path to the test task JSON file
-test_task_file = '../data/tasks/fora_tasks.json'
+# Path to a local archived task JSON file. Public release users normally use
+# `data/release/` rather than re-uploading annotation tasks to MongoDB.
+test_task_file = 'data/archive_local/tasks/insq_tasks.json'
 
 
 def load_tasks(file_path):
@@ -65,9 +65,6 @@ def initiate_tasks(tasks, split="prod", filter=None):
 
     except Exception as e:
         print(f"Error occurred: {e}")
-
-def initiate_test_user():
-    add_new_user("test_user", db)
 
 def initiate_study_metadata():
     study_info = {
@@ -127,7 +124,6 @@ def setup_mongo_db():
     initiate_tasks(dev_tasks)
     # initiate_task_assignment()
     # initiate_study_metadata()
-    # initiate_test_user()
 
 
 

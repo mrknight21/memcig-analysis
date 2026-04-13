@@ -22,8 +22,13 @@ PORT = os.getenv("PORT", "8000")
 LOG_LEVEL = os.getenv("LOG_LEVEL", "DEBUG")
 MODE = os.getenv("MODE", "DEBUG")
 
-# rater filter
-BLACKLIST = {"aso", "maychill", "test"}                    # annotator ids to always skip
+# Rater ids to skip can be provided via env for private/internal runs.
+# Keep the public default empty so test handles are not embedded in the repo.
+BLACKLIST = {
+    item.strip()
+    for item in os.getenv("ANNOTATOR_BLACKLIST", "").split(",")
+    if item.strip()
+}
 AGREEMENT_THRESHOLD = float(os.getenv("AGREE_THRESH", 0.3))  # mean QWK below this → drop
 MIN_OVERLAP = int(os.getenv("MIN_OVERLAP", 3))             # min shared items to compute QWK
 MIN_RATERS_TO_DROP = int(os.getenv("MIN_RATERS_TO_DROP", 2))  # only drop if conv has ≥ this many raters
@@ -736,7 +741,7 @@ def build_final_labels(
 
 def evaluate_against_seed_gt(df):
     aspect_decoder = {"CIG": "info", "Novelty": "novo", "Relevance": "relv", "Scope": "imsc"}
-    seed_df = pd.read_csv("../data/human_annotated/insq_2228.csv")
+    seed_df = pd.read_csv("data/archive_local/human_annotated/insq_2228.csv")
     seed_df = seed_df[seed_df.segment >= 0]
     seed_utt_ids = seed_df.utterance_id.unique().tolist()
 

@@ -5,6 +5,7 @@ import glob
 import json
 import logging
 import os
+from pathlib import Path
 
 from typing import Callable, Dict, List, Literal, Tuple
 from memory.multiparty_memory import MultipartyMemory, process_conversation_segment_memory, get_retreived_memories_from_result, generate_formatted_memories
@@ -42,7 +43,7 @@ TOP_K_CONTEXT = 5
 MODEL_CONFIG = {
     "memory": ["openai", "gpt-5-mini"],
     "memory_embedding": ["huggingface", "Qwen/Qwen3-Embedding-0.6B"],
-    "intro": ["gemini", "gemini-2.5-pro"],
+    "intro": ["openai", "gpt-5"],
     "sum": ["openai", "gpt-5"],
     "rate": ["openai", "gpt-5"]
 }
@@ -63,6 +64,38 @@ logging.basicConfig(
 enc = tiktoken.encoding_for_model("gpt-4o-mini")
 
 _Backend = Literal["openai", "gemini"]
+
+
+def _conversation_id_aliases(conversation_id: str) -> set[str]:
+    conv_id = str(conversation_id)
+    aliases = {conv_id}
+    if conv_id.startswith("insq_"):
+        aliases.add(conv_id.removeprefix("insq_"))
+    else:
+        aliases.add(f"insq_{conv_id}")
+    return aliases
+
+
+def load_archived_prior_memory_embeddings(conversation_id: str) -> Dict[str, List[float]]:
+    """Load local archived dense vectors for release metadata that omits them."""
+    archive_path = Path("data/archive_local/embeddings/insq_prior_memory_embeddings.jsonl")
+    if not archive_path.exists():
+        return {}
+
+    aliases = _conversation_id_aliases(conversation_id)
+    embeddings: Dict[str, List[float]] = {}
+    with archive_path.open("r", encoding="utf-8") as handle:
+        for line in handle:
+            if not line.strip():
+                continue
+            record = json.loads(line)
+            if str(record.get("conversation_id")) not in aliases:
+                continue
+            memory_text = record.get("memory")
+            embedding = record.get("embedding")
+            if memory_text and embedding:
+                embeddings[memory_text] = embedding
+    return embeddings
 
 
 def _get_llm(backend: _Backend = "gemini", *, use_async: bool = False):
@@ -239,11 +272,25 @@ async def quality_checked_recursive_summaries(
     else:
         prior_memory_json = meta["prior_memory"]
         memory = MultipartyMemory(backend=backend["memory"][0])
-        embedding_dict = {m["memory"]: m["embedding"] for m in prior_memory_json if 'embedding' in m}
+        embedding_dict = {m["memory"]: m["embedding"] for m in prior_memory_json if "embedding" in m}
+        archived_embeddings = load_archived_prior_memory_embeddings(conversation_id)
+        if archived_embeddings:
+            embedding_dict.update(archived_embeddings)
+            logger.info(
+                "Loaded %d archived prior-memory embeddings for conversation %s.",
+                len(archived_embeddings),
+                conversation_id,
+            )
         for m in prior_memory_json:
             m['metadata']["run_id"] = conversation_id
             if "actor_id" not in m['metadata'] and "speaker" in m['metadata']:
                 m['metadata']['actor_id'] = m['metadata']['speaker']
+            if m["memory"] not in embedding_dict:
+                logger.info(
+                    "No archived embedding for one prior-memory item in %s; regenerating it locally.",
+                    conversation_id,
+                )
+                embedding_dict[m["memory"]] = memory.embedding_model.embed(m["memory"], memory_action="add")
             memory._create_memory(m["memory"], embedding_dict, m['metadata'])
 
 
@@ -447,19 +494,19 @@ async def _generate_intro_summaries(
 
 
 def generate_intro_summaries(*, backend: _Backend = "gemini", use_async: bool = False) -> None:
-    dialogue_files = glob.glob("../data/raw/*.csv")
+    dialogue_files = glob.glob("data/raw/insq/*.csv")
     metas = asyncio.run(
         _generate_intro_summaries(dialogue_files, backend=backend, use_async=use_async)
     )
 
     for m in metas:
         fname = f"insq_{m['conversation_id']}_meta.json"
-        with open(os.path.join("../data/meta", fname), "w") as fh:
+        with open(os.path.join("data/archive_local/meta", fname), "w") as fh:
             json.dump(m, fh, ensure_ascii=False, indent=2)
 
 
 def generate_segment_summaries(backend, overwrite: bool = False) -> None:
-    dialogue_files = glob.glob("../data/raw/fora/*.csv")
+    dialogue_files = glob.glob("data/raw/insq/*.csv")
     memory = MultipartyMemory(backend=backend["memory"][0])
     for idx, df_path in enumerate(dialogue_files, start=1):
         logger.info("Summarising (%d/%d): %s", idx, len(dialogue_files), df_path)

@@ -2,7 +2,9 @@ import concurrent
 import json
 import logging
 import os
+import tempfile
 import time
+import uuid
 from copy import deepcopy
 from typing import Any, Dict, List, Optional, Tuple
 
@@ -34,6 +36,23 @@ from google.api_core.exceptions import (
 
 
 MAX_TRIES = 3
+
+
+def _deep_merge_dicts(base: Dict[str, Any], overrides: Dict[str, Any]) -> Dict[str, Any]:
+    merged = deepcopy(base)
+    for key, value in overrides.items():
+        if isinstance(value, dict) and isinstance(merged.get(key), dict):
+            merged[key] = _deep_merge_dicts(merged[key], value)
+        else:
+            merged[key] = value
+    return merged
+
+
+def _default_qdrant_path() -> str:
+    configured = os.environ.get("MEM0_QDRANT_PATH")
+    if configured:
+        return configured
+    return os.path.join(tempfile.gettempdir(), f"mem0_qdrant_{uuid.uuid4().hex}")
 
 
 def _resolve_conflicting_updates(actions: List[Dict]) -> List[Dict]:
@@ -120,7 +139,6 @@ class MultipartyMemory(Memory):
                     "model": "gpt-5-mini",
                     "max_tokens": 50000,
                     "reasoning_effort": "minimal",
-                    "verbosity": "low"
                 }
             )
 
@@ -132,11 +150,10 @@ class MultipartyMemory(Memory):
                 provider="gemini",
                 config={
                     # Using a modern, capable, and cost-effective model
-                    "api_key": os.environ.get("GEMINI_API_KEY"),
+                    "api_key": os.environ.get("GOOGLE_API_KEY") or os.environ.get("GEMINI_API_KEY") or os.environ.get("GEMINI_API"),
                     "model": "gemini-2.5-flash",
                     "max_tokens": 50000,
                     "temperature": 0.1,
-                    "thinking_budget": 0
                 }
             )
         else:
@@ -158,23 +175,22 @@ class MultipartyMemory(Memory):
             provider="qdrant",
             config={
                 "embedding_model_dims": 1024,
+                "path": _default_qdrant_path(),
             }
         )
 
-        # Assemble the final MemoryConfig object, including our common prompts
-        config = MemoryConfig(
-            llm=llm_config,
-            embedder=embedder_config,
-            vector_store=vector_store_config,
-            **common_config_args
-        )
+        memory_config_data = {
+            "llm": llm_config.model_dump(),
+            "embedder": embedder_config.model_dump(),
+            "vector_store": vector_store_config.model_dump(),
+            **common_config_args,
+        }
 
-
-
-        # If a custom_config dict is provided, we can smartly update our generated config
         if custom_config:
-            # This is an advanced feature allowing runtime overrides, e.g., changing the model
-            config = MemoryConfig(**config.model_dump(), **custom_config)
+            memory_config_data = _deep_merge_dicts(memory_config_data, custom_config)
+
+        # Assemble the final MemoryConfig object, including any runtime overrides.
+        config = MemoryConfig(**memory_config_data)
 
         # Initialize the parent Memory class with the fully constructed config object
         super().__init__(config)
@@ -668,4 +684,3 @@ def get_retreived_memories_from_result(results, cutoff):
                         retrieved_memories.append(source_mem)
         retrieved_memories.append(v)
     return retrieved_memories
-

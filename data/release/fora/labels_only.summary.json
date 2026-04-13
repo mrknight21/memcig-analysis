@@ -1,0 +1,9 @@
+{
+  "output": "data/release/fora/labels_only.csv",
+  "rows": 4582,
+  "label_source_counts": {
+    "human_individual": 3330,
+    "human_consensus": 1252
+  },
+  "conversation_text_joined": false
+}

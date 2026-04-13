@@ -1,0 +1,9 @@
+{
+  "output": "data/release/integrated_labels_labels_only.csv",
+  "rows": 8566,
+  "label_source_counts": {
+    "human_individual": 6290,
+    "human_consensus": 2276
+  },
+  "conversation_text_joined": false
+}

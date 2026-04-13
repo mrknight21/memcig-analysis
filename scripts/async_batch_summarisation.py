@@ -40,7 +40,7 @@ async def _process_dialogue(
 #  kick off N-concurrent episodes
 # ---------------------------------------------------------------------------
 async def run_segment_summaries(
-        cache_glob : str = "../data/cache/*.csv",
+        cache_glob : str = "data/raw/insq/*.csv",
         *,
         backend    : str = "gemini",
         overwrite  : bool = False,

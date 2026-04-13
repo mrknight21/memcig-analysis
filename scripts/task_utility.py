@@ -21,21 +21,46 @@ from sklearn.preprocessing import MinMaxScaler
 from typing import List, Tuple, Dict, Set
 import re
 import unicodedata
+import logging
+import nltk
 from nltk.corpus import stopwords
-import spacy
 import re, html as htmlmod
 
-
-STOP_WORDS = set(stopwords.words('english'))
-
-
-# Load the spaCy model
 try:
-    nlp = spacy.load("en_core_web_trf")
-except OSError:
-    print("Downloading spaCy model 'en_core_web_sm'...\n"
-          "Please run: python -m spacy download en_core_web_sm")
-    nlp = None
+    import spacy
+except Exception as e:
+    spacy = None
+    logging.warning("spaCy import failed; keyword extraction will be disabled. Error: %s", e)
+
+try:
+    STOP_WORDS = set(stopwords.words("english"))
+except LookupError:
+    nltk.download("stopwords", quiet=True)
+    try:
+        STOP_WORDS = set(stopwords.words("english"))
+    except Exception:
+        STOP_WORDS = set()
+
+
+def _load_spacy_model():
+    if spacy is None:
+        return None
+
+    # Prefer the lightweight model first for maximum environment compatibility.
+    for model_name in ("en_core_web_sm", "en_core_web_trf"):
+        try:
+            return spacy.load(model_name)
+        except Exception:
+            continue
+
+    try:
+        return spacy.blank("en")
+    except Exception:
+        logging.warning("No usable spaCy pipeline found. Install with: python -m spacy download en_core_web_sm")
+        return None
+
+
+nlp = _load_spacy_model()
 
 
 _ARTICLES = r"(?:\b(?:the|a|an)\s+)?"
@@ -363,7 +388,7 @@ def extract_keywords(content: str) -> List[str]:
     into canonical representatives for robust cross-article matching.
     """
     if nlp is None:
-        return ["spaCy model not loaded."]
+        return []
 
     doc_dialogue = nlp(content)
 
@@ -563,4 +588,3 @@ def extract_keywords(content: str) -> List[str]:
         final_keywords.append(k)
 
     return final_keywords
-

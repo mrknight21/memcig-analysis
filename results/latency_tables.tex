@@ -1,0 +1,59 @@
+\begin{table}[t]
+\centering
+\caption{Memory operation latency by corpus and backend (seconds), measured on 3 consecutive segments per corpus, with ChatGPT reasoning\_effort=\texttt{minimal} and Gemini thinking\_budget=128. Sample unit is utterance (\(N_{\text{utt}}\)).}
+\label{tab:memory_ops_latency}
+\begin{tabular}{l l l c c c}
+\hline
+Corpus & Backend & Operation & Mean (s) & Std (s) & \(N_{\text{utt}}\) \\
+\hline
+FORA & OpenAI & Claim extraction & 2.536 & 1.843 & 49 \\
+FORA & OpenAI & Retrieval + matching & 5.046 & 5.331 & 49 \\
+FORA & OpenAI & Memory integration & 0.067 & 0.124 & 49 \\
+FORA & OpenAI & Total memory add & 7.650 & 7.147 & 49 \\
+FORA & Gemini & Claim extraction & 2.791 & 1.752 & 49 \\
+FORA & Gemini & Retrieval + matching & 3.566 & 3.474 & 49 \\
+FORA & Gemini & Memory integration & 0.057 & 0.144 & 49 \\
+FORA & Gemini & Total memory add & 6.414 & 5.185 & 49 \\
+INSQ & OpenAI & Claim extraction & 1.957 & 1.245 & 59 \\
+INSQ & OpenAI & Retrieval + matching & 3.444 & 3.984 & 59 \\
+INSQ & OpenAI & Memory integration & 0.027 & 0.131 & 59 \\
+INSQ & OpenAI & Total memory add & 5.429 & 5.185 & 59 \\
+INSQ & Gemini & Claim extraction & 2.408 & 1.019 & 59 \\
+INSQ & Gemini & Retrieval + matching & 2.977 & 2.496 & 59 \\
+INSQ & Gemini & Memory integration & 0.094 & 0.218 & 59 \\
+INSQ & Gemini & Total memory add & 5.480 & 3.497 & 59 \\
+Pooled & OpenAI & Claim extraction & 2.220 & 1.565 & 108 \\
+Pooled & OpenAI & Retrieval + matching & 4.171 & 4.690 & 108 \\
+Pooled & OpenAI & Memory integration & 0.045 & 0.129 & 108 \\
+Pooled & OpenAI & Total memory add & 6.436 & 6.223 & 108 \\
+Pooled & Gemini & Claim extraction & 2.582 & 1.406 & 108 \\
+Pooled & Gemini & Retrieval + matching & 3.244 & 2.980 & 108 \\
+Pooled & Gemini & Memory integration & 0.077 & 0.188 & 108 \\
+Pooled & Gemini & Total memory add & 5.904 & 4.348 & 108 \\
+\hline
+\end{tabular}
+\end{table}
+
+\begin{table}[t]
+\centering
+\caption{Rating inference latency in memory mode by corpus and model, reported as seconds per utterance (segment wall-time divided by number of utterances in that segment). Sample unit is utterance (\(N_{\text{utt}}\)).}
+\label{tab:rating_latency}
+\begin{tabular}{l l c c c}
+\hline
+Corpus & Model & Mean (s/utt) & Std (s/utt) & \(N_{\text{utt}}\) \\
+\hline
+FORA & OpenAI GPT-5 & 0.743 & 0.484 & 49 \\
+FORA & OpenAI GPT-5-mini & 0.855 & 0.163 & 49 \\
+FORA & Gemini 2.5 Pro & 0.541 & 0.079 & 49 \\
+FORA & Gemini 2.5 Flash & 0.315 & 0.040 & 49 \\
+INSQ & OpenAI GPT-5 & 0.456 & 0.049 & 59 \\
+INSQ & OpenAI GPT-5-mini & 0.800 & 0.146 & 59 \\
+INSQ & Gemini 2.5 Pro & 0.469 & 0.051 & 59 \\
+INSQ & Gemini 2.5 Flash & 0.293 & 0.043 & 59 \\
+Pooled & OpenAI GPT-5 & 0.586 & 0.356 & 108 \\
+Pooled & OpenAI GPT-5-mini & 0.825 & 0.156 & 108 \\
+Pooled & Gemini 2.5 Pro & 0.502 & 0.074 & 108 \\
+Pooled & Gemini 2.5 Flash & 0.303 & 0.043 & 108 \\
+\hline
+\end{tabular}
+\end{table}

@@ -3,18 +3,19 @@ from pathlib import Path
 from typing import Iterable, List, Dict, Set, Tuple
 import pandas as pd
 import os
+import sys
 import numpy as np
 
-from scripts.dialogue_segmentation import segment_dialogue
+sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 from util import load_json
 
-ratings_file = "../data/ratings/tasks_ratings.json"
-segment_dir = "../data/processed_segments/openai/"
+ratings_file = "data/archive_local/ratings/tasks_ratings.json"
+segment_dir = "data/archive_local/processed_segments/openai"
 
 
-def read_all_csvs(input_dir: Path) -> Dict[Path, pd.DataFrame]:
+def read_all_csvs(input_dir: Path, corpus: str = "insq") -> Dict[Path, pd.DataFrame]:
     csvs = {}
-    for p in sorted(input_dir.glob("fora_*.csv")):
+    for p in sorted(input_dir.glob(f"{corpus}_*.csv")):
         df = pd.read_csv(p)
         # sanity: required column
         assert "utterance_text" in df.columns, f"Missing 'utterance_text' in {p}"
@@ -85,12 +86,12 @@ def episode_iterative_features(dialogue, segments, ratings, corpus):
 
 
 
-def generate_memory_feats(input_dir, output_dir):
+def generate_memory_feats(input_dir, output_dir, corpus: str = "insq", ratings_path: Path = Path(ratings_file), segment_meta_dir: Path = Path(segment_dir)):
     output_dir.mkdir(parents=True, exist_ok=True)
 
     print("Reading CSVs...")
-    csvs = read_all_csvs(input_dir)
-    ratings = load_json(ratings_file)
+    csvs = read_all_csvs(input_dir, corpus=corpus)
+    ratings = load_json(ratings_path)
 
     print("Augmenting episodes with episode-level memory features...")
     for path, df in csvs.items():
@@ -99,10 +100,11 @@ def generate_memory_feats(input_dir, output_dir):
         corpus = conv_id.split("_")[0]
         eps_ratings = [r for r in ratings if r["conversation_id"] == conv_id and "claim_predictions" in r]
 
-        if not os.path.isfile(f"{segment_dir}{conv_id}_meta_checkpoint.json"):
+        meta_path = segment_meta_dir / f"{conv_id}_meta_checkpoint.json"
+        if not os.path.isfile(meta_path):
             continue
         else:
-            meta = load_json(f"{segment_dir}{conv_id}_meta_checkpoint.json")
+            meta = load_json(meta_path)
             eps_segments = meta["segmentation"]["segments"]
 
         enriched = episode_iterative_features(df, eps_segments, eps_ratings, corpus)
@@ -114,11 +116,20 @@ def generate_memory_feats(input_dir, output_dir):
 
 def parse_args():
     ap = argparse.ArgumentParser(description="Compute memory based features for debate episodes.")
-    ap.add_argument("--input_dir", type=Path, required=True, help="Folder containing episode CSVs")
-    ap.add_argument("--output_dir", type=Path, required=True, help="Folder to write augmented CSVs")
+    ap.add_argument("--input_dir", type=Path, default=Path("data/raw/insq"), help="Folder containing episode CSVs")
+    ap.add_argument("--output_dir", type=Path, default=Path("data/archive_local/feat/insq"), help="Folder to write augmented CSVs")
+    ap.add_argument("--corpus", choices=["insq", "fora"], default="insq")
+    ap.add_argument("--ratings_path", type=Path, default=Path(ratings_file))
+    ap.add_argument("--segment_meta_dir", type=Path, default=Path(segment_dir))
 
     return ap.parse_args()
 
 if __name__ == "__main__":
     args = parse_args()
-    generate_memory_feats(args.input_dir, args.output_dir)
+    generate_memory_feats(
+        args.input_dir,
+        args.output_dir,
+        corpus=args.corpus,
+        ratings_path=args.ratings_path,
+        segment_meta_dir=args.segment_meta_dir,
+    )

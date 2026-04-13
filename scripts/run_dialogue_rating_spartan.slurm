@@ -89,9 +89,8 @@ cd "$REPO/scripts"
 python dialogue_rating.py \
   --model "vllm:$MODEL_PATH" \
   --backend oss \
-  --input "../data/ratings/tasks_ratings_{}.json" \
-  --output "../data/ratings/tasks_ratings_{}_{}.json" \
+  --input "data/archive_local/ratings/tasks_ratings_{}.json" \
+  --output "data/archive_local/ratings/tasks_ratings_{}_{}.json" \
   --iterations 3 \
   --thinking-budget 1024
-
 

@@ -12,12 +12,12 @@ from statsmodels.stats.sandwich_covariance import cov_cluster
 ACT_ALL = ['prob','conf','inst','intp','supp','util']
 MTV_ALL = ['info_mtv','social_mtv','coord_mtv']
 
-seg_files = glob.glob("../data/processed_segments/openai/*.json")
-insq_files = glob.glob("../data/whow/insq/*.xlsx")
-fora_files = glob.glob("../data/whow/fora/*.csv")
+seg_files = glob.glob("data/archive_local/processed_segments/openai/*.json")
+insq_files = glob.glob("data/archive_local/whow/insq/*.xlsx")
+fora_files = glob.glob("data/archive_local/whow/fora/*.csv")
 
 dfs_dict= {}
-for file in glob.glob("../data/raw/insq/*.csv") + glob.glob("../data/raw/fora/*.csv"):
+for file in glob.glob("data/raw/insq/*.csv"):
     cid = os.path.basename(file).split(".")[0]
     dfs_dict[cid] = file
 
@@ -113,7 +113,8 @@ def aggregate_sequence_dfs():
                 local_index += 1
 
         seq_df = pd.DataFrame(seq_data)
-        seq_df.to_csv(f"../data/whow_sequences/{corpus}_{conv_id}.csv", index=False)
+        os.makedirs("data/archive_local/whow_sequences", exist_ok=True)
+        seq_df.to_csv(f"data/archive_local/whow_sequences/{corpus}_{conv_id}.csv", index=False)
 
 def stack_episodes(dfs, episode_ids=None, infer_conv_from='utterance_id'):
     """
@@ -350,7 +351,7 @@ def summarize_adjacency(part):
 
 def main():
     aggregate_sequence_dfs()
-    seq_files = glob.glob("../data/whow_sequences/*.csv")
+    seq_files = glob.glob("data/archive_local/whow_sequences/*.csv")
     seq_dfs = [pd.read_csv(f) for f in seq_files]
     seq_dfs = [df for df in seq_dfs if len(df) > 100]
     df_all = stack_episodes(seq_dfs)

@@ -21,8 +21,21 @@ BOUNDARY_JSON_RE = re.compile(
     r"\[\s*\[\s*\d+\s*,\s*\d+\s*](?:\s*,\s*\[\s*\d+\s*,\s*\d+\s*])*\s*]"
 )
 
-# Configure the client (do this exactly once in your program)
-gemini_client = genai.Client(api_key=os.environ["GEMINI_API_KEY"])
+def _get_gemini_api_key() -> str:
+    api_key = os.environ.get("GOOGLE_API_KEY") or os.environ.get("GEMINI_API_KEY") or os.environ.get("GEMINI_API")
+    if not api_key:
+        raise KeyError("Set GOOGLE_API_KEY, GEMINI_API_KEY, or GEMINI_API before using Gemini.")
+    return api_key
+
+
+_gemini_client = None
+
+
+def get_gemini_client():
+    global _gemini_client
+    if _gemini_client is None:
+        _gemini_client = genai.Client(api_key=_get_gemini_api_key())
+    return _gemini_client
 
 
 # Suggested defaults that are permissive but still within provider policy
@@ -141,7 +154,7 @@ async def call_gemini_async(
     while attempts_left > 0:
         attempts_left -= 1
         try:
-            resp = await gemini_client.aio.models.generate_content(
+            resp = await get_gemini_client().aio.models.generate_content(
                 model=model,
                 contents=prompt,
                 config=config
@@ -207,7 +220,7 @@ def call_gemini_sync(prompt: str, model=gemini_models[0],
     while not complete and try_left > 0:
         try:
             try_left -= 1
-            response = gemini_client.models.generate_content(
+            response = get_gemini_client().models.generate_content(
                 model=model,
                 contents=prompt,
                 config=config

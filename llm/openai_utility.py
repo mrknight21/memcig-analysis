@@ -107,20 +107,32 @@ async def call_openai_async(
       # Non-GPT-5 (legacy chat) models:
       - temperature, top_p, presence_penalty, frequency_penalty, max_tokens, n
     """
+    cfg = generation_config or {}
+    reasoning_effort = cfg.get("reasoning_effort", cfg.get("reason_effort"))
+    verbosity = cfg.get("verbosity")
+    fmt = cfg.get("format")
+
+    request_kwargs = {
+        "model": model,
+        "input": prompt,
+    }
+    if reasoning_effort:
+        request_kwargs["reasoning"] = {"effort": reasoning_effort}
+    if verbosity or fmt:
+        text_cfg = {}
+        if verbosity:
+            text_cfg["verbosity"] = verbosity
+        if fmt:
+            text_cfg["format"] = {"type": fmt}
+        request_kwargs["text"] = text_cfg
+
     try_left = MAX_TRIALS
     last_response = None
 
     while try_left > 0:
         try:
             try_left -= 1
-            resp = await client_async.responses.create(
-                model=model,
-                input=prompt
-                # text={"verbosity": generation_config["verbosity"], "format": {"type": generation_config["format"]}},
-                # reasoning={
-                #     "effort": "high"
-                # }
-            )
+            resp = await client_async.responses.create(**request_kwargs)
             last_response = resp.output_text
 
             if valid_func and not valid_func(resp.output_text):

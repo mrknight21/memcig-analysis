@@ -1,0 +1,27 @@
+cff-version: 1.2.0
+message: "If you use this repository, please cite the CIG paper and the source corpora."
+title: "CIG: Measuring Conversational Information Gain in Deliberative Dialogues with Semantic Memory Dynamics"
+authors:
+  - family-names: "Chen"
+    given-names: "Ming-Bin"
+  - family-names: "Lau"
+    given-names: "Jey Han"
+  - family-names: "Frermann"
+    given-names: "Lea"
+repository-code: "https://github.com/mrknight21/memcig-analysis"
+license: "Apache-2.0"
+references:
+  - type: conference-paper
+    title: "Conversational Flow in Oxford-Style Debates"
+    authors:
+      - family-names: "Zhang"
+        given-names: "Justine"
+    conference:
+      name: "NAACL"
+    year: 2016
+  - type: website
+    title: "ConvoKit Intelligence Squared Debates Corpus"
+    url: "https://convokit.cornell.edu/documentation/iq2.html"
+  - type: website
+    title: "FORA Corpus"
+    url: "https://github.com/schropes/fora-corpus"

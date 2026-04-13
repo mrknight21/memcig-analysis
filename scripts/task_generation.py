@@ -4,6 +4,7 @@ import numpy as np
 from thefuzz import fuzz
 import json
 import glob
+import os
 from convokit import Corpus, download
 from task_utility import rank_segments, extract_keywords, _apply_highlights
 
@@ -11,7 +12,7 @@ import re
 from typing import List, Tuple
 
 
-corpus_id = "fora"
+corpus_id = "insq"
 max_total_reading_time = 60 * 6
 target_valid_utterance_count = 7
 TOP_K_CONTEXT = 5
@@ -270,7 +271,11 @@ def tagged_important_phrases(tasks):
 
 def generate_annotation_task_from_meta(tgt_folder, corpus="insq", k_pick=4, summary_type="memory", convo_ids=None):
 
-    meta_files = glob.glob("../data/processed_segments/openai/*.json")
+    corpus_id = corpus
+    if corpus == "insq":
+        meta_files = glob.glob("data/raw/insq/*_meta.json")
+    else:
+        meta_files = glob.glob("data/archive_local/processed_segments/openai/*.json")
     tasks = []
     selected_qa_info = []
 
@@ -284,19 +289,23 @@ def generate_annotation_task_from_meta(tgt_folder, corpus="insq", k_pick=4, summ
             if not any([str(id) in file for id in convo_ids]):
                 continue
         meta = json.load(open(file))
-        df_file = file.replace("processed_segments/openai/", f"raw/{corpus}/").replace("_meta_checkpoint.json", ".csv")
+        if corpus == "insq":
+            df_file = file.replace("_meta.json", ".csv")
+        else:
+            df_file = file.replace("archive_local/processed_segments/openai/", f"raw/{corpus}/").replace("_meta_checkpoint.json", ".csv")
         dialogue = pd.read_csv(df_file)
         # all the utterances in the conversation to be used as the prior history
         utts_strings = [
             row["utterance_speaker"] + f' ({row["role"]})' + ": " + row[
                 "utterance_text"] for i, row in dialogue.iterrows()]
 
-        convo_id = df_file.split("/")[-1].split(".")[0].split("_")[3]
+        convo_name = df_file.split("/")[-1].split(".")[0]
+        convo_id = convo_name.split("_")[-1]
         if convo_id == "2245":
             continue
 
         topic = meta["topic"].title()
-        goal = meta["goal"]
+        goal = meta.get("goal", "")
         segments = meta["segmentation"]["segments"]
         for i, segment in enumerate(segments):
             current_segment_id = i
@@ -306,6 +315,13 @@ def generate_annotation_task_from_meta(tgt_folder, corpus="insq", k_pick=4, summ
             participants = segment_df.loc[~segment_df["role"].isin(["mod", "moderator", "audience", "host", "unknown"])].utterance_speaker.unique()
 
             target_utterances, skipped_ratio, start = filter_target_utterance([r.to_dict() for j, r in segment_df.iterrows()], start)
+            summaries = segment.get("summaries", {})
+            if summary_type in summaries:
+                summary_text = summaries[summary_type]
+            elif summary_type in {"memory", "best"}:
+                summary_text = segment.get("best_context_sum") or segment.get("prior_summary", "")
+            else:
+                summary_text = segment.get(summary_type) or segment.get("prior_summary", "")
             try:
                 segment_task = {
                     "task_id": f"{corpus_id}_{convo_id}_{current_segment_id}",
@@ -315,7 +331,7 @@ def generate_annotation_task_from_meta(tgt_folder, corpus="insq", k_pick=4, summ
                     "topic": topic,
                     "goal": goal,
                     "target_utterances": target_utterances,
-                    "summary": segment["summaries"][summary_type],
+                    "summary": summary_text,
                     "sum_type": summary_type,
                     "participant_count": len(participants),
                 }
@@ -330,7 +346,7 @@ def generate_annotation_task_from_meta(tgt_folder, corpus="insq", k_pick=4, summ
             utterance_reading_times = int(sum([t["total_secs"] for t in reading_times]))
 
             segment_task['utterance_reading_time'] = utterance_reading_times
-            summary_reading_time = estimate_reading_time(segment["summaries"][summary_type])
+            summary_reading_time = estimate_reading_time(summary_text)
             segment_task["summary_reading_time"] = summary_reading_time
 
             left_time = max_total_reading_time - utterance_reading_times - summary_reading_time["total_secs"]
@@ -361,6 +377,7 @@ def generate_annotation_task_from_meta(tgt_folder, corpus="insq", k_pick=4, summ
 
     qa_df = pd.DataFrame(selected_qa_info)
     tagged_important_phrases(tasks)
+    os.makedirs(tgt_folder, exist_ok=True)
     with open(tgt_folder + corpus_id + "_tasks.json", "w") as f:
         json.dump(tasks, f)
     return tasks
@@ -371,13 +388,11 @@ def main():
     # insq_corpus = Corpus(filename=download("iq2-corpus"))
     # test_set_ids = [2228, 2960, 4134]
     # print("Corpus loaded")
-    generate_annotation_task_from_meta(tgt_folder="../data/tasks/", corpus="fora")
+    generate_annotation_task_from_meta(tgt_folder="data/archive_local/tasks/", corpus="insq")
 
 
 if __name__ == "__main__":
     main()
-
-
 
 
 

@@ -355,11 +355,11 @@ async def segment_dialogue(
     return segments_dict
 
 async def  segment_insq_dialogues(p=5, update_csv=False):
-    dialogue_files = glob.glob("../data/raw/*.csv")
+    dialogue_files = glob.glob("data/raw/insq/*.csv")
     for i, dialogue_file in enumerate(dialogue_files):
         print("Processing dialogue file: {}".format(dialogue_file))
         print(f"Progress {i} / {len(dialogue_files)}")
-        meta_file = dialogue_file.replace(".csv", "_meta.json").replace("raw", "meta")
+        meta_file = dialogue_file.replace(".csv", "_meta.json")
         meta = load_json(meta_file)
         dialogue = pd.read_csv(dialogue_file)
         discussion = dialogue.loc[dialogue.phase == 1]
@@ -369,7 +369,9 @@ async def  segment_insq_dialogues(p=5, update_csv=False):
         segmentation = await segment_dialogue(discussion, p=p, backend="openai", topic=topic, context=intro_sum, use_async=True)
         meta["segmentation"] = segmentation
         segments = segmentation["segments"]
-        with open(meta_file.replace("/meta", "/cache"), "w") as f:
+        out_meta = meta_file.replace("data/raw/insq", "data/archive_local/cache")
+        os.makedirs(os.path.dirname(out_meta), exist_ok=True)
+        with open(out_meta, "w") as f:
             json.dump(meta, f)
         if update_csv:
             for seg_idx, segment in enumerate(segments):
@@ -377,7 +379,8 @@ async def  segment_insq_dialogues(p=5, update_csv=False):
                 # mark rows whose utterance_index falls inside this interval
                 mask = dialogue["utterance_index"].between(start, end, inclusive="both")
                 dialogue.loc[mask, "segment"] = seg_idx
-            dialogue.to_csv(dialogue_file.replace("/raw", "/cache"), index=False)
+            out_csv = dialogue_file.replace("data/raw/insq", "data/archive_local/cache")
+            dialogue.to_csv(out_csv, index=False)
 
 
 # -----------------------------------------------------------------------

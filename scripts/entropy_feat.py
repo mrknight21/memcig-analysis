@@ -49,8 +49,8 @@ def read_all_csvs(input_dir: Path) -> Dict[Path, pd.DataFrame]:
 
 
 def merge_entropy_feat(input_dir, output_dir):
-    insq_ent = pd.read_csv("../data/entropy/insq_meta_llama_Llama_32_3B_c-1_meta.csv")
-    fora_ent = pd.read_csv("../data/entropy/fora_meta_llama_Llama_32_3B_c-1_meta.csv")
+    insq_ent = pd.read_csv("data/archive_local/entropy/insq_meta_llama_Llama_32_3B_c-1_meta.csv")
+    fora_ent = pd.read_csv("data/archive_local/entropy/fora_meta_llama_Llama_32_3B_c-1_meta.csv")
 
     output_dir.mkdir(parents=True, exist_ok=True)
 

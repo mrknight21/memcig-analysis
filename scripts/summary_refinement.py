@@ -159,7 +159,7 @@ def summary_refinement(
 
 def main():
 
-    updated = summary_refinement("../data/tasks/fora_tasks.json")
+    updated = summary_refinement("data/archive_local/tasks/insq_tasks.json")
 
 if __name__ == "__main__":
     main()
