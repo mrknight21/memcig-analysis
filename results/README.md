@@ -5,6 +5,7 @@ This folder contains publication-facing generated outputs.
 ## Main Findings
 
 - `findings_summary.md`: compact numerical summary of the main empirical findings, including annotation reliability, aspect validation, GPT-based prediction, memory-dynamics correlations, claim-level aggregation, and moderator dynamics.
+- `mae_model_context_table.tex`: LaTeX table comparing rating MAE across models, context settings, CIG, Novelty, Relevance, and Scope. This table includes the Gemini 2.5 Pro backfill.
 
 ## Latency Appendix
 
@@ -21,3 +22,4 @@ Related scripts:
 
 - `scripts/benchmark_memory_latency.py`
 - `scripts/benchmark_rating_latency.py`
+- `analysis/calculate_mae.py`

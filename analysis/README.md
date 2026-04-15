@@ -22,5 +22,6 @@ If a notebook references `data/archive_local/...`, it is using local research ar
 The maintained analysis helper defaults have been updated for the refactored layout:
 
 - `analysis/correlation_analysis.py` defaults to `data/archive_local/feat`, `analysis/final_labels.csv`, and `data/archive_local/ratings`.
+- `analysis/calculate_mae.py` rebuilds `analysis/mae_results_detailed.csv` and `results/mae_model_context_table.tex` from the local `run_*.json` rating bundles.
 - `analysis/repro_mem_feat.py` defaults to the redistributable INSQ transcript `insq_2228` and writes regenerated features to `data/archive_local/feat/insq/`.
 - Debug helpers use `data/raw/insq/*_meta.json` when possible and fall back to `data/archive_local/processed_segments/`.
