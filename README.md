@@ -63,6 +63,23 @@ The paper uses this codebase to study Conversational Information Gain (CIG): how
 - Memory-dynamics features, especially relevance-gated memory changes, correlate more strongly with human CIG ratings than common heuristics such as length, TF-IDF, entity novelty, or token surprisal.
 - Claim-level aggregation suggests a conjunctive bottleneck: utterance-level CIG is often limited by the weakest aspect among Novelty, Relevance, and Implication Scope.
 
+Proxy-feature comparison against human CIG soft labels (`N=569` utterances; 313 FORA, 256 INSQ) shows that memory dynamics are the strongest linear correlates, while entropy/surprisal only competes when summed over the utterance:
+
+| Feature | Pearson r | Spearman r | N |
+|---|---:|---:|---:|
+| Memory changes, relevance-gated | 0.726 | 0.776 | 569 |
+| Memory changes, any | 0.720 | 0.770 | 569 |
+| Extracted claim count | 0.713 | 0.761 | 569 |
+| Memory changes, informativeness-gated | 0.712 | 0.765 | 569 |
+| Memory changes, novelty-gated | 0.703 | 0.755 | 569 |
+| TF-IDF sum | 0.701 | 0.793 | 569 |
+| Content token count | 0.697 | 0.791 | 569 |
+| Token surprisal sum | 0.678 | 0.785 | 569 |
+| Length, tokens | 0.675 | 0.785 | 569 |
+| Novel word count | 0.601 | 0.737 | 569 |
+| Entity count | 0.466 | 0.508 | 569 |
+| Novel entity count | 0.419 | 0.421 | 569 |
+
 See `results/findings_summary.md` for the compact numeric summary and `results/latency_tables.tex` for the latency appendix tables.
 
 ## Environment
